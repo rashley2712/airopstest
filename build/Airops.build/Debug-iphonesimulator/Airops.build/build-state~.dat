@@ -1,0 +1,816 @@
+TAirops
+v6
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Info.plist /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Airops-Info.plist
+cPhaseScriptExecution Copy\ www\ directory /Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Script-304B58A110DAC018002A0835.sh
+cCpResource Airops/Resources/icons/icon-76.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-76.png
+cCpResource Airops/Resources/icons/icon-40@2x.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-40@2x.png
+cCpResource Airops/Resources/icons/icon-72.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-72.png
+cCpResource Airops/Resources/icons/icon.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon.png
+cCpResource Airops/Resources/icons/icon@2x.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon@2x.png
+cCopyStringsFile /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/en.lproj/Localizable.strings Airops/Resources/en.lproj/Localizable.strings
+cCompileXIB /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/MainViewController.xib
+cCpResource Airops/Resources/icons/icon-60@2x.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-60@2x.png
+cCpResource Airops/Resources/icons/icon-50.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-50.png
+cCopyStringsFile /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/de.lproj/Localizable.strings Airops/Resources/de.lproj/Localizable.strings
+cCpResource Airops/Resources/icons/icon-small.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-small.png
+cCpResource Airops/Resources/splash/Default-Landscape@2x~ipad.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Landscape@2x~ipad.png
+cCpResource Airops/Resources/splash/Default-Landscape~ipad.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Landscape~ipad.png
+cCpResource Airops/Resources/splash/Default-Portrait@2x~ipad.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Portrait@2x~ipad.png
+cCpResource Airops/Resources/icons/icon-small@2x.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-small@2x.png
+cCpResource Airops/Resources/splash/Default-Portrait~ipad.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Portrait~ipad.png
+cCpResource Airops/Resources/icons/icon-40.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-40.png
+cCpResource Airops/Resources/splash/Default@2x~iphone.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default@2x~iphone.png
+cCpResource Airops/Resources/icons/icon-60.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-60.png
+cCpResource Airops/Resources/splash/Default-568h@2x~iphone.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-568h@2x~iphone.png
+cCpResource Airops/Resources/splash/Default~iphone.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default~iphone.png
+cCpResource Airops/Resources/icons/icon-50@2x.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-50@2x.png
+cCpResource Airops/Resources/icons/icon-76@2x.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-76@2x.png
+cCpResource Airops/Resources/icons/icon-72@2x.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-72@2x.png
+cProcessPCH /var/folders/c7/6vp692j53n51t0bqcwllk1dw0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Airops-Prefix-fcpyuqzeznlhkocxtdscalhllivt/Airops-Prefix.pch.pch Airops/Airops-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/main.o /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/AppDelegate.o /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/MainViewController.o /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Airops normal i386
+cGenerateDSYMFile /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app.dSYM /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Airops
+cTouch /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
+c000000005347B8FD0000000000000198
+t1397209341
+s408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
+c000000005345D71F00000000000003B4
+t1397085983
+s948
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c000000005345D722000000000000019E
+t1397085986
+s414
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
+c000000005345D7220000000000059340
+t1397085986
+s365376
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000005347B8E10000000000446820
+t1397209313
+s4483104
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000005345D72300000000000F1A80
+t1397085987
+s989824
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c000000005345D72400000000001BE790
+t1397085988
+s1828752
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Airops-Info.plist
+c0000000053AD98940000000000000A13
+t1403885716
+s2579
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Airops-Prefix.pch
+c0000000053AD975900000000000003C5
+t1403885401
+s965
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/AppDelegate.m
+c0000000053AD975900000000000013AB
+t1403885401
+s5035
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/MainViewController.m
+c0000000053AD9759000000000000126B
+t1403885401
+s4715
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/MainViewController.xib
+c0000000053AD97590000000000001759
+t1403885401
+s5977
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/de.lproj/Localizable.strings
+c0000000053AD975900000000000004C0
+t1403885401
+s1216
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/en.lproj/Localizable.strings
+c0000000053AD975900000000000004AB
+t1403885401
+s1195
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon-40.png
+c0000000053AD97590000000000000FF2
+t1403885401
+s4082
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon-40@2x.png
+c0000000053AD97590000000000001CF3
+t1403885401
+s7411
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon-50.png
+c0000000053AD9759000000000000130A
+t1403885401
+s4874
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon-50@2x.png
+c0000000053AD9759000000000000258B
+t1403885401
+s9611
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon-60.png
+c0000000053AD975900000000000016B3
+t1403885401
+s5811
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon-60@2x.png
+c0000000053AD97590000000000002E94
+t1403885401
+s11924
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon-72.png
+c0000000053AD97590000000000001350
+t1403885401
+s4944
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon-72@2x.png
+c0000000053AD97590000000000002DBA
+t1403885401
+s11706
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon-76.png
+c0000000053AD97590000000000001B71
+t1403885401
+s7025
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon-76@2x.png
+c0000000053AD97590000000000003B9E
+t1403885401
+s15262
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon-small.png
+c0000000053AD97590000000000000CDE
+t1403885401
+s3294
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon-small@2x.png
+c0000000053AD975900000000000015E8
+t1403885401
+s5608
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon.png
+c0000000053AD97590000000000000F3E
+t1403885401
+s3902
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon@2x.png
+c0000000053AD97590000000000001EBD
+t1403885401
+s7869
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/splash/Default-568h@2x~iphone.png
+c0000000053AD975900000000000085B1
+t1403885401
+s34225
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/splash/Default-Landscape@2x~ipad.png
+c0000000053AD97590000000000033D0A
+t1403885401
+s212234
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/splash/Default-Landscape~ipad.png
+c0000000053AD975900000000000166A2
+t1403885401
+s91810
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/splash/Default-Portrait@2x~ipad.png
+c0000000053AD97590000000000033F7C
+t1403885401
+s212860
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/splash/Default-Portrait~ipad.png
+c0000000053AD97590000000000016641
+t1403885401
+s91713
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/splash/Default@2x~iphone.png
+c0000000053AD97590000000000007323
+t1403885401
+s29475
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/splash/Default~iphone.png
+c0000000053AD9759000000000000289A
+t1403885401
+s10394
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/main.m
+c0000000053AD9759000000000000045C
+t1403885401
+s1116
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/Airops.LinkFileList
+c0000000053AD9895000000000000019E
+t1403885717
+s414
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/AppDelegate.o
+t1403885718
+s73956
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/MainViewController.o
+t1403885718
+s51536
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/main.o
+t1403885718
+s2956
+
+N/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Script-304B58A110DAC018002A0835.sh
+c0000000053AD9895000000000000002D
+t1403885717
+s45
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app
+t1403885719
+s1020
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app.dSYM
+t2
+s0
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Airops
+t1403885719
+s271948
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-568h@2x~iphone.png
+t1403885717
+s34225
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Landscape@2x~ipad.png
+t1403885717
+s212234
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Landscape~ipad.png
+t1403885717
+s91810
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Portrait@2x~ipad.png
+t1403885717
+s212860
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Portrait~ipad.png
+t1403885717
+s91713
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default@2x~iphone.png
+t1403885717
+s29475
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default~iphone.png
+t1403885717
+s10394
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Info.plist
+t1403885717
+s1279
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/MainViewController.nib
+t1403885718
+s836
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/PkgInfo
+t2
+s0
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/de.lproj/Localizable.strings
+t1403885717
+s280
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/en.lproj/Localizable.strings
+t1403885717
+s166
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-40.png
+t1403885717
+s4082
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-40@2x.png
+t1403885717
+s7411
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-50.png
+t1403885717
+s4874
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-50@2x.png
+t1403885717
+s9611
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-60.png
+t1403885717
+s5811
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-60@2x.png
+t1403885717
+s11924
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-72.png
+t1403885717
+s4944
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-72@2x.png
+t1403885717
+s11706
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-76.png
+t1403885717
+s7025
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-76@2x.png
+t1403885717
+s15262
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-small.png
+t1403885717
+s3294
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-small@2x.png
+t1403885717
+s5608
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon.png
+t1403885717
+s3902
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon@2x.png
+t1403885717
+s7869
+
+N/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/libCordova.a
+c0000000053AD975C00000000000D3760
+t1403885404
+s866144
+
+N/var/folders/c7/6vp692j53n51t0bqcwllk1dw0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Airops-Prefix-fcpyuqzeznlhkocxtdscalhllivt/Airops-Prefix.pch.pch
+t1403885718
+s5376404
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies8d414f15d05db941^c1e68015d05db941^---0#1#1#--18"Check dependencies36"585D0347-AC9A-46EC-9810-A8B6AC4B065C-
+
+CCompileC build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/AppDelegate.o /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425578518.929194
+e425578519.015156
+r1
+xCompileC
+xbuild/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/AppDelegate.o
+x/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/AppDelegate.m
+d/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/AppDelegate.h
+d/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
+d/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
+d/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
+d/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
+d/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
+d/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
+d/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
+d/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
+d/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
+d/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
+d/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/MainViewController.h
+d/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/AppDelegate.m209"[1mCompileC[0m build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/AppDelegate.o [1mAirops/Classes/AppDelegate.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler0ef3ed16d05db941^b5e20317d05db941^---0#0#1#-19%DVTDocumentLocation2@85"file:///Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/AppDelegate.m0000000000000000^3668"[1mCompileC[0m build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/AppDelegate.o [1mAirops/Classes/AppDelegate.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Airops-generated-files.hmap -I/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Airops-own-target-headers.hmap -I/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Airops-all-target-headers.hmap -iquote /Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Airops-project-headers.hmap -I/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include -I/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/usr/local/lib/include -I/Users/integra-airops/Desktop/myapp/platforms/ios/build/UninstalledProducts/include -I/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator -I/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/DerivedSources/i386 -I/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/DerivedSources -F/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator -include /var/folders/c7/6vp692j53n51t0bqcwllk1dw0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Airops-Prefix-fcpyuqzeznlhkocxtdscalhllivt/Airops-Prefix.pch -MMD -MT dependencies -MF /Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/AppDelegate.dia -c /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/AppDelegate.m -o /Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/AppDelegate.o36"06A4F882-D001-4F2B-BA3F-1109E86FFBEF-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCompileC build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/MainViewController.o /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425578518.929368
+e425578519.014750
+r1
+xCompileC
+xbuild/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/MainViewController.o
+x/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/MainViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/MainViewController.m
+d/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/MainViewController.h
+d/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
+d/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
+d/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
+d/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
+d/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
+d/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
+d/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
+d/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
+d/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
+d/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
+d/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Compile /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/MainViewController.m223"[1mCompileC[0m build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/MainViewController.o [1mAirops/Classes/MainViewController.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler7afded16d05db941^f7c70317d05db941^---0#0#1#-19%DVTDocumentLocation2@92"file:///Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/MainViewController.m0000000000000000^3710"[1mCompileC[0m build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/MainViewController.o [1mAirops/Classes/MainViewController.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Airops-generated-files.hmap -I/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Airops-own-target-headers.hmap -I/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Airops-all-target-headers.hmap -iquote /Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Airops-project-headers.hmap -I/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include -I/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/usr/local/lib/include -I/Users/integra-airops/Desktop/myapp/platforms/ios/build/UninstalledProducts/include -I/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator -I/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/DerivedSources/i386 -I/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/DerivedSources -F/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator -include /var/folders/c7/6vp692j53n51t0bqcwllk1dw0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Airops-Prefix-fcpyuqzeznlhkocxtdscalhllivt/Airops-Prefix.pch -MMD -MT dependencies -MF /Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/MainViewController.d --serialize-diagnostics /Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/MainViewController.dia -c /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/MainViewController.m -o /Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/MainViewController.o36"23C825B2-5795-4A31-B9EA-EE59A203F145-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCompileC build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/main.o /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425578518.928994
+e425578518.946396
+r1
+xCompileC
+xbuild/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/main.o
+x/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/main.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/main.m187"[1mCompileC[0m build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/main.o [1mAirops/main.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler32e7ed16d05db941^ce52f216d05db941^---0#0#1#-19%DVTDocumentLocation2@70"file:///Users/integra-airops/Desktop/myapp/platforms/ios/Airops/main.m0000000000000000^3610"[1mCompileC[0m build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/main.o [1mAirops/main.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Airops-generated-files.hmap -I/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Airops-own-target-headers.hmap -I/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Airops-all-target-headers.hmap -iquote /Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Airops-project-headers.hmap -I/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include -I/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/usr/local/lib/include -I/Users/integra-airops/Desktop/myapp/platforms/ios/build/UninstalledProducts/include -I/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator -I/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/DerivedSources/i386 -I/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/DerivedSources -F/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator -include /var/folders/c7/6vp692j53n51t0bqcwllk1dw0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Airops-Prefix-fcpyuqzeznlhkocxtdscalhllivt/Airops-Prefix.pch -MMD -MT dependencies -MF /Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/main.dia -c /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/main.m -o /Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/main.o36"DA171BA3-8040-49C4-803E-0EA17B8D9F89-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCompileXIB /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/MainViewController.xib
+s425578517.673939
+e425578518.568306
+r1
+xCompileXIB
+x/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/MainViewController.xib
+o2014-06-27 17:15:18.214 Interface Builder Cocoa Touch Tool[3663:303] CFPreferences: user home directory at file:///Users/integra-airops/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Compiling /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/MainViewController.xib64"[1mCompileXIB[0m [1mAirops/Classes/MainViewController.xib[0mf295ac15d05db941^397d9116d05db941^-238"2014-06-27 17:15:18.214 Interface Builder Cocoa Touch Tool[3663:303] CFPreferences: user home directory at file:///Users/integra-airops/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.-0#0#1#-19%DVTDocumentLocation2@94"file:///Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/MainViewController.xib0000000000000000^824"[1mCompileXIB[0m [1mAirops/Classes/MainViewController.xib[0m    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 6.0 --output-format human-readable-text --compile /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/MainViewController.nib /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Classes/MainViewController.xib36"38E96F13-EFC1-45C3-800E-8814594818D2-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCopyStringsFile /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/de.lproj/Localizable.strings Airops/Resources/de.lproj/Localizable.strings
+s425578517.675862
+e425578517.677060
+r1
+xCopyStringsFile
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/de.lproj/Localizable.strings
+xAirops/Resources/de.lproj/Localizable.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy Airops/Resources/de.lproj/Localizable.strings174"[1mCopyStringsFile[0m /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/de.lproj/Localizable.strings Airops/Resources/de.lproj/Localizable.stringse90fad15d05db941^1363ad15d05db941^---0#0#1#-19%DVTDocumentLocation2@102"file:///Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/de.lproj/Localizable.strings0000000000000000^666"[1mCopyStringsFile[0m /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/de.lproj/Localizable.strings Airops/Resources/de.lproj/Localizable.strings    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/de.lproj -- Airops/Resources/de.lproj/Localizable.strings36"B91551C2-9D40-4387-ACB0-8D7FA7F4544C-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCopyStringsFile /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/en.lproj/Localizable.strings Airops/Resources/en.lproj/Localizable.strings
+s425578517.673625
+e425578517.675668
+r1
+xCopyStringsFile
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/en.lproj/Localizable.strings
+xAirops/Resources/en.lproj/Localizable.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy Airops/Resources/en.lproj/Localizable.strings174"[1mCopyStringsFile[0m /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/en.lproj/Localizable.strings Airops/Resources/en.lproj/Localizable.stringsa181ac15d05db941^6afaac15d05db941^---0#0#1#-19%DVTDocumentLocation2@102"file:///Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/en.lproj/Localizable.strings0000000000000000^666"[1mCopyStringsFile[0m /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/en.lproj/Localizable.strings Airops/Resources/en.lproj/Localizable.strings    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/en.lproj -- Airops/Resources/en.lproj/Localizable.strings36"D2680010-5A5C-431A-98EA-2261FB5F3A57-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCpResource Airops/Resources/icons/icon-40.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-40.png
+s425578517.679716
+e425578517.680613
+r1
+xCpResource
+xAirops/Resources/icons/icon-40.png
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-40.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Copy /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-40.png149"[1mCpResource[0m Airops/Resources/icons/icon-40.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-40.png[0me812ae15d05db941^c53dae15d05db941^---0#0#1#-19%DVTDocumentLocation2@94"file:///Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-40.png0034bce3dcffdf42^690"[1mCpResource[0m Airops/Resources/icons/icon-40.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-40.png[0m    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon-40.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app36"EF66F82C-A441-488F-9BA2-D86A17E20EA3-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCpResource Airops/Resources/icons/icon-40@2x.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-40@2x.png
+s425578517.671126
+e425578517.672967
+r1
+xCpResource
+xAirops/Resources/icons/icon-40@2x.png
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-40@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Copy /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-40@2x.png155"[1mCpResource[0m Airops/Resources/icons/icon-40@2x.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-40@2x.png[0mecd9ab15d05db941^3754ac15d05db941^---0#0#1#-19%DVTDocumentLocation2@97"file:///Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-40@2x.png0034bce3dcffdf42^699"[1mCpResource[0m Airops/Resources/icons/icon-40@2x.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-40@2x.png[0m    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon-40@2x.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app36"81E5CB58-C04D-468D-94CD-AB16601B4433-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCpResource Airops/Resources/icons/icon-50.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-50.png
+s425578517.675305
+e425578517.676167
+r1
+xCpResource
+xAirops/Resources/icons/icon-50.png
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-50.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Copy /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-50.png149"[1mCpResource[0m Airops/Resources/icons/icon-50.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-50.png[0mb7ecac15d05db941^5b24ad15d05db941^---0#0#1#-19%DVTDocumentLocation2@94"file:///Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-50.png0034bce3dcffdf42^690"[1mCpResource[0m Airops/Resources/icons/icon-50.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-50.png[0m    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon-50.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app36"56132CDC-FEC5-48AC-8E55-AD44AF0E3FBE-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCpResource Airops/Resources/icons/icon-50@2x.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-50@2x.png
+s425578517.681932
+e425578517.682687
+r1
+xCpResource
+xAirops/Resources/icons/icon-50@2x.png
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-50@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Copy /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-50@2x.png155"[1mCpResource[0m Airops/Resources/icons/icon-50@2x.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-50@2x.png[0mfe9cae15d05db941^b1e0ae15d05db941^---0#0#1#-19%DVTDocumentLocation2@97"file:///Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-50@2x.png0034bce3dcffdf42^699"[1mCpResource[0m Airops/Resources/icons/icon-50@2x.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-50@2x.png[0m    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon-50@2x.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app36"703A6D31-B8A0-4FA5-99BE-9B6AB50B6A38-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCpResource Airops/Resources/icons/icon-60.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-60.png
+s425578517.680765
+e425578517.682270
+r1
+xCpResource
+xAirops/Resources/icons/icon-60.png
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-60.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Copy /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-60.png149"[1mCpResource[0m Airops/Resources/icons/icon-60.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-60.png[0m425fae15d05db941^f4a6ae15d05db941^---0#0#1#-19%DVTDocumentLocation2@94"file:///Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-60.png0034bce3dcffdf42^690"[1mCpResource[0m Airops/Resources/icons/icon-60.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-60.png[0m    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon-60.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app36"76E758C5-3C18-46DD-A90D-79ECF45D350A-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCpResource Airops/Resources/icons/icon-60@2x.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-60@2x.png
+s425578517.675144
+e425578517.676030
+r1
+xCpResource
+xAirops/Resources/icons/icon-60@2x.png
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-60@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Copy /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-60@2x.png155"[1mCpResource[0m Airops/Resources/icons/icon-60@2x.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-60@2x.png[0m93e1ac15d05db941^be11ad15d05db941^---0#0#1#-19%DVTDocumentLocation2@97"file:///Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-60@2x.png0034bce3dcffdf42^699"[1mCpResource[0m Airops/Resources/icons/icon-60@2x.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-60@2x.png[0m    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon-60@2x.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app36"8D7286BF-2AAD-49F5-B5DC-95CB7B946A69-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCpResource Airops/Resources/icons/icon-72.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-72.png
+s425578517.671304
+e425578517.672655
+r1
+xCpResource
+xAirops/Resources/icons/icon-72.png
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-72.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Copy /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-72.png149"[1mCpResource[0m Airops/Resources/icons/icon-72.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-72.png[0m32e9ab15d05db941^2251ac15d05db941^---0#0#1#-19%DVTDocumentLocation2@94"file:///Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-72.png0034bce3dcffdf42^690"[1mCpResource[0m Airops/Resources/icons/icon-72.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-72.png[0m    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon-72.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app36"9DF580CC-F881-4DFC-B681-AADD4E137C53-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCpResource Airops/Resources/icons/icon-72@2x.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-72@2x.png
+s425578517.683059
+e425578517.683825
+r1
+xCpResource
+xAirops/Resources/icons/icon-72@2x.png
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-72@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Copy /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-72@2x.png155"[1mCpResource[0m Airops/Resources/icons/icon-72@2x.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-72@2x.png[0m54e6ae15d05db941^8b17af15d05db941^---0#0#1#-19%DVTDocumentLocation2@97"file:///Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-72@2x.png0034bce3dcffdf42^699"[1mCpResource[0m Airops/Resources/icons/icon-72@2x.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-72@2x.png[0m    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon-72@2x.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app36"3E4219E3-4A6E-4D3E-AC06-EBF3EA5FF081-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCpResource Airops/Resources/icons/icon-76.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-76.png
+s425578517.671023
+e425578517.672515
+r1
+xCpResource
+xAirops/Resources/icons/icon-76.png
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-76.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Copy /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-76.png149"[1mCpResource[0m Airops/Resources/icons/icon-76.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-76.png[0m1fd6ab15d05db941^b134ac15d05db941^---0#0#1#-19%DVTDocumentLocation2@94"file:///Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-76.png0034bce3dcffdf42^690"[1mCpResource[0m Airops/Resources/icons/icon-76.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-76.png[0m    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon-76.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app36"962DCE32-7B75-4516-80EF-AC88E65F1917-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCpResource Airops/Resources/icons/icon-76@2x.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-76@2x.png
+s425578517.682805
+e425578517.683595
+r1
+xCpResource
+xAirops/Resources/icons/icon-76@2x.png
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-76@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Copy /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-76@2x.png155"[1mCpResource[0m Airops/Resources/icons/icon-76@2x.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-76@2x.png[0m77d6ae15d05db941^de00af15d05db941^---0#0#1#-19%DVTDocumentLocation2@97"file:///Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-76@2x.png0034bce3dcffdf42^699"[1mCpResource[0m Airops/Resources/icons/icon-76@2x.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-76@2x.png[0m    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon-76@2x.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app36"A86EC772-89EE-4231-84F3-7481A75DBACD-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCpResource Airops/Resources/icons/icon-small.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-small.png
+s425578517.676406
+e425578517.676999
+r1
+xCpResource
+xAirops/Resources/icons/icon-small.png
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-small.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Copy /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-small.png155"[1mCpResource[0m Airops/Resources/icons/icon-small.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-small.png[0m9432ad15d05db941^4051ad15d05db941^---0#0#1#-19%DVTDocumentLocation2@97"file:///Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-small.png0034bce3dcffdf42^699"[1mCpResource[0m Airops/Resources/icons/icon-small.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-small.png[0m    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon-small.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app36"5C66621F-2122-47BD-BDB1-170F5F892ED5-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCpResource Airops/Resources/icons/icon-small@2x.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-small@2x.png
+s425578517.678053
+e425578517.678767
+r1
+xCpResource
+xAirops/Resources/icons/icon-small@2x.png
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-small@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Copy /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-small@2x.png161"[1mCpResource[0m Airops/Resources/icons/icon-small@2x.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-small@2x.png[0m629ead15d05db941^47c7ad15d05db941^---0#0#1#-19%DVTDocumentLocation2@100"file:///Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-small@2x.png0034bce3dcffdf42^708"[1mCpResource[0m Airops/Resources/icons/icon-small@2x.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon-small@2x.png[0m    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon-small@2x.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app36"BCDC1946-6AF6-4FDB-8E6D-F00A9C8FEE1B-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCpResource Airops/Resources/icons/icon.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon.png
+s425578517.671941
+e425578517.672700
+r1
+xCpResource
+xAirops/Resources/icons/icon.png
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Copy /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon.png143"[1mCpResource[0m Airops/Resources/icons/icon.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon.png[0md40dac15d05db941^e752ac15d05db941^---0#0#1#-19%DVTDocumentLocation2@91"file:///Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon.png0034bce3dcffdf42^681"[1mCpResource[0m Airops/Resources/icons/icon.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon.png[0m    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app36"DB9B2745-8E20-4EAF-98C1-2E9858ECAE2A-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCpResource Airops/Resources/icons/icon@2x.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon@2x.png
+s425578517.672612
+e425578517.673510
+r1
+xCpResource
+xAirops/Resources/icons/icon@2x.png
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Copy /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon@2x.png149"[1mCpResource[0m Airops/Resources/icons/icon@2x.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon@2x.png[0m7841ac15d05db941^1b62ac15d05db941^---0#0#1#-19%DVTDocumentLocation2@94"file:///Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon@2x.png0034bce3dcffdf42^690"[1mCpResource[0m Airops/Resources/icons/icon@2x.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/icon@2x.png[0m    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/icons/icon@2x.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app36"D680F8F3-B4B8-46A9-A4DD-DF7E69DFCABE-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCpResource Airops/Resources/splash/Default-568h@2x~iphone.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-568h@2x~iphone.png
+s425578517.681213
+e425578517.681855
+r1
+xCpResource
+xAirops/Resources/splash/Default-568h@2x~iphone.png
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-568h@2x~iphone.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Copy /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-568h@2x~iphone.png180"[1mCpResource[0m Airops/Resources/splash/Default-568h@2x~iphone.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-568h@2x~iphone.png[0m7a6dae15d05db941^2e8eae15d05db941^---0#0#1#-19%DVTDocumentLocation2@109"file:///Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-568h@2x~iphone.png0034bce3dcffdf42^737"[1mCpResource[0m Airops/Resources/splash/Default-568h@2x~iphone.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-568h@2x~iphone.png[0m    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/splash/Default-568h@2x~iphone.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app36"89FC1FFC-4F32-46D3-86D6-CAE8982E4867-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCpResource Airops/Resources/splash/Default-Landscape@2x~ipad.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Landscape@2x~ipad.png
+s425578517.676807
+e425578517.677715
+r1
+xCpResource
+xAirops/Resources/splash/Default-Landscape@2x~ipad.png
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Landscape@2x~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Copy /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Landscape@2x~ipad.png186"[1mCpResource[0m Airops/Resources/splash/Default-Landscape@2x~ipad.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Landscape@2x~ipad.png[0mc555ad15d05db941^847fad15d05db941^---0#0#1#-19%DVTDocumentLocation2@112"file:///Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Landscape@2x~ipad.png0034bce3dcffdf42^746"[1mCpResource[0m Airops/Resources/splash/Default-Landscape@2x~ipad.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Landscape@2x~ipad.png[0m    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/splash/Default-Landscape@2x~ipad.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app36"58D0A8A8-3A68-4107-9A93-C7BAF2AD9579-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCpResource Airops/Resources/splash/Default-Landscape~ipad.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Landscape~ipad.png
+s425578517.677613
+e425578517.679246
+r1
+xCpResource
+xAirops/Resources/splash/Default-Landscape~ipad.png
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Landscape~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Copy /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Landscape~ipad.png180"[1mCpResource[0m Airops/Resources/splash/Default-Landscape~ipad.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Landscape~ipad.png[0mdf89ad15d05db941^c9e7ad15d05db941^---0#0#1#-19%DVTDocumentLocation2@109"file:///Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Landscape~ipad.png0034bce3dcffdf42^737"[1mCpResource[0m Airops/Resources/splash/Default-Landscape~ipad.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Landscape~ipad.png[0m    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/splash/Default-Landscape~ipad.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app36"95DB2620-64C3-4375-AF8D-5D789022EB88-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCpResource Airops/Resources/splash/Default-Portrait@2x~ipad.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Portrait@2x~ipad.png
+s425578517.677704
+e425578517.679223
+r1
+xCpResource
+xAirops/Resources/splash/Default-Portrait@2x~ipad.png
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Portrait@2x~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Copy /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Portrait@2x~ipad.png184"[1mCpResource[0m Airops/Resources/splash/Default-Portrait@2x~ipad.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Portrait@2x~ipad.png[0m7e8cad15d05db941^c2ddad15d05db941^---0#0#1#-19%DVTDocumentLocation2@111"file:///Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Portrait@2x~ipad.png0034bce3dcffdf42^743"[1mCpResource[0m Airops/Resources/splash/Default-Portrait@2x~ipad.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Portrait@2x~ipad.png[0m    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/splash/Default-Portrait@2x~ipad.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app36"BDE483A5-1DF5-4D2D-BB9B-E5717F6CBC90-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCpResource Airops/Resources/splash/Default-Portrait~ipad.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Portrait~ipad.png
+s425578517.679216
+e425578517.680475
+r1
+xCpResource
+xAirops/Resources/splash/Default-Portrait~ipad.png
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Portrait~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Copy /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Portrait~ipad.png178"[1mCpResource[0m Airops/Resources/splash/Default-Portrait~ipad.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Portrait~ipad.png[0madf9ad15d05db941^5d36ae15d05db941^---0#0#1#-19%DVTDocumentLocation2@108"file:///Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Portrait~ipad.png0034bce3dcffdf42^734"[1mCpResource[0m Airops/Resources/splash/Default-Portrait~ipad.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default-Portrait~ipad.png[0m    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/splash/Default-Portrait~ipad.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app36"4A1EE7EC-B602-426C-BF72-FA466E0CB57D-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCpResource Airops/Resources/splash/Default@2x~iphone.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default@2x~iphone.png
+s425578517.679996
+e425578517.680860
+r1
+xCpResource
+xAirops/Resources/splash/Default@2x~iphone.png
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default@2x~iphone.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Copy /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default@2x~iphone.png170"[1mCpResource[0m Airops/Resources/splash/Default@2x~iphone.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default@2x~iphone.png[0mb81dae15d05db941^384eae15d05db941^---0#0#1#-19%DVTDocumentLocation2@104"file:///Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default@2x~iphone.png0034bce3dcffdf42^722"[1mCpResource[0m Airops/Resources/splash/Default@2x~iphone.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default@2x~iphone.png[0m    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/splash/Default@2x~iphone.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app36"0DB035DE-DDA3-4513-8D23-DB7B94D1287A-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CCpResource Airops/Resources/splash/Default~iphone.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default~iphone.png
+s425578517.681549
+e425578517.682672
+r1
+xCpResource
+xAirops/Resources/splash/Default~iphone.png
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default~iphone.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Copy /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default~iphone.png164"[1mCpResource[0m Airops/Resources/splash/Default~iphone.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default~iphone.png[0ma29aae15d05db941^e7c4ae15d05db941^---0#0#1#-19%DVTDocumentLocation2@101"file:///Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default~iphone.png0034bce3dcffdf42^713"[1mCpResource[0m Airops/Resources/splash/Default~iphone.png [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Default~iphone.png[0m    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Resources/splash/Default~iphone.png /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app36"574ACDB9-8449-4A8F-BA6D-1FB27649A1B6-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CGenerateDSYMFile /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app.dSYM /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Airops
+s425578519.058081
+e425578519.113363
+r1
+xGenerateDSYMFile
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app.dSYM
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Airops
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Generate /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app.dSYM196"[1mGenerateDSYMFile[0m [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app.dSYM[0m /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Airopsd9ea0e17d05db941^0b081d17d05db941^---0#0#1#-19%DVTDocumentLocation2@87"file:///Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app.dSYM0034bce3dcffdf42^731"[1mGenerateDSYMFile[0m [1m/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app.dSYM[0m /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Airops    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Airops -o /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app.dSYM36"2565617E-A23D-4B00-861E-BF7F30FE0DB1-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CLd /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Airops normal i386
+s425578519.015844
+e425578519.049047
+r1
+xLd
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Airops
+xnormal
+xi386
+d/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/Airops.LinkFileList
+d/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/libCordova.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/crt1.o
+d/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/main.o
+d/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/AppDelegate.o
+d/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/MainViewController.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.ios.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AVFoundation.framework/libAVFAudio.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_override.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcache_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcommonCrypto_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcorecrypto_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcompiler_rt_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcopyfile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdyld_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libmacho_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libnotify_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libremovefile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libunwind_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_asl.dylib
+d/usr/lib/libSystem.B.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/host/libdyld.dylib
+d/usr/lib/system/libcache.dylib
+d/usr/lib/system/libcommonCrypto.dylib
+d/usr/lib/system/libcompiler_rt.dylib
+d/usr/lib/system/libcopyfile.dylib
+d/usr/lib/system/libcorecrypto.dylib
+d/usr/lib/system/libkeymgr.dylib
+d/usr/lib/system/liblaunch.dylib
+d/usr/lib/system/libmacho.dylib
+d/usr/lib/system/libquarantine.dylib
+d/usr/lib/system/libremovefile.dylib
+d/usr/lib/system/libsystem_asl.dylib
+d/usr/lib/system/libsystem_blocks.dylib
+d/usr/lib/system/libsystem_c.dylib
+d/usr/lib/system/libsystem_configuration.dylib
+d/usr/lib/system/libsystem_dnssd.dylib
+d/usr/lib/system/libsystem_info.dylib
+d/usr/lib/system/libsystem_kernel.dylib
+d/usr/lib/system/libsystem_m.dylib
+d/usr/lib/system/libsystem_malloc.dylib
+d/usr/lib/system/libsystem_notify.dylib
+d/usr/lib/system/libsystem_platform.dylib
+d/usr/lib/system/libsystem_pthread.dylib
+d/usr/lib/system/libsystem_sandbox.dylib
+d/usr/lib/system/libunc.dylib
+d/usr/lib/system/libunwind.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Link /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Airops105"[1mLd[0m /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Airops normal i3868f1d0417d05db941^dd9a0c17d05db941^---0#0#1#--1738"[1mLd[0m /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Airops normal i386    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export IPHONEOS_DEPLOYMENT_TARGET=6.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator -F/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator -filelist /Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/Airops.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -force_load /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/libCordova.a -ObjC -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=6.0 -framework AssetsLibrary /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/libCordova.a -framework CoreGraphics -framework MobileCoreServices -framework CoreLocation -Xlinker -dependency_info -Xlinker /Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Objects-normal/i386/Airops_dependency_info.dat -o /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Airops36"7DAF114F-2F6F-42B7-8DB2-EF4ECF0BC051-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CPhaseScriptExecution Copy\ www\ directory /Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Script-304B58A110DAC018002A0835.sh
+s425578517.506882
+e425578517.670635
+r1
+xPhaseScriptExecution
+xCopy www directory
+x/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Script-304B58A110DAC018002A0835.sh
+o
+oreal	0m0.148s
+ouser	0m0.058s
+osys	0m0.078s
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Run custom shell script 'Copy www directory'138"[1mPhaseScriptExecution[0m Copy\ www\ directory build/Airops.build/Debug-iphonesimulator/Airops.build/Script-304B58A110DAC018002A0835.sh3e038215d05db941^ccb2ab15d05db941^-42"real	0m0.148suser	0m0.058ssys	0m0.078s3(21%IDEActivityLogMessage2@14"real	0m0.148s-425578517#1#14#-0#-----2@14"user	0m0.058s-425578517#15#14#-0#-----2@13"sys	0m0.078s-425578517#29#13#-0#-----0#0#1#--350"[1mPhaseScriptExecution[0m Copy\ www\ directory build/Airops.build/Debug-iphonesimulator/Airops.build/Script-304B58A110DAC018002A0835.sh    cd /Users/integra-airops/Desktop/myapp/platforms/ios    /bin/sh -c /Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Script-304B58A110DAC018002A0835.sh36"E6CEAD96-B326-4547-8FD2-EF684866F8E5-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CProcessInfoPlistFile /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Info.plist /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Airops-Info.plist
+s425578517.504291
+e425578517.506115
+r1
+xProcessInfoPlistFile
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Info.plist
+x/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Airops-Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Process /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Airops-Info.plist148"[1mProcessInfoPlistFile[0m /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Info.plist [1mAirops/Airops-Info.plist[0m38308115d05db941^21928115d05db941^---0#0#1#-19%DVTDocumentLocation2@81"file:///Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Airops-Info.plist0000000000000000^768"[1mProcessInfoPlistFile[0m /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Info.plist [1mAirops/Airops-Info.plist[0m    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-infoPlistUtility /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Airops-Info.plist -genpkginfo /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app/Info.plist36"8DB85CBE-31B8-42A8-A345-C9C697FF9E79-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CProcessPCH /var/folders/c7/6vp692j53n51t0bqcwllk1dw0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Airops-Prefix-fcpyuqzeznlhkocxtdscalhllivt/Airops-Prefix.pch.pch Airops/Airops-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425578518.569008
+e425578518.928377
+r1
+xProcessPCH
+x/var/folders/c7/6vp692j53n51t0bqcwllk1dw0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Airops-Prefix-fcpyuqzeznlhkocxtdscalhllivt/Airops-Prefix.pch.pch
+xAirops/Airops-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Airops-Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection35"Precompile Airops/Airops-Prefix.pch294"[1mProcessPCH[0m /var/folders/c7/6vp692j53n51t0bqcwllk1dw0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Airops-Prefix-fcpyuqzeznlhkocxtdscalhllivt/Airops-Prefix.pch.pch Airops/Airops-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerf5be9116d05db941^c5aaed16d05db941^---0#0#1#-19%DVTDocumentLocation2@81"file:///Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Airops-Prefix.pch0000000000000000^3699"[1mProcessPCH[0m /var/folders/c7/6vp692j53n51t0bqcwllk1dw0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Airops-Prefix-fcpyuqzeznlhkocxtdscalhllivt/Airops-Prefix.pch.pch Airops/Airops-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Airops-generated-files.hmap -I/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Airops-own-target-headers.hmap -I/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Airops-all-target-headers.hmap -iquote /Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/Airops-project-headers.hmap -I/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/include -I/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/usr/local/lib/include -I/Users/integra-airops/Desktop/myapp/platforms/ios/build/UninstalledProducts/include -I/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator -I/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/DerivedSources/i386 -I/Users/integra-airops/Desktop/myapp/platforms/ios/build/Airops.build/Debug-iphonesimulator/Airops.build/DerivedSources -F/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator --serialize-diagnostics /var/folders/c7/6vp692j53n51t0bqcwllk1dw0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Airops-Prefix-fcpyuqzeznlhkocxtdscalhllivt/Airops-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/c7/6vp692j53n51t0bqcwllk1dw0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Airops-Prefix-fcpyuqzeznlhkocxtdscalhllivt/Airops-Prefix.pch.d -c /Users/integra-airops/Desktop/myapp/platforms/ios/Airops/Airops-Prefix.pch -o /var/folders/c7/6vp692j53n51t0bqcwllk1dw0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Airops-Prefix-fcpyuqzeznlhkocxtdscalhllivt/Airops-Prefix.pch.pch36"11A86C4B-C5C3-484B-A46B-DE10AC95B984-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+
+CTouch /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app
+s425578519.114375
+e425578519.117552
+r1
+xTouch
+x/Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Touch /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app89"[1mTouch[0m /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.appf4521d17d05db941^48181e17d05db941^---0#0#1#--455"[1mTouch[0m /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app    cd /Users/integra-airops/Desktop/myapp/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /usr/bin/touch -c /Users/integra-airops/desktop/myapp/platforms/ios/build/emulator/Airops.app36"EE586C53-35DD-43DF-BC87-ACA1587F2CDF-
+bEB387CF1-002B-4B8A-9DD9-A152546529A6
+

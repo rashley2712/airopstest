@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+    
+   <title>Embedded Sql Example</title>
+    <script src="assets/ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="SQLitePlugin.js"></script>
+    <script type="text/javascript">  
+
+// global variables
+var db;
+var shortName = 'AirOps_db';
+var version = '1.0';
+var displayName = 'AirOps_db';
+var maxSize = 65535;
+var db = openDatabase(shortName, version, displayName , maxSize); 
+// this is called when an error happens in a transaction
+function errorHandler(transaction, error) {
+   debug.log('Error: ' + error.message + ' code: ' + error.code); 
+}
+
+// this is called when a successful transaction happens
+function successCallBack() {
+   debug.log("DEBUGGING: success"); 
+}
+
+function nullHandler(){};
+
+// called when the application loads
+function onBodyLoad(){
+
+// This alert is used to make sure the application is loaded correctly
+// you can comment this out once you have the application working
+debug.log("DEBUGGING: we are in the onBodyLoad() function");
+
+ if (!window.openDatabase) {  
+   console.log('Databases are not supported in this browser.');
+   return;
+ }
+    
+ db.transaction(function(tx){ 
+   tx.executeSql( 'CREATE TABLE IF NOT EXISTS User(UserId INTEGER NOT NULL PRIMARY KEY, 
+    FirstName TEXT NOT NULL, LastName TEXT NOT NULL)',[],nullHandler,errorHandler);
+ },errorHandler,successCallBack); 
+}
+ 
+function ListDBValues() {
+
+ if (!window.openDatabase) {
+  console.log('Databases are not supported in this browser.');
+  return;
+ }
+ 
+ $('#lbUsers').html(''); 
+
+ db.transaction(function(tx) {
+   tx.executeSql('SELECT * FROM User;', [],
+     function(tx, result) {
+      if (result != null && result.rows != null) {
+        for (var i = 0; i < result.rows.length; i++) {
+          var row = result.rows.item(i);
+          $('#lbUsers').append('<br>' + row.UserId + '. ' + row.FirstName+ ' ' + row.LastName);
+        }
+      }
+     },errorHandler);
+ },errorHandler,nullHandler);
+
+ return;
+
+}
+ 
+function AddValueToDB() {
+  
+ db.transaction(function(tx) {
+   tx.executeSql('INSERT INTO User(FirstName, LastName) VALUES (?,?)',[$('#txFirstName').val(), $('#txLastName').val()],
+     nullHandler,errorHandler);
+   },errorHandler,successCallBack); 
+ 
+ ListDBValues();
+
+ return false;
+
+}
+
+</script>
+</head>
+<body onload="onBodyLoad()">
+<h1>WebSQL</h1>
+<input id="txFirstName" type="text" placeholder="FirstName">
+<input id="txLastName" type="text" placeholder="Last Name">
+<input type="button" value="Add record" onClick="AddValueToDB()">
+<input type="button" value="Refresh" onClick="ListDBValues()"> <br>
+<br>
+<span style="font-weight:bold;">Currently stored values:</span>
+<span id="lbUsers"></span>
+</body>
+</html> 

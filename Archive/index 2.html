@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html>
+    
+    
+    <head>
+        <!-- Meta, title, CSS, favicons, etc. -->
+        <meta charset="utf-8">
+            <title>AirOps</title>
+            <!-- <meta name="keywords" content="HTML5 Bootstrap 3 Admin Template UI Theme" />
+             <meta name="description" content="Stardom - A Responsive HTML5 Admin UI Template Theme">
+             <meta name="author" content="Holladay"> -->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+                <!-- Font CSS
+                 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700">-->
+                
+                <!-- Core CSS  -->
+                <link rel="stylesheet" type="text/css" href="assets/netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+                    <link rel="stylesheet" type="text/css" href="assets/netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+                        <link rel="stylesheet" type="text/css" href="fonts/glyphicons_pro/glyphicons.min.css">
+                            
+                            <!-- Plugin CSS -->
+                            <link rel="stylesheet" type="text/css" href="vendor/plugins/calendar/fullcalendar.css">
+                                <link rel="stylesheet" type="text/css" href="vendor/plugins/datatables/css/datatables.min.css">
+                                    <link rel="stylesheet" type="text/css" href="css/animate.css">
+                                        
+                                        <!-- Theme CSS -->
+                                        <link rel="stylesheet" type="text/css" href="css/theme.css">
+                                            <link rel="stylesheet" type="text/css" href="css/pages.css">
+                                                <link rel="stylesheet" type="text/css" href="css/plugins.css">
+                                                    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+                                                        
+                                                        <!-- Boxed-Layout CSS -->
+                                                        <link rel="stylesheet" type="text/css" href="css/boxed.css">
+                                                            
+                                                            <!-- Demonstration CSS -->
+                                                            <link rel="stylesheet" type="text/css" href="css/demo.css">
+                                                                
+                                                                <!-- Your Custom CSS -->
+                                                                <link rel="stylesheet" type="text/css" href="css/custom.css">
+                                                                    
+                                                                    <!-- Favicon -->
+                                                                    <link rel="shortcut icon" href="img/favicon.ico">
+                                                                        
+                                                                        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+                                                                        <!--[if lt IE 9]>
+                                                                         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+                                                                         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+                                                                         <![endif]-->
+                                                                        
+    </head>
+    <body class="dashboard" style="margin-top:20px;">
+    	<div class="panel" id="loginV">
+           	<div class="panel-heading">
+                    <div class="panel-title">LOGIN</div></div>
+                                    <div class="panel-body">
+                                        <form id="loginF">
+                                            User: &nbsp;<input type="text" name="userN" id="userN"><br>
+                                            Password: &nbsp;<input type="text" name="passW" id="passW"><br>
+                                            <input type="file" id="picUp" accept="image/*;" capture="camera" >
+                                            <div id="cPhoto"></div>
+                                        </form>
+                                    </div>
+                                    <div class="panel-footer"><button type="button" id="logB" class="btn btn-primary">go</button></div>
+                                </div>
+		<script> var boxtest = localStorage.getItem('boxed'); if (boxtest === 'true') {document.body.className+=' boxed-layout';} </script>
+        <!-- Start: Header -->
+      <div id="bGin" style="display:none;">
+        <header class="navbar navbar-fixed-top" style="margin-top:20px;">
+            <div class="pull-left"><span id="syncStatus">OK</span>&nbsp;Sync Status</div>
+            <div align="center" class="hInfo">
+                <span id="curDate"></span>
+                <span id="curTime"></span>
+                <span id="regi">ZS-PPH</span><span id="type">H25B</span><span id="serial">Serial &#35;401707</span></div>
+            <div class="pull-right header-btns"><button id="onSup">Online Support</button></div>
+        </header>
+        <!-- End: Header -->
+        <!-- Start: Main -->
+        <div id="main">
+            <!-- Start: Sidebar -->
+            
+            <!-- End: Sidebar -->
+            <!-- Start: Content -->
+            <section id="content">
+                <div id="topbar">
+                    <ol class="breadcrumb">
+                        <li><span class="glyphicons glyphicons-nameplate"></span></li>
+                        <li class="active">Startup</li>
+                    </ol>
+                </div>
+                <div class="container" style="height:70px;">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="console-btns">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-2" style="margin:auto -34px auto 3px;">
+                                        <div class="console-btn" id="stButt">
+                                            <div class="console-icon divider-right"> <span class="glyphicons glyphicons-nameplate"></span> </div>
+                                            <div class="console-text">
+                                                <div class="console-title">Startup</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-2" style="margin-right:-7px;">
+                                        <div class="console-btn" id="oButt">
+                                            <div class="console-icon divider-right"> <span class="glyphicons glyphicons-airplane"></span> </div>
+                                            <div class="console-text">
+                                                <div class="console-title">Operational</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-2" style="margin-right:-7px;">
+                                        <div class="console-btn" id="mButt">
+                                            <div class="console-icon divider-right"> <span class=""></span> </div>
+                                            <div class="console-text">
+                                                <div class="console-title">Maintenance</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-2" style="margin-right:-34px;">
+                                        <div class="console-btn" id="suButt">
+                                            <div class="console-icon divider-right"> <span class="glyphicons glyphicons-notes"></span> </div>
+                                            <div class="console-text">
+                                                <div class="console-title">Summary</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-2" style="width:25%;margin-right:-11px;">
+                                        <div class="console-btn" id="fdButt">
+                                            <div class="console-icon divider-right"> <span class="glyphicons glyphicons-airplane"></span> </div>
+                                            <div class="console-text">
+                                                <div class="console-title" style="font-size:19px;">Flight &amp; Duty</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-2">
+                                        <div class="console-btn" id="slButt">
+                                            <div class="console-icon divider-right"> <span class="glyphicons glyphicons-airplane"></span> </div>
+                                            <div class="console-text">
+                                                <div class="console-title">Sector Log</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div></div>
+                <hr class="short margin-top-none" style="margin:0;">
+                
+                <!--Begin Startup-->
+                <div class="row" id="vStart">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <div class="panel-title">CONFIRM</div></div>
+                        <div class="panel-body">
+                            <div class="sConf">
+                                <form id="fConf">
+                                    <table class="tConf">
+                                        <tr>
+                                            <td>Registration</td>
+                <td>Call Sign</td><td>Current Location</td><td>Date</td><td>Time</td><td></td>
+                <td rowspan="2" colspan="3" class="stacEd"><table><tr><td></td><td></td><td></td></tr>
+                <tr><td style="padding-right:18px;">Status<br><button class="cirStatW btn btn-gradient"></button></td>
+                    <td><button class="cfm btn btn-gradient">CONFIRM</button></td>
+                    <td><button class="edBtn btn btn-gradient" style="margin-right:-11px;">EDIT</button></td></tr>
+                </table></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <select name="air_reg" id="regN">
+                                                    <option value="2">ZS-PPH</option>
+                                                    <option value="3">ZA-GXA</option>
+                                                </select>
+                                            </td>
+                                            <td><input type="text" id="clSgn"></td>
+                                            <td><div align="center" id="depOpt" >
+                                            		<input class="typeahead" type="text" placeholder="ICAO Code" style="width:100%;">
+                                                </div>
+                                                <br><span id="depart_"></span>
+                                            </td>
+                                            <td><span id="confDate"></span></td>
+                                            <td>Local&#58;&nbsp;<span id="locTime"></span><br>UTC&#58;&nbsp;<span id="utcTime"></span></td>
+                                             <td>&nbsp;</td>
+                                              <td>&nbsp;</td>
+                                              <td>&nbsp;</td><td>&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-heading"><div class="panel-title">CREW</div></div>
+                        <div class="panel-body">
+                            <div class="sCrew"><form id="fCrew">
+                                <table class="tCrew">
+                                    <tr>
+                                       <td>PIC</td><td>SIC</td><td>Head C/A</td><td></td><td></td><td></td>
+                <td rowspan="2" colspan="3" class="stacEd"><table><tr><td></td><td></td><td></td></tr>
+                <tr><td style="padding-right:18px;">Status<br><button class="cirStatW btn btn-gradient"></button></td>
+                    <td><button class="cfm btn btn-gradient">CONFIRM</button></td>
+                    <td><button class="edBtn btn btn-gradient" data-toggle="modal" data-target="#maddCrew">EDIT</button></td></tr>
+                </table></td>
+                                    </tr>
+                                    <tr><td><select id="cPic"><option>R. Martin</option></select></td>
+                                        <td><select id="cSic"><option>Q. Vorster</option></select></td>
+                                        <td><select id="cHca"><option>K. Stander</option></select></td>
+                                        <td></td>
+                                        <td></td><td></td>
+                <td></td>
+                <td></td>
+                <td></td></tr>
+                                    
+                                </table></form>
+                <!--Modal--><div class="modal fade" role="dialog" id="maddCrew"><div class="modal-dialog">
+                                <div id="nDfct" class="panel modal-content">
+                                    <div class="panel-heading modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><div class="panel-title modal-title">ADD CREW</div></div>
+                                    <div class="panel-body modal-body">
+                                        <form id="aCrew">
+                                            Name &nbsp;<input type="text"><br>
+                                            Position &nbsp;<input type="text"><br>
+                                            License No. ;&nbsp;<input type="text"><br>
+                                            License Type &nbsp;<input type="text"><br>
+                                           	Medical Exp. &nbsp;<input type="text"><br>
+                                        </form>
+                                    </div>
+                                    <div class="panel-footer modal-footer">
+                                    <button type="button" class="btn btn-primary">Save</button></div>
+                                </div></div></div><!--End Modal-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-heading"><div class="panel-title">AIRCRAFT STATUS</div></div>
+                        <div class="panel-body">
+                            <div class="sStat"><form id="fAirStat">
+                                <table class="tStat">
+                                    <tr>
+                                        <td>Engine &#35;1</td>
+                                        <td>Engine &#35;2</td>
+                                        <td>Airframe hrs</td>
+                                        <td>Landings</td>
+                                        <td>APU hrs</td>
+                                        <td>Next Inspection</td>
+                                        <td rowspan="2" colspan="3" class="stacEd">
+                                            <table>
+                                                <tr><td></td><td></td><td></td></tr>
+                                                <tr><td style="padding-right:18px;">Status<br><button class="cirStatW btn btn-gradient"></button></td>
+                                                <td><button class="cfm btn btn-gradient">CONFIRM</button></td>
+                                                <td><button class="edBtn btn btn-gradient">EDIT</button></td></tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr><td>Hours&#58;&nbsp;<span id="ste1hrs">3169.7</span><br>Cycles&#58;&nbsp;<span id="ste1cyc">2633</span></td>
+                                        <td>Hours&#58;&nbsp;<span id="ste2hrs">3169.7</span><br>Cycles&#58;&nbsp;<span id="ste2cyc">2633</span></td>
+                                        <td><span id="stAirhrs">3169.7</span></td>
+                                        <td><span id="stLands">2410</span></td>
+                                        <td><input type="text" id="apuHrs"></td>
+                                        <td><span id="niHrs">400</span>hrs&nbsp;&#64;&nbsp;<span id="niMls">3220.0</span>&nbsp;or&nbsp;<span id="niDate">20 September 2014</span><br>Remaining&#58;&nbsp;<span id="niHrem">50.3</span>&nbsp;&#47;&#47;&nbsp;<span id="niDrem">20<span>&nbsp;days</span></span></td>
+                                        <td></td>
+                                       <td></td>
+              <td></td>
+              <td></td>
+                                    </tr>
+                                </table></form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="multiP"><form id="fMulti"><div class="panel">
+                        <div class="panel-heading"><div class="panel-title">DEFECTS</div></div>
+                        <div class="panel-body"><div class="sDef">
+                            <table class="tDef">
+                                <tr>
+                                    <td>Defect</td>
+                                    <td>Pilot</td>
+                                </tr>
+                                <tr><td>Oil leak from left engine</td><td><span class="ccBox"><input type="checkbox" value="1" class="ccBoxIn"/></span></td></tr>
+                                <tr><td>Low flush intermetent</td><td><span class="ccBox"><input type="checkbox"></span></td></tr>
+                            </table></div></div></div>
+                    <div class="panel">
+                        <div class="panel-heading"><div class="panel-title">DEFERRED DEFECTS</div></div>
+                        <div class="panel-body"><div class="sDefD">
+                            <table class="tDefD">
+                                <tr><td>&nbsp;</td><td>remaining</td></tr>
+                                <tr><td>RHS Windscreen</td><td class="tDefRem"><span>2</span>&nbsp;days</td></tr>
+                                <tr><td>Pilot Oxygen Mask</td><td class="tDefRem"><span>7</span>&nbsp;days</td></tr>
+                                <tr><td>Rear Seatbelt Sign U/S</td><td class="tDefRem"><span>23</span>&nbsp;days</td></tr>
+                            </table></div></div></div>
+                    <div class="panel">
+                        <div class="panel-heading"><div class="panel-title">MEL</div></div>
+                        <div class="panel-body"><div class="sMel">
+                            <table class="tMel">
+                                <tr><td>&nbsp;</td><td>remaining</td></tr>
+                                <tr><td>Defect &#35;1</td><td class="tMelRem"><span>2</span>&nbsp;days</td></tr>
+                                <tr><td>Defect &#35;26</td><td class="tMelRem"><span>7</span>&nbsp;days</td></tr></table></div></div></div>
+                    <div class="panel">
+                        <div class="panel-heading"><div class="panel-title"></div></div>
+                        <div class="panel-body"><div class="snoHead">
+                            <table class="tnoHead">
+                                <tr><td rowspan="2" colspan="3" class="stacEd">
+                                                <tr><td></td><td></td><td></td></tr>
+                                                <tr><td style="padding-right:18px;padding-left:11px;">Status<br><button class="cirStatW btn btn-gradient"></button></td>
+                                                <td><button class="cfm btn btn-gradient">CONFIRM</button></td>
+                                                <td><button class="edBtn btn btn-gradient">EDIT</button></td></tr>
+                                        </td></tr>
+                            </table></div></div></div></form>
+                    </div>
+                    <div class="stFoot" align="center">
+                        <button id="airBtn" class="btn btn-gradient">ACCESS PREVIOUS AIR</button>
+                        <button id="exBtn" class="btn btn-gradient">SIGN OUT</button>
+                        <button id="accBtn" class="btn btn-gradient">ACCEPT</button>
+                    </div>
+                </div> <!--End Startup-->
+                
+                <form id="sector_frm" name="sectorForm">
+                    <!--Begin Operational-->
+                    <div class="row" id="vOper">
+                        <div class="panel">
+                            <div class="panel-heading"><div class="panel-title">SECTOR DETAILS</div></div>
+                            <div class="panel-body">
+                                <div class="oSec">
+                                    <input type="hidden" name="aircraftid" id="aircraft_id" value="2" />
+                                    <input type="hidden" name="flightTime" value="" />
+                                    <input type="hidden" name="blockTime" value="" />
+                                    <table class="tSecD">
+                                        <tr>
+                                            <td>Sector</td>
+                                            <td>From</td>
+                                            <td>To</td>
+                                            <td>PIC</td>
+                                            <td>SIC</td>
+                                            <td>Head C/A</td>
+                                            <td>PAX</td>
+                                            <td>Nature of Flight</td>
+                                            <td>Client</td>
+                                            <td rowspan="2"><button class="edBtn">EDIT</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <select id="secOpt" name="secOpt">
+                                                    <option value="1">1</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select id="frOpt" name="frOpt"><!-- To do: Select by GeoLocation -->
+													<option value="DNAA" data-airport="Nnamdi Azikiwe Intl., Abuja">DNAA</option>
+                                                    <option value="DNCA" data-airport="Calabar Intl., Calabar">DNCA</option>
+                                                    <option value="DNEN" data-airport="Enugu Airport, Enugu">DNEN</option>
+                                                    <option value="DNIB" data-airport="New Ibadan, Ibadan">DNIB</option>
+                                                    <option value="DNIL" data-airport="Ilorin Airport, Ilorin">DNIL</option>
+                                                    <option value="DNJO" data-airport="Jos Aiport, Jos">DNJO</option>
+                                                    <option value="DNKA" data-airport="New Kaduna Airport, Kaduna">DNKA</option>
+                                                    <option value="DNKN" data-airport="Mallam Aminu Intl., Kano">DNKN</option>
+                                                    <option value="DNMA" data-airport="Maiduguri Airport, Maiduguri">DNMA</option>
+                                                    <option value="DNMM" data-airport="Muritala Mohammed, Lagos">DNMM</option>
+                                                    <option value="DNPO" data-airport="Port Harcourt Aiport, P.H">DNPO</option>
+                                                    <option value="DNSO" data-airport="Sokoto Airport, Sokoto">DNSO</option>
+                                                    <option value="DNYO" data-airport="Yola Airport, Yola">DNYO</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select id="toOpt" name="toOpt">
+													<option value="DNAA" data-airport="Nnamdi Azikiwe Intl., Abuja">DNAA</option>
+                                                    <option value="DNCA" data-airport="Calabar Intl., Calabar">DNCA</option>
+                                                    <option value="DNEN" data-airport="Enugu Airport, Enugu">DNEN</option>
+                                                    <option value="DNIB" data-airport="New Ibadan, Ibadan">DNIB</option>
+                                                    <option value="DNIL" data-airport="Ilorin Airport, Ilorin">DNIL</option>
+                                                    <option value="DNJO" data-airport="Jos Aiport, Jos">DNJO</option>
+                                                    <option value="DNKA" data-airport="New Kaduna Airport, Kaduna">DNKA</option>
+                                                    <option value="DNKN" data-airport="Mallam Aminu Intl., Kano">DNKN</option>
+                                                    <option value="DNMA" data-airport="Maiduguri Airport, Maiduguri">DNMA</option>
+                                                    <option value="DNMM" data-airport="Muritala Mohammed, Lagos">DNMM</option>
+                                                    <option value="DNPO" data-airport="Port Harcourt Aiport, P.H">DNPO</option>
+                                                    <option value="DNSO" data-airport="Sokoto Airport, Sokoto">DNSO</option>
+                                                    <option value="DNYO" data-airport="Yola Airport, Yola">DNYO</option>
+                                                </select>
+                                            </td>
+                                            
+                                            <td>
+                                                <select id="picOpt" name="picOpt">
+                                                    <option value="R.M" selected>RM</option>
+                                                    <option value="G.V">GV</option>
+                                                    <option value="K.S">K.S</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select id="sicOpt" name="sicOpt">
+                                                    <option value="G.V" selected>GV</option>
+                                                    <option value="R.M">RM</option>
+                                                    <option value="K.S">K.S</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select id="headOpt" name="headOpt">
+                                                    <option value="G.V">GV</option>
+                                                    <option value="R.M">RM</option>
+                                                    <option value="K.S" selected >K.S</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select id="paxOpt" name="paxOpt">
+													<option value="0">0</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select id="natOpt" name="natOpt">
+                                                    <option value="Non-Schedule">Non-Schedule</option>
+                                                    <option value="Ferry">Ferry</option> 
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select id="cliOpt" name="cliOpt">
+													<option value="------">-</option>
+                                                    <option value="NPC Oil">NPC Oil</option>
+                                                </select>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>                                            
+                                            <td><span id="depart"></span></td>
+                                            <td><span id="arrive"></span></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-heading"><div class="panel-title">TIMES</div></div>
+                            <div class="panel-body">
+                                <div class="oTime">
+                                    <table class="opTime">
+                                        <tr><td>Block Off</td><td>Take-Off</td><td>Landing</td><td>Blocks On</td><td class="bRight">Flight Times</td><td>Dept Fuel</td><td class="bRight">Arr Fuel</td><td>Distance(nm)</td><td>Landings</td></tr>
+                                        <tr>
+                                            <td><input type="time" id="bOff" value="" name="bOff"></td>
+                                            <td><input type="time" id="tOff" value="" name="tOff"></td>
+                                            <td><input type="time" id="lndng" value="" name="lndng"></td>
+                                            <td><input type="time" id="bOn" value="" name="bOn"></td>
+                                            <td class="bRight">
+                                                Block Time&#58&nbsp;<span id="bTime">00.00</span> hrs<br>
+                                                Flight Time&#58&nbsp;<span id="fTime">00.00</span> hrs</td>
+                                            <td><input type="number" id="dFuel" value="" name="dFuel"></td>
+                                            <td class="bRight"><input type="number" id="aFuel" value="" name="aFuel"></td>
+                                            <td><input type="number" id="nmDist" value="" name="nmDist"></td>
+                                            <td>
+                                                <select id="sLnd" name="sLnd">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <button id="bStart" class="btn btn-gradient">Start</button>
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <button id="bStop" class="btn btn-gradient">Stop</button>
+                                            </td>
+                                            <td class="bRight"></td>
+                                            <td colspan="2" class="bRight">
+                                                Fuel Used&#58;&nbsp;<span id="fUsed">1970</span>&nbsp;lbs<br>
+                                                <!-- <span class="addBtn btn btn-gradient fReceipt">+</span> -->&nbsp;Add Fuel Receipt 
+                                                <div style="margin-left:auto; margin-right:auto"><input type="file" capture="camera" accept="image/*" class="fReceipt"></div><br/>
+                                                <img id="fuelreceipt" width="100px" height="100px">
+                                            </td>
+                                            <td></td>
+                                            <td><span id="kmDist">00.00</span>&#58;KM&nbsp;</td><td></td></tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="stFoot" align="center">
+                            <!-- <button id="taBtn" class="btn btn-gradient">TAB</button>
+                             <span class="rptNo">Report &#35;<span id="rptNo">00001</span></span> -->
+                            <button id="subSec" class="btn btn-gradient">SUBMIT SECTOR</button>
+                        </div>
+                    </div> <!--End Operational-->
+                </form>
+                
+                <!--Begin Maintenance-->
+                <div class="row" id="vMaint">
+                    <!--grouping<div style="width:100%;">-->
+                    <div class="col-md-4" style="width:25%;float:right;">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="panel" align="center" style="height:442px;">
+                                    <div class="panel-heading"><div class="panel-title">
+                                        <i class="fa fa-bar-chart-"></i>DOCUMENTATION</div>
+                                    </div>
+                                    <table id="docu">
+                                        <thead>
+                                            <tr>
+                                                <td>Status</td>
+                                                <td>Name</td>
+                                                <td>Access</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="aircraft_docs">
+                                            
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td><input type="file" capture="camera" accept="image/*" class="fReceipt"></td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div></div>
+                    <div class="col-md-8" style="width:75%;">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="panel" id="maintenance">
+                                    
+                                </div>
+                            </div></div></div>
+                    <div class="col-md-12" style="width:75%;">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <div class="panel-title"> <i class="fa fa-chain-broken"></i> DEFECTS &amp; DEFERRED DEFECTS</div>
+                            </div>
+                            <div class="panel-body" style="padding:5px;">
+                                <form id="defect" name="defect">
+                                    <table id="dFect" align="center">
+                                        <thead style="font-variant: small-caps;font-weight: bold;">
+                                            <th>Defect</th>
+                                            <th>Date Logged</th>
+                                            <th>Action Taken</th>
+                                            <th>Engineer</th>
+                                            <th>Date</th>
+                                            <th>Status</th>
+                                            <th style="text-align:center;">Remaining<br>(days)</th>
+                                        </thead>
+                                        <tbody>
+                                            <td><input type="text" style="width:145px"></td>
+                                            <td><input type="date" style="width:110px"></td>
+                                            <td><input type="text" style="width:135px"></td>
+                                            <td><input type="text" style="width:75px"></td>
+                                            <td><input type="date" style="width:110px"></td>
+                                            <td><button class="cirStatA">SEE</button></td>
+                                            <td style="text-align:center;"><input type="number" style="width:25px"></td>
+                                        </tbody>
+                                        <tr>
+                                            <td id="aDfct"><button class="btn btn-gradient" data-toggle="modal" data-target="#myModal">Add Defect..</button></td>
+                                        </tr>
+                                    </table>
+                                </form>
+                                <!--Modal--><div class="modal fade" role="dialog" id="myModal"><div class="modal-dialog">
+                                    <div id="nDfct" class="panel modal-content">
+                                        <div class="panel-heading modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><div class="panel-title modal-title">ADD DEFECT</div></div>
+                                        <div class="panel-body modal-body">
+                                            <form id="fDfct">
+                                                Defect&nbsp;<input type="text"><br>
+                                                    Date&nbsp;<input type="date"><br>
+                                                        Action Taken&nbsp;<input type="text"><br>
+                                                            Engineer&nbsp;<input type="text"><br>
+                                                                Status&nbsp;<input type="text"><br>
+                                                                    Remaining(days)&nbsp;<input type="number">
+                                                                        </form>
+                                        </div><div class="panel-footer modal-footer"><button type="button" class="btn btn-primary">Save</button></div>
+                                    </div></div></div><!--End Modal-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--grouping</div>-->
+                    <div class="col-md-12" style="width:100%;">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <div class="panel-title"> <i class="glyphicons glyphicons-stats"></i> TREND MONITORING</div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="tMon">
+                                    <table><tr><td colspan="6">Flight Details</td></tr>
+                                        <tr><td>weight</td><td>oat/sat</td><td>ias</td><td>tas</td><td>mach</td><td>fl</td></tr>
+                                        <tr><td class="bord">22750</td><td class="bord">-20</td><td class="bord">264</td><td class="bord">444</td><td class="bord">M.75</td><td class="bord">FL330</td></tr>
+                                    </table>
+                                    <table><tr><td colspan="6">Fuel Flow</td></tr>
+                                        <tr><td>l</td><td>r</td></tr>
+                                        <tr><td class="bord">880</td><td class="bord">880</td></tr>
+                                    </table>
+                                    <table><tr><td colspan="6">N1</td></tr>
+                                        <tr><td>l</td><td>r</td></tr>
+                                        <tr><td class="bord">92.9</td><td class="bord">93.0</td></tr>
+                                    </table>
+                                    <table><tr><td colspan="6">N2</td></tr>
+                                        <tr><td>l</td><td>r</td></tr>
+                                        <tr><td class="bord">94.7</td><td class="bord">94.2</td></tr>
+                                    </table>
+                                    <table><tr><td colspan="6">ITT</td></tr>
+                                        <tr><td>l</td><td>r</td></tr>
+                                        <tr><td class="bord">860</td><td class="bord">848</td></tr>
+                                    </table>
+                                    <table><tr><td colspan="6">Oil Pres.</td></tr>
+                                        <tr><td>l</td><td>r</td></tr>
+                                        <tr><td class="bord">43</td><td class="bord">46</td></tr>
+                                    </table>
+                                    <table><tr><td colspan="6">Oil Temp.</td></tr>
+                                        <tr><td>l</td><td>r</td></tr>
+                                        <tr><td class="bord">77</td><td class="bord">79</td></tr>
+                                    </table>
+                                    <table><tr><td colspan="6">amps</td></tr>
+                                        <tr><td>l</td><td>r</td></tr>
+                                        <tr><td class="bord">80</td><td class="bord">80</td></tr>
+                                    </table>
+                                    <table><tr><td colspan="6">Fuel Temp.</td></tr>
+                                        <tr><td class="bord" rowspan="2">20</td></tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>       
+                </div><!--End Maintenance-->
+                
+                <!--Begin Summary-->
+                <div class="row" id="vSumm">
+                    <div class="pTop" style="padding-left:auto; padding-right:auto; margin-left: auto; margin-right: auto">
+                        <table id="sumTit">
+                            
+                        </table>
+                    </div>
+                    <div class="panel" style="margin-top:10px;">
+                        <div class="panel-heading"><div class="panel-title">CREW</div></div>
+                        <div class="panel-body">
+                            <table id="crewSumTbl">
+                                <tr id="crewlist">
+                                    <!-- <td>PIC&#58;&nbsp;<span>R. Martin</span>&nbsp;<span>0271011233</span></td>
+                                    <td>SIC&#58;&nbsp;<span>G. Visser</span>&nbsp;<span>0274234311</span></td>
+                                    <td>H C&#47;A&#58;&nbsp;<span>B. VD Merve</span>&nbsp;<span>A10023</span></td>
+                                    <td>C&#47;A&nbsp;&#35;2&#58;&nbsp;<span>K. Stander</span>&nbsp;<span>A10367</span></td> -->
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-heading"><div class="panel-title">SECTOR DETAILS</div></div>
+                        <div class="panel-body">
+							<b id="msg">No Sectors Recorded</b>
+                            <table id="sumSecD">
+                                <thead>
+                                    <tr>
+                                        <td colspan='10'></td>      
+                                        <td colspan='2'>engine hours</td>
+                                        <td colspan='2'>engine cycles</td>              
+                                        <td colspan='5'></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ID</td>
+                                        <td>from</td>
+                                        <td>to</td>
+                                        <td>dist(nm)</td>
+                                        <td>pic</td>
+                                        <td>sic</td>
+                                        <td>h c&#47;a</td>
+                                        <td>block time</td>
+                                        <td>flight time</td>
+                                        <td>airframe</td>
+                                        <td>&#35;1</td>
+                                        <td>&#35;2</td>
+                                        <td>&#35;1</td>
+                                        <td>&#35;2</td>
+                                        <td>lnds</td>
+                                        <td>fuel</td>
+                                        <td>pax</td>
+                                        <td>nature</td>
+                                        <td>client</td>
+                                    </tr>
+                                </thead>
+                                <tbody id="sectordetails">                                    
+
+                                </tbody>
+                                <tfoot>
+                                    <!--<tr>
+                                        <td align='right' colspan='8'><b><i>Grand-Total:&nbsp;&nbsp;</b></i></td>       
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>-->
+                                </tfoot>
+                            </table>                  
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-heading"><div class="panel-title">DEFECTS</div></div>
+                        <div class="panel-body">
+                            <table id="sumDef">
+                                <tr class="trUnd"><td>pilot entry</td><td>action &# deferred</td><td>date</td><td>engineer</td><td>days remaining</td></tr>
+                                    <tr>
+                                    <td><span class="sumDefN">1.&nbsp;</span><span class="sumDef">Left Engine ITT fluctuating through FL 180</span></td>
+                                <td><span class="sumDefActN">1.&nbsp;</span><span class="sumDefActN">New lamp sensor on order</span></td>
+                                <td><span class="sumDefDate">17 July 2014</span></td>
+                                <td><span class="sumDefEng">M. Mason</span></td>
+                                <td><span class="sumDefRem">16</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="sumDefN">2.&nbsp;</span><span class="sumDef">Low flush intermittent</span></td>
+                                    <td><span class="sumDefActN">nil</span></td>
+                                    <td><span class="sumDefDate">nil</span></td>
+                                    <td><span class="sumDefEng">nil</span></td>
+                                    <td><span class="sumDefRem">nil</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="multiP">
+                        <div class="panel" style="width:40%">
+                        <div class="panel-heading">
+                            <div class="panel-title">PRE FLIGHT</div></div>
+                            <div class="panel-body">
+                                <table>
+                                    <tr class="trUnd"><td>engineer pre flight</td><td>pilots acceptance</td></tr>
+                                    <tr><td>name&#58;&nbsp;<span class="pfEng">M. Mason</span></td><td>name&#58;&nbsp;<span class="pfPil">R. Martin</span></td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    <div class="panel" style="width:40%">
+                        <div class="panel-heading"><div class="panel-title">POST FLIGHT</div></div>
+                        <div class="panel-body">
+                            <table>
+                                <tr class="trUnd"><td>pilots approval</td><td>engineer sign in</td></tr>
+                                <tr><td>name&#58;&nbsp;<span class="pfEng">R. Martin</span></td><td>name&#58;&nbsp;<span class="pfPil">nil</span></td></tr>
+                            </table>
+                        </div>
+                    </div>                    
+                    <button id="subAir" class="btn btn-gradient">SUBMIT AIR</button></div>
+                    
+                    <div class="progress progress-striped active" style="display:none">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%"> <span class="sr-only"></span> </div>
+                      </div>
+                    
+                    <div id="dClaim">By submitting the above AIR it will be taken that the information is correct and true and complies with all requirements prescribed in the Civil Aviation Regulations 1997.</div>
+                    
+                    </div><!--End Summary-->
+                <!--Begin FlightDuty-->
+                <div class="row" id="vFdut">
+                    <div class="panel">
+                    </div>
+                </div>
+                <!--End FlightDuty-->
+            </section>
+            <!-- End: Content --> 
+        </div>
+        <!-- End: Main --> 
+        
+        <!-- Core Javascript - via CDN --> 
+		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script src="assets/ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+        <script src="assets/ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script> 
+        <script src="assets/netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script> <!-- Plugins - Via CDN --> 
+        <script type="text/javascript" src="assets/cdnjs.cloudflare.com/ajax/libs/flot/0.8.1/jquery.flot.min.js"></script> 
+        
+        <!-- Plugins --> 
+        <script type="text/javascript" src="vendor/plugins/jquerymask/jquery.maskedinput.min.js"></script>
+        <script type="text/javascript" src="vendor/plugins/daterange/moment.min.js"></script><!-- Datatable Bootstrap Addon -->
+        <script type="text/javascript" src="js/twitAuto.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script> 
+        
+        <!-- Theme Javascript --> 
+        <script type="text/javascript" src="js/uniform.min.js"></script> 
+        <script type="text/javascript" src="js/main.js"></script> 
+        <script type="text/javascript">
+		$(document).keypress(function(e){if (e.which == 13){$("#logB").click();}});
+            jQuery(document).ready(function() {
+                                   // Init Theme Core
+                                   Core.init(); 
+                                   
+                                   $("#locTime").html(moment().format("hh:mm"));
+                                   $("#utcTime").html(moment.utc().format("hh:mm"));
+                                   $("#confDate").html(moment.utc().format("LL")); 
+                                   $("#aircraft_id").val($("select[name=air_reg]").val());
+                                   var inFlight = false;
+
+                                   var today = moment.utc().format("YYYY/MM/DD");
+                                   var sectorid = parseInt($("#secOpt").val()); // Sector counter
+
+
+
+                                   var id = $("select[name=air_reg]").val();
+                                   var sectorData = []; 
+
+                                    $(".fReceipt").on("change",gotPic);
+                                    function gotPic(e) {
+                                        if(e.target.files.length == 1 && 
+                                           e.target.files[0].type.indexOf("image/") == 0) {
+                                            $("#fuelreceipt").attr("src",URL.createObjectURL(event.target.files[0])); 
+                                        }
+                                    }
+                                   
+                                   // Load aircraft stats
+                                   var getAirstats = function(id){ 
+                                   if(id){
+                                    $.get("http://www.tbcmainland.org/airops/conn/get_aircraftstats.php", {"aircraftid":id}, function(html){
+                                        $("#maintenance").replaceWith(html);  
+
+
+                                        });
+                                    }    
+                                   }  
+                                   
+                                   // Load aircraft documents 
+                                   var getAirDocs = function(id){ 
+
+                                   if(id){
+                                   $.get("http://www.tbcmainland.org/airops/conn/get_aircraftdocs.php", {"aircraftid":id}, function(data){  
+                                         $("#aircraft_docs").html(data);
+                                         });
+                                   }   
+                                   }  
+                                   
+                                   // Load aircraft details 
+                                   var getAircraft = function(id){ 
+
+                                   if(id){ $.get("http://www.tbcmainland.org/airops/conn/getAircraft.php", {"aircraftid":id}, function(html){  
+                                                 $("#sumTit").replaceWith(html);  
+
+
+                                                 getAirstats(id);
+                                                 getAirDocs(id);
+                                                 }); 
+                                   }   
+                                   } 
+                                    
+                                    //var dirty = false;
+                                    var loadSector = function(id){
+                                        if(id != $("#secOpt option:last").val()){
+                                            if(typeof window.localStorage["sector"+id] !== "undefined"){
+                                                console.log("Loading Sector..."+id);
+                                                var data =  JSON.parse(window.localStorage['sector'+id]);
+                                                // Set form fields
+                                                $("#frOpt, #depOpt").val(data[4].value);
+                                                $("#depart, #depart_").html($("#frOpt option:selected").data("airport"));
+
+                                                $("#toOpt").val(data[5].value);
+                                                $("#arrive").html($("#toOpt option:selected").data("airport")); 
+
+                                                $("#picOpt").val(data[6].value);
+                                                $("#sicOpt").val(data[7].value);
+                                                $("#headOpt").val(data[8].value);
+                                                $("#paxOpt").val(data[9].value);
+                                                $("#natOpt").val(data[10].value);
+                                                $("#cliOpt").val(data[11].value);
+                                                $("#bOff").val(data[12].value);
+                                                $("#tOff").val(data[13].value);
+                                                $("#bTime").html(data[2].value);
+                                                $("#fTime").html(data[1].value);
+                                                $("#lndng").val(data[14].value);
+                                                $("#bOn").val(data[15].value);
+                                                $("#dFuel").val(data[16].value);
+                                                $("#aFuel").val(data[17].value);
+                                                $("#fUsed").html(data[16].value - data[17].value);
+                                                $("#sLnd").val(data[19].value); 
+                                                $("#nmDist").val(data[18].value);
+                                                $("#kmDist").html((data[18].value*1.852).toFixed(2));
+
+                                                $("#fuelreceipt").attr("src","");  
+                                            } 
+                                        }else{  
+                                            resetSectorForm();
+                                        }
+                                   }
+
+
+
+                                    // Summary Tab
+                                    var getSummary = function(id){
+                                        //var id = $("select[name=air_reg]").val();
+                                        //$.get("http://www.tbcmainland.org/airops/conn/loadSummary.php", {"aircraftid":id}, function(html){ 
+                                            //$("#sectordetails").replaceWith(html); 
+                                        //});
+                                        var html = "";
+                                        console.log("Printing sectors....");
+
+
+
+                                        if(inFlight){
+                                            $("#sumSecD").show();
+                                            $("#msg").hide();
+                                            $("#sectordetails").html(""); 
+                                            
+                                            var total_fTime = total_bTime = total_legs = total_fuel = total_pax = 0;
+                                            // Show sectors                                         
+
+
+
+
+
+                                            for(var i=1; i < sectorid; i++){
+                                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                console.log("Showing: " + i); 
+                                                if(typeof window.localStorage["sector"+i] !== "undefined"){
+                                                    html += "<tr><td>"+i+"</td>";
+                                                    console.log("Sector[" + i +"]");
+
+                                                    var data =  JSON.parse(window.localStorage['sector'+i]);
+
+                                                    var fUsed = data[16].value - data[17].value;
+                                                    
+                                                    html+="<td align='center'>"+data[4].value+"</td>";
+                                                    html+="<td align='center'>"+data[5].value+"</td>";
+
+                                                    html+="<td align='center'>"+data[18].value+"</td>";
+                                                    html+="<td align='center'>"+data[6].value+"</td>";
+                                                    html+="<td align='center'>"+data[7].value+"</td>";
+                                                    html+="<td align='center'>"+data[8].value+"</td>"; 
+                                                    html+="<td align='center'>"+data[2].value+"</td>";
+
+                                                    html+="<td align='center'>"+data[1].value+"</td>";
+                                                    html+="<td align='center'>"+data[1].value+"</td>";
+                                                    html+="<td align='center'>"+data[1].value+"</td>";
+                                                    html+="<td align='center'>"+data[1].value+"</td>";
+                                                    html+="<td align='center'>"+data[2].value+"</td>";
+                                                    html+="<td align='center'>"+data[2].value+"</td>";
+                                                    html+="<td align='center'>"+data[19].value+"</td>";
+ 
+                                                    html+="<td align='center'>"+fUsed+"</td>";
+
+
+
+
+
+
+
+                                                    html+="<td align='center'>"+data[9].value+"</td>";
+                                                    html+="<td align='center'>"+data[10].value+"</td>";
+                                                    html+="<td align='center'>"+data[11].value+"</td></tr>";
+                                             
+                                                    total_fTime +=  Math.round(data[1].value * 10 )/ 10;
+                                                    total_bTime += Math.round(data[2].value * 10 ) / 10;
+                                                    total_legs += parseInt(data[19].value);
+                                                    total_fuel += parseInt(fUsed);   
+
+                                                    total_pax += parseInt(data[9].value);
+                                                }
+                                            }
+
+                                            html+="<tr><td colspan='7' align='right'><b><i>Sub-Total:&nbsp;&nbsp;</b></i></td>";
+                                            html+="<td style='margin-right:5px'>"+total_bTime+"</td>";
+                                            html+="<td style='margin-right:5px'>"+total_fTime.toFixed(1)+"</td>";
+                                            html+="<td>"+total_fTime.toFixed(1)+"</td>";
+                                            html+="<td>"+total_fTime.toFixed(1)+"</td>";
+                                            html+="<td>"+total_fTime.toFixed(1)+"</td>";
+                                            html+="<td>"+total_bTime+"</td>";
+                                            html+="<td>"+total_bTime+"</td>";
+                                            html+="<td>"+total_legs+"</td>";
+                                            html+="<td>"+total_fuel+"</td>";
+                                            html+="<td colspan='3' align='left'>&nbsp;"+total_pax+"</td></tr>";
+
+
+
+
+                                            $("#sectordetails").append(html);
+                                        }else{ 
+                                            $("#sumSecD").hide();
+                                            $("#msg").show();
+                                        }                                        
+                                        
+                                        //Load Crew
+                                        $.get("http://www.tbcmainland.org/airops/conn/getCrew.php", 
+                                            {"aircraftid":id}, function(html){ $("#crewlist").html(html); });    
+
+                                    }
+                                   
+                                    var resetSectorForm = function(){
+                                        var arrived = $("#toOpt").val();        // Save arrival airport
+                                        // Reset form fields 
+                                        $('form#sector_frm').find('input[type=time],input[type=number],input[type=file],#depart,#arrive').val("");
+                                        $("#paxOpt").val(0); 
+                                        $("#sLnd").val(1);
+                                        $("#toOpt").focus();
+  
+                                        $("#depOpt, #frOpt").val(arrived);
+                                        $("#depart, #depart_").html($("#frOpt option:selected").data("airport"));
+                                        $("#arrive").html("");
+                                        $("#fuelreceipt").attr("src","");      
+                                        $("#fUsed,#bTime,#fTime,#kmDist").html("0");
+                                    }
+
+                                    var dirty = function(){
+                                        if($("#secOpt").val() != $("#secOpt option:last").val()) return true;
+                                        else return false;
+                                    }
+
+                                    var alert_air = function(msg, callback){ 
+                                        navigator.notification.alert(msg, (callback==undefined)? true: callback, 'AirOps','Done'); 
+                                        navigator.notification.beep(1);
+                                    }
+
+                                    // Padd Zeros recursively
+
+                                    function pad(str) {
+                                        // str = str.toString();
+                                        // return str.length < 5 ? pad("0" + str, 5) : str;
+
+                                        return str;
+                                    }
+                                   
+
+                                   getAircraft(id);
+                                   //getSummary();
+                                   
+                                   $("select[name=air_reg]").change(function(e){
+                                        $("#aircraft_id").val($(this).val()); 
+
+                                        getAircraft(id);
+                                        //getSummary();
+                                    });
+                                    
+                                    // ********** Summary ************* //  
+                                    $("#suButt").click(function(e){
+                                        e.preventDefault();
+
+                                        getSummary(id);
+                                    });
+
+                                    // ********** Operational ************* //
+
+
+                                     // $('form#sector_frm').change(function(e){ 
+                                     //    if($("#secOpt").val() != $("#secOpt option:last").val()){
+                                     //        dirty = true;
+                                     //        console.log("Sector form is dirty!!!!!!");
+                                     //    }else dirty = false;
+                                     // });
+
+                                    // Load selected sector
+                                    $("#secOpt").change(function(e){
+                                        e.preventDefault();
+                                        loadSector($(this).val());
+                                    });
+
+                                   $("#depOpt").on("focusout",function(){
+                                   var code = $("#depOpt").innerText;
+                                        $("#depart_, #depart").html(code); 
+                                        $("#frOpt").val($(this).val());
+										});
+                                    // Display Airport name - Departure
+                                    $("#frOpt").change(function(e){
+
+                                        e.preventDefault();                                  
+                                        var code = $("#frOpt option:selected").data("airport");
+
+                                        $("#depart, #depart_").html(code);
+                                        $("#depOpt").val($(this).val());
+                                    });
+
+                                    // Display Airport name - Arrival
+                                    $("#toOpt").change(function(e){
+                                        e.preventDefault();                                        
+                                        var code = $("#toOpt option:selected").data("airport");                                        
+                                        $("#arrive").html(code);
+                                    });
+
+                                    // Display UTC 
+                                    $("#bStart").click(function(e){
+                                                      e.preventDefault();
+                                                      $("#bOff").val(moment.utc().format("H:mm:ss"));
+                                                      //alert("::"+moment.utc().format("h:mm:ss"));
+                                                      });
+                                   
+                                   // Display UTC
+                                   $("#bStop").click(function(e){
+                                                     e.preventDefault();    
+                                                     $("#bOn").val(moment.utc().format("H:mm:ss"));
+                                                     });
+                                   
+                                   // Calculate Flight time 
+                                   $("#lndng").change(function(){
+                                            var self = this;
+                                                      var tOff = moment(today+" "+$("#tOff").val());    
+                                                      var landing = moment(today+" "+$(this).val());
+                                                      var diff = parseFloat(landing.diff(tOff,"m")/60).toFixed(1).replace("-","");
+                                                      $("input[name=flightTime]").val(diff);
+                                                      $("#fTime").html(pad(diff));
+                                                      });
+                                   
+                                   // Calculate Block time  
+                                   $("#bOn").change(function(){
+                                                    var bOff = moment(today+" "+$("#bOff").val());
+                                                    var bOn = moment(today+" "+$(this).val());
+                                                    var diff = parseFloat(bOn.diff(bOff,"m")/60).toFixed(1).replace("-","");
+                                                    $("input[name=blockTime]").val(diff);
+                                                    $("#bTime").html(pad(diff));
+                                                    });
+                                   
+                                   // Calculate and display fuel used
+                                   $("#aFuel, #dFuel").keyup(function(){ $("#fUsed").html($("#dFuel").val() - $("#aFuel").val()); });
+
+
+                                   
+                                   // Convert and display distance to km
+                                   $("#nmDist").keyup(function(){ $("#kmDist").html(($(this).val()*1.852).toFixed(2));});
+
+
+                                   
+                                   // Submit Sector
+                                   $("#subSec").click(function(e){
+                                        e.preventDefault(); 
+
+
+
+
+                                        // Increase sector count and update dropdown                            
+                                        inFlight = true;                                                
+
+                                        // push to global sector array 
+                                        var sector = $("form#sector_frm").serializeArray(); 
+                                        sectorData.push(sector);    
+
+                                        console.log("Number of sectors= "+sectorData.length); 
+
+
+
+
+
+
+
+
+
+
+
+  
+                                        window.localStorage['sector'+sectorid] = JSON.stringify(sector);    
+
+
+
+                                        $.each(sector, function(i, v){
+                                            console.log(">"+i+" Name:"+v.name+"| Value:"+v.value);
+                                        });    
+
+
+
+                                        alert_air("Sector "+sectorid+" Saved!", resetSectorForm);
+
+
+
+                                        //resetSectorForm(); 
+                                        sectorid += 1;
+                                        $("#secOpt").append('<option value="'+sectorid+'">'+sectorid+'</option>');
+                                        $("#secOpt").val(sectorid);                                        
+                                    });
+                                    
+
+                                    // Submit Sector
+                                    $("#subAir").click(function(e){
+                                          e.preventDefault(); 
+
+                                            if(sectorData.length > 0){
+
+
+                                                if(hostReachable){
+                                                    var status = 0;
+                                                    $.each(sectorData, function(i, value){
+                                                        status += (100/sectorData.length);
+                                                        console.log("progress-bar status : "+status);
+
+
+                                                        $.ajax({
+                                                            type: "POST",
+                                                            url: "http://www.tbcmainland.org/airops/conn/add_sector.php",
+
+
+
+                                                            data: value,
+                                                            beforeSend: function(){
+                                                                $(".progress").show();
+                                                                console.log('Submitting Sector '+(sectorid-1));
+
+
+
+
+                                                            },
+                                                            success: function(data){
+                                                                console.log(data);                                                           
+                                                            }, 
+                                                            complete: function(){ // Reset Form elements
+                                                                console.log("Sector "+i+" submited");
+                                                                $(".progress-bar").animate({'width': status+'%'}, 'fast');
+
+
+
+
+
+                                                                //getSummary();
+                                                            },
+                                                            error: function(e){
+                                                                console.log(e);
+                                                            }
+                                                        });
+                                                    });
+
+
+                                                    //alert("AIR Successfully Submitted");                                            
+                                                    window.localStorage.clear(); 
+
+
+                                                }
+                                                else if(supportsLocalstorage()){      
+                                                    window.localStorage.setItem("sector_data", sectorData);
+                                                }
+                                            }else{
+                                                alert_air('Oops! No AIR to submit'); 
+                                            }
+
+
+
+
+
+
+
+
+
+
+                                            sectorid = 1;     // Reset sector count
+                                            sectorData = [];  // Empty array
+                                            //$(".progress").fadeOut("slow");
+                                            inFlight = false;
+                                            $(".progress-bar").fadeOut("slow");
+                                    });
+    
+                                    $("#maskedTime").mask("00:00:00");
+                                   });
+            </script>
+            </div>
+    </body>
+    
+</html>

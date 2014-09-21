@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Meta, title, CSS, favicons, etc. -->
+        <meta charset="utf-8">
+        <title>AirOps</title>
+        <!-- <meta name="keywords" content="HTML5 Bootstrap 3 Admin Template UI Theme" />
+        <meta name="description" content="Stardom - A Responsive HTML5 Admin UI Template Theme">
+        <meta name="author" content="Holladay"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Core CSS  -->
+        <link rel="stylesheet" type="text/css" href="assets/netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="fonts/glyphicons_pro/glyphicons.min.css">
+        
+        <!-- Theme CSS -->
+        <link rel="stylesheet" type="text/css" href="css/theme.css">
+        <link rel="stylesheet" type="text/css" href="css/pages.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
+        
+        <!-- Boxed-Layout CSS -->
+        <link rel="stylesheet" type="text/css" href="css/boxed.css">
+        
+        <!-- Your Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+        <link rel="stylesheet" type="text/css" href="css/jqx.base.css">
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="assets/ajax.googleapis.com/ajax/libs/jqueryui/jquery-ui.min.css">
+<!--        <link rel="stylesheet" type="text/css" href="assets/ajax.googleapis.com/ajax/libs/jqueryui/jquery-ui.min.css">
+-->        
+        <!-- Core Javascript - via CDN -->
+    </head>
+    <body class="dashboard" style="margin-top:50px;position:relative;">
+        <div style="width:100%;height:20px;background-color:white;position:fixed;z-index:1050;top:0;"></div>
+        <div class="panel" id="loginV" style="display:none;">
+            <div class="panel-heading">
+                <div class="panel-title">LOGIN</div></div>
+                <div class="panel-body">
+                    <form id="loginF">
+                        User: &nbsp;<select id="uType">
+                            <hr>
+                            <option>Pilot</option>
+                            <option>Maintenance</option>
+                        </select><br><br>
+                        Name: &nbsp;<input type="text" name="userN" id="userN"><br><br>
+                        PIN: &nbsp;<input type="password" name="passW" id="passW"><br><br>
+                        Photo Identification: &nbsp;<br>
+                        <div  id="cPhoto">
+	                     	<img id="imgHold" alt="Image" src="img/camBg.png" />
+                        <img style="display:none;" id="smallImage" src="" />
+                        </div>
+                        <input type="hidden" id="picURL">
+                        <hr>
+                        Reason For Login: &nbsp;<select id="logRez">
+                            <option>Pre-Flight</option>
+                            <option>Service</option>
+                            <option>Other</option>
+                        </select><br><br>
+                        <span id="othLab">Other:</span><br><input type="text" id="othRez" placeholder="Enter reason...">
+                        <hr>
+                        <span id="disclaimer">BY CLICKING THE SUBMIT BUTTON I CONFIRM THE ABOVE INFORMATION TO BE CORRECT AND TRUE, AND THAT I HAVE BEEN PRE-APPROVED TO USE THIS APPLICATION.</span>
+                    </form>
+                </div>
+                <div class="panel-footer"><button type="button" id="logB" class="btn btn-primary">SUBMIT</button></div>
+            </div>
+            <script> var boxtest = localStorage.getItem('boxed'); if (boxtest === 'true') {document.body.className+=' boxed-layout';} </script>
+            <!-- Start: Header -->
+            <div id="bGin"><input type="hidden" id="curUsr"><input type="hidden" id="tmStmp"><input type="hidden" id="geoLoc">
+            <header class="navbar navbar-fixed-top" style="margin-top:20px">
+                <div class="pull-left"></div>
+                <div  class="hInfo">
+                    <span id="curDate"></span>
+                    <span id="curTime"></span>
+                <span id="aRegi"></span><span id="aType"></span><span id="aSerial">Serial &#35;401707</span></div>
+                <div class="pull-right header-btns">
+                	<button id="pdfMake" style="display:none;">Print Sector</button>
+                	<button id="onSup">Online Support</button>
+                    </div>
+            </header>
+            <!-- End: Header -->
+            <!-- Start: Main -->
+            <div id="main">
+                <!-- Start: Sidebar -->
+                
+                <!-- End: Sidebar -->
+                <!-- Start: Content -->
+                <section id="content">
+                    <div id="topbar">
+                        <ol class="breadcrumb">
+                            <li><span class="glyphicons glyphicons-nameplate"></span></li>
+                            <li class="active">Startup</li>
+                        </ol>
+                    </div>
+                    <div class="container" style="height:70px;">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="console-btns">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-2" style="margin:auto;">
+                                            <div class="console-btn" id="stButt" style="border:1px solid #000f89">
+                                                <div class="console-icon divider-right"><span class="glyphicons glyphicons-nameplate"></span></div>
+                                                <div class="console-text">
+                                                    <div class="console-title">Startup</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-2" style="">
+                                            <div class="console-btn" id="oButt">
+                                                <div class="console-icon divider-right"><span class="glyphicons glyphicons-airplane"></span></div>
+                                                <div class="console-text">
+                                                    <div class="console-title">Operational</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-2" style="">
+                                            <div class="console-btn" id="mButt">
+                                                <div class="console-icon divider-right"><span class="glyphicons glyphicons-settings"></span></div>
+                                                <div class="console-text">
+                                                    <div class="console-title">Maintenance</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-2" style="">
+                                            <div class="console-btn" id="suButt">
+                                                <div class="console-icon divider-right"><span class="glyphicons glyphicons-notes"></span></div>
+                                                <div class="console-text">
+                                                    <div class="console-title">Summary</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-2" style="">
+                                            <div class="console-btn" id="fdButt">
+                                                <div class="console-icon divider-right"><span class="glyphicons glyphicons-airplane"></span></div>
+                                                <div class="console-text">
+                                                    <div class="console-title" style="font-size:19px;">Flight &amp; Duty</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-2">
+                                            <div class="console-btn" id="slButt">
+                                                <div class="console-icon divider-right"><span class="glyphicons glyphicons-airplane"></span></div>
+                                                <div class="console-text">
+                                                    <div class="console-title">Sector Log</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div></div>
+                        <hr class="short margin-top-none" style="margin:0;">
+                        
+                        <!--Begin Startup-->
+                        <div class="row" id="vStart">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <div class="panel-title">CONFIRM</div></div>
+                                    <div class="panel-body">
+                                        <div class="sConf">
+                                            <form id="fConf">
+                                                <table class="tConf">
+                                                    <tr>
+                                                        <td>Registration</td>
+                                                        <td>Call Sign</td><td>Current Location</td><td>Date</td><td>Time</td><td></td>
+                                                        <td rowspan="2" colspan="3" class="stacEd"><table><tr><td></td><td></td><td></td></tr>
+                                                        <tr><td style="padding-right:18px;">Status<br><button class="cirStatW btn btn-gradient"></button></td>
+                                                        <td><button class="cfm btn btn-gradient" id="confBt">CONFIRM</button></td>
+                                                        <td><button class="edBtn btn btn-gradient" style="margin-right:-11px;" id="confEdt">EDIT</button></td></tr>
+                                                    </table></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <select name="air_reg" id="regN">
+                                                            <option value="0">---</option>
+                                                            <option value="2">ZS-PPH</option>
+                                                            <option value="3">ZA-GXA</option>
+                                                        </select>	
+                                                    </td>
+                                                    <td><input type="text" id="clSgn" value=""></td>
+                                                    <td id="deptd"><select id="depOpt" >
+                                                                                <option value></option>
+                                                        <option value="DNAA" data-airport="Nnamdi Azikiwe Intl., Abuja">DNAA (Nnamdi Azikiwe Intl., Abuja)</option>                                             <option value="DNAI" data-airport="Akwa Ibom Intl., Uyo">DNAI (Akwa Ibom Intl., Uyo)</option>
+                                                        <option value="DNAK" data-airport="Akure Airport, Akure">DNAK (Akure Airport, Akure)</option>
+                                                        <option value="DNBE" data-airport="Benin Airport, Benin">DNBE (Benin Airport, Benin)</option>
+                                                        <option value="DNBI" data-airport="Bida Airstrip, Bida">DNBI (Bida Airstrip, Bida)</option>
+                                                        <option value="DNCA" data-airport="Margaret Ekpo Intl., Calabar">DNCA (Margaret Ekpo Intl., Calabar)</option>
+                                                        <option value="DNEN" data-airport="Akana Ibiam Airport, Enugu">DNEN (Akana Ibiam Airport, Enugu)</option>
+                                                        <option value="DNGU" data-airport="Gusau Airstrip, Gusau">DNGU (Gusau Airstrip, Gusau)</option>
+                                                        <option value="DNIB" data-airport="New Ibadan, Ibadan">DNIB (New Ibadan, Ibadan)</option>
+                                                        <option value="DNIL" data-airport="Ilorin Airport, Ilorin">DNIL (Ilorin Airport, Ilorin)</option>
+                                                        <option value="DNIM" data-airport="Sam Mbakwe Intl. Cargo Airport, Imo">DNIM (Sam Mbakwe Intl. Cargo Airport, Imo)</option>
+                                                        <option value="DNJO" data-airport="Jos Aiport, Jos">DNJO (Jos Aiport, Jos)</option>
+                                                        <option value="DNKA" data-airport="New Kaduna Airport, Kaduna">DNKA (New Kaduna Airport, Kaduna)</option>
+                                                        <option value="DNKN" data-airport="Mallam Aminu Intl., Kano">DNKN (Mallam Aminu Intl., Kano)</option>
+                                                        <option value="DNMA" data-airport="Maiduguri Airport, Maiduguri">DNMA (Maiduguri Airport, Maiduguri)</option>
+                                                        <option value="DNMK" data-airport="Makurdi Airport, Makurdi">DNKA (Makurdi Airport, Makurdi)</option>
+                                                        <option value="DNMM" data-airport="Muritala Mohammed, Lagos">DNMM (Muritala Mohammed, Lagos)</option>
+                                                        <option value="DNMN" data-airport="Minna Airport, Minna">DNMN (Minna Airport, Minna)</option>
+                                                        <option value="DNOS" data-airport="Osogbo Airstrip, Osogbo">DNOS (Osogbo Airstrip, Osogbo)</option>
+                                                        <option value="DNPO" data-airport="Port Harcourt Aiport, P.H">DNPO (Port Harcourt Aiport, P.H)</option>
+                                                        <option value="DNSO" data-airport="Sokoto Airport, Sokoto">DNSO (Sokoto Airport, Sokoto)</option>
+                                                        <option value="DNYO" data-airport="Yola Airport, Yola">DNYO (Yola Airport, Yola)</option>
+                                                        <option value="DNZA" data-airport="Zaria Airport, Zaria">DNZA (Zaria Airport, Zaria)</option>
+                                                    </select><span id="addPort" class="glyphicons glyphicons-circle_plus"></span>
+                                                </td>
+                                                <td><span id="confDate"></span><input type="hidden" id="realDate"></td>
+                                                <td style="width:150px;">Local&#58;&nbsp;<input id="locTime" type="text"><br>UTC&#58;&nbsp;<input id="utcTime" type="text"></td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td><td>&nbsp;</td>
+                                            </tr>
+                                            <tr><td></td><td></td>
+                                            <td><span id="apName1">&nbsp;</span></td>
+                                            <td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                        </table>
+                                    </form>
+                                    <div id="portForm" title="Add Airport">
+                                        <form>
+                                            ICAO Code:<input type="text" class="addIcao" maxlength="4"><br>
+                                            Airport Name:<input type="text" class="addPortName"><br>
+                                            Airport City:<input type="text" class="addPortCity"><br>
+                                            <span class="portClaim">It is <em>extremely</em> unlikely that you are going to or are currently at an airport that we haven't included in our list. Please close this dialog and go check again. If it <em>really</em> isn't there, we'll be more than happy to investigate.</span><br>
+                                            <button id="subPort" class="btn btn-primary" style="float:right;">Add Airport</button>
+                                        </form>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-heading"><div class="panel-title">CREW</div></div>
+                            <div class="panel-body">
+                                <div class="sCrew"><form id="fCrew" name="crewForm">
+                                    <table class="tCrew">
+                                        <tr>
+                                            <td>PIC</td><td>SIC</td><td>Head C/A</td><td id="addedHead"></td><td></td><td></td>
+                                            <td rowspan="2" colspan="3" class="stacEd"><table><tr><td></td><td></td><td></td></tr>
+                                            <tr><td style="padding-right:18px;">Status<br><button id="seeCrew" class="cirStatW btn btn-gradient"></button></td>
+                                            <td><button class="cfm btn btn-gradient" id="crEdBt">CONFIRM</button></td>
+                                            <td><button class="edBtn btn btn-gradient" id="crEdt">EDIT</button></td></tr>
+                                        </table></td>
+                                    </tr>
+                                    <tr><td><select id="cPic"><option value="1">R. Martin</option></select></td>
+                                    <td><select id="cSic"><option value="2">Q. Vorster</option></select></td>
+                                    <td><select id="cHca"><option value="3">K. Stander</option></select></td>
+                                    <td id="addedCrew"></td>
+                                    <td></td><td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td></tr>
+                                    
+                                </table></form>
+                                <!--Modal--><div id="cProb" title="Detected Issues">
+                                		<table>
+                                        <thead>
+                                        <th>Name</th><th>Document</th><th>Document #</th><th>Expiry</th><th>Days Remaining</th>
+                                    	</thead>
+                                        <tbody id="issuS"></tbody>
+                                    </table>
+                                </div><!--Modal End-->
+                                <!--Modal--><div id="maddCrew" title="Add Crew Member">
+                                <form id="aCrew">
+                                    Name &nbsp;<input id="adName" type="text" style="margin-left:46px;"><br>
+                                    Position &nbsp;<input id="adPos" type="text" style="margin-left:25px;"><br>
+                                    License No. &nbsp;<input id="adLicNo" type="text" style="margin-left:8px;"><br>
+                                    License Type &nbsp;<input id="adLicTp" type="text" style="margin-left:3px;"><br>
+                                    Medical Exp. &nbsp;<input id="adMed" type="date" style="margin-left:2px;"><br>
+                                    <input type="checkbox" style="margin:10px 5px 10px auto;width:auto;"><span id="crewClaim">All crew member's credentials are valid and current.</span><br>
+                                </form>
+                                <button type="button" id="saveCrew" style="float:right;" class="btn btn-primary">Save</button>
+                                </div><!--Modal End-->
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-heading"><div class="panel-title">AIRCRAFT STATUS</div></div>
+                        <div class="panel-body">
+                            <div class="sStat"><form id="fAirStat">
+                                <table class="tStat">
+                                    <tr>
+                                        <td>Engine &#35;1</td>
+                                        <td>Engine &#35;2</td>
+                                        <td>Airframe hrs</td>
+                                        <td>Landings</td>
+                                        <td>APU hrs</td>
+                                        <td>Next Inspection</td>
+                                        <td rowspan="2" colspan="3" class="stacEd">
+                                            <table>
+                                                <tr><td></td><td></td><td></td></tr>
+                                                <tr><td style="padding-right:18px;">Status<br><button class="cirStatW btn btn-gradient"></button></td>
+                                                <td><button class="cfm btn btn-gradient" id="craftBt">CONFIRM</button></td>
+                                                <td><button class="edBtn btn btn-gradient" id="craftEdt">EDIT</button></td></tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr><td>Hours&#58;&nbsp;<span id="ste1hrs">3169.7</span><br>Cycles&#58;&nbsp;<span id="ste1cyc">2633</span></td>
+                                    <td>Hours&#58;&nbsp;<span id="ste2hrs">3169.7</span><br>Cycles&#58;&nbsp;<span id="ste2cyc">2633</span></td>
+                                    <td><span id="stAirhrs">3169.7</span></td>
+                                    <td><span id="stLands">2410</span></td>
+                                    <td><input type="text" id="apuHrs" pattern="[0-9]*"></td>
+                                    <td><span id="niHrs">400</span>hrs&nbsp;&#64;&nbsp;<span id="niMls">3220.0</span>&nbsp;or&nbsp;<span id="niDate">20 September 2014</span><br>Remaining&#58;&nbsp;<span id="niHrem">50.3</span>&nbsp;&#47;&#47;&nbsp;<span id="niDrem">20<span>&nbsp;days</span></span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table></form>
+                        </div>
+                    </div>
+                </div>
+                <div class="multiP"><form id="fMulti"><div class="panel">
+                    <div class="panel-heading"><div class="panel-title">DEFECTS</div></div>
+                    <div class="panel-body"><div class="sDef">
+                        <table class="tDef">
+                            <tr>
+                                <td>Defect</td>
+                                <td>Pilot Acceptance</td>
+                            </tr>
+                            <tr><td>Oil leak from left engine</td><td><span class="ccBox"><input type="checkbox" value="1" class="ccBoxIn"/></span></td></tr>
+                            <tr><td>Low flush intermetent</td><td><span class="ccBox"><input type="checkbox"></span></td></tr>
+                        </table></div></div></div>
+                        <div class="panel">
+                            <div class="panel-heading"><div class="panel-title">DEFERRED DEFECTS</div></div>
+                            <div class="panel-body"><div class="sDefD">
+                                <table class="tDefD">
+                                    <tr><td>&nbsp;</td><td>remaining</td></tr>
+                                    <tr><td>RHS Windscreen</td><td class="tDefRem"><span>2</span>&nbsp;days</td></tr>
+                                    <tr><td>Pilot Oxygen Mask</td><td class="tDefRem"><span>7</span>&nbsp;days</td></tr>
+                                    <tr><td>Rear Seatbelt Sign U/S</td><td class="tDefRem"><span>23</span>&nbsp;days</td></tr>
+                                </table></div></div></div>
+                                <div class="panel">
+                                    <div class="panel-heading"><div class="panel-title">MEL</div></div>
+                                    <div class="panel-body"><div class="sMel">
+                                        <table class="tMel">
+                                            <tr><td>&nbsp;</td><td>remaining</td></tr>
+                                            <tr><td>Defect &#35;1</td><td class="tMelRem"><span>2</span>&nbsp;days</td></tr>
+                                            <tr><td>Defect &#35;26</td><td class="tMelRem"><span>7</span>&nbsp;days</td></tr></table></div></div></div>
+                                            <div class="panel" style="width:25%;">
+                                                <div class="panel-heading"><div class="panel-title"></div></div>
+                                                <div class="panel-body"><div class="snoHead">
+                                                    <table class="tnoHead">
+                                                        <tr><td rowspan="2" colspan="3" class="stacEd">
+                                                            <table>
+                                                                <tr><td></td><td></td><td></td></tr>
+                                                                <tr><td id="multd" style="padding-right:15px;padding-left:0px;font-weight:bold;font-size:15px;">Status<br><button class="cirStatW btn btn-gradient"></button></td>
+                                                                <td><button class="cfm btn btn-gradient" id="multiBt">CONFIRM</button></td>
+                                                                <td><button class="edBtn btn btn-gradient" id="multiEdt">EDIT</button></td></tr>
+                                                            </table>
+                                                        </td></tr>
+                                                    </table></div></div></div></form>
+                                                </div>
+                                                <div class="stFoot">
+                                                    <button id="airBtn" class="btn btn-gradient">ACCESS PREVIOUS AIR</button>
+                                                    <button id="exBtn" class="btn btn-gradient">SIGN OUT</button>
+                                                    <button id="accBtn" class="btn btn-gradient">ACCEPT</button>
+                                                </div>
+                                                <div class="panel" id="logOut"  title="Logout / Redirect">
+                                                    <div style="float:right"><span id="logDate"></span>&nbsp;&nbsp;<span id="logTime"></span></div><br>
+                                                    <span class="wRed">Where would you like to be directed?</span><hr>
+                                                    <button id="contAir">Continue Current AIR</button><br>
+                                                    <button id="startAir">Start New AIR</button><br>
+                                                    <button id="logoButt">LOGOUT</button>
+                                                </div>
+                                                </div> <!--End Startup-->
+                                                
+                                                <form id="sector_frm" name="sectorForm">
+                                                    <!--Begin Operational-->
+                                                    <div class="row" id="vOper">
+                                                        <div class="panel">
+                                                            <div class="panel-heading"><div class="panel-title">SECTOR DETAILS</div></div>
+                                                            <div class="panel-body">
+                                                                <div class="oSec">
+                                                                    <input type="hidden" name="aircraftid" id="aircraft_id" value="" />
+                                                                    <input type="hidden" name="airframe" value="" />
+                                                                    <input type="hidden" name="blockTime" value="" />
+                                                                    <table class="tSecD">
+                                                                        <tr>
+                                                                            <td>Sector</td>
+                                                                            <td>From</td>
+                                                                            <td>To</td>
+                                                                            <td>PIC</td>
+                                                                            <td>SIC</td>
+                                                                            <td>Head C/A</td>
+                                                                            <td>PAX</td>
+                                                                            <td>Nature of Flight</td>
+                                                                            <td>Client</td>
+                                                                            <td rowspan="2"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <select id="secOpt" name="secOpt">
+                                                                                    <option value="1">1</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td id="frtd">
+                                                                                <select id="frOpt" name="from"><!-- To do: Select by GeoLocation -->
+                                                                                <option value></option>
+                                                                                <option value="DNAA" data-airport="Nnamdi Azikiwe Intl., Abuja">DNAA (Nnamdi Azikiwe Intl., Abuja)</option>                                                    <option value="DNAI" data-airport="Akwa Ibom Intl., Uyo">DNAI (Akwa Ibom Intl., Uyo)</option>
+                                                                                <option value="DNAK" data-airport="Akure Airport, Akure">DNAK (Akure Airport, Akure)</option>
+                                                                                <option value="DNBE" data-airport="Benin Airport, Benin">DNBE (Benin Airport, Benin)</option>
+                                                                                <option value="DNBI" data-airport="Bida Airstrip, Bida">DNBI (Bida Airstrip, Bida)</option>
+                                                                                <option value="DNCA" data-airport="Margaret Ekpo Intl., Calabar">DNCA (Margaret Ekpo Intl., Calabar)</option>
+                                                                                <option value="DNEN" data-airport="Akana Ibiam Airport, Enugu">DNEN (Akana Ibiam Airport, Enugu)</option>
+                                                                                <option value="DNGU" data-airport="Gusau Airstrip, Gusau">DNGU (Gusau Airstrip, Gusau)</option>
+                                                                                <option value="DNIB" data-airport="New Ibadan, Ibadan">DNIB (New Ibadan, Ibadan)</option>
+                                                                                <option value="DNIL" data-airport="Ilorin Airport, Ilorin">DNIL (Ilorin Airport, Ilorin)</option>
+                                                                                <option value="DNIM" data-airport="Sam Mbakwe Intl. Cargo Airport, Imo">DNIM (Sam Mbakwe Intl. Cargo Airport, Imo)</option>
+                                                                                <option value="DNJO" data-airport="Jos Aiport, Jos">DNJO (Jos Aiport, Jos)</option>
+                                                                                <option value="DNKA" data-airport="New Kaduna Airport, Kaduna">DNKA (New Kaduna Airport, Kaduna)</option>
+                                                                                <option value="DNKN" data-airport="Mallam Aminu Intl., Kano">DNKN (Mallam Aminu Intl., Kano)</option>
+                                                                                <option value="DNMA" data-airport="Maiduguri Airport, Maiduguri">DNMA (Maiduguri Airport, Maiduguri)</option>
+                                                                                <option value="DNMK" data-airport="Makurdi Airport, Makurdi">DNKA (Makurdi Airport, Makurdi)</option>
+                                                                                <option value="DNMM" data-airport="Muritala Mohammed, Lagos">DNMM (Muritala Mohammed, Lagos)</option>
+                                                                                <option value="DNMN" data-airport="Minna Airport, Minna">DNMN (Minna Airport, Minna)</option>
+                                                                                <option value="DNOS" data-airport="Osogbo Airstrip, Osogbo">DNOS (Osogbo Airstrip, Osogbo)</option>
+                                                                                <option value="DNPO" data-airport="Port Harcourt Aiport, Port Harcourt">DNPO (Port Harcourt Aiport, Port Harcourt)</option>
+                                                                                <option value="DNSO" data-airport="Sokoto Airport, Sokoto">DNSO (Sokoto Airport, Sokoto)</option>
+                                                                                <option value="DNYO" data-airport="Yola Airport, Yola">DNYO (Yola Airport, Yola)</option>
+                                                                                <option value="DNZA" data-airport="Zaria Airport, Zaria">DNZA (Zaria Airport, Zaria)</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td id="totd">
+                                                                            <select id="toOpt" name="to">
+                                                                                <option value></option>
+                                                                                <option value="DNAA" data-airport="Nnamdi Azikiwe Intl., Abuja">DNAA (Nnamdi Azikiwe Intl., Abuja)</option>                                                    <option value="DNAI" data-airport="Akwa Ibom Intl., Uyo">DNAI (Akwa Ibom Intl., Uyo)</option>
+                                                                                <option value="DNAK" data-airport="Akure Airport, Akure">DNAK (Akure Airport, Akure)</option>
+                                                                                <option value="DNBE" data-airport="Benin Airport, Benin">DNBE (Benin Airport, Benin)</option>
+                                                                                <option value="DNBI" data-airport="Bida Airstrip, Bida">DNBI (Bida Airstrip, Bida)</option>
+                                                                                <option value="DNCA" data-airport="Margaret Ekpo Intl., Calabar">DNCA (Margaret Ekpo Intl., Calabar)</option>
+                                                                                <option value="DNEN" data-airport="Akana Ibiam Airport, Enugu">DNEN (Akana Ibiam Airport, Enugu)</option>
+                                                                                <option value="DNGU" data-airport="Gusau Airstrip, Gusau">DNGU (Gusau Airstrip, Gusau)</option>
+                                                                                <option value="DNIB" data-airport="New Ibadan, Ibadan">DNIB (New Ibadan, Ibadan)</option>
+                                                                                <option value="DNIL" data-airport="Ilorin Airport, Ilorin">DNIL (Ilorin Airport, Ilorin)</option>
+                                                                                <option value="DNIM" data-airport="Sam Mbakwe Intl. Cargo Airport, Imo">DNIM (Sam Mbakwe Intl. Cargo Airport, Imo)</option>
+                                                                                <option value="DNJO" data-airport="Jos Aiport, Jos">DNJO (Jos Aiport, Jos)</option>
+                                                                                <option value="DNKA" data-airport="New Kaduna Airport, Kaduna">DNKA (New Kaduna Airport, Kaduna)</option>
+                                                                                <option value="DNKN" data-airport="Mallam Aminu Intl., Kano">DNKN (Mallam Aminu Intl., Kano)</option>
+                                                                                <option value="DNMA" data-airport="Maiduguri Airport, Maiduguri">DNMA (Maiduguri Airport, Maiduguri)</option>
+                                                                                <option value="DNMK" data-airport="Makurdi Airport, Makurdi">DNKA (Makurdi Airport, Makurdi)</option>
+                                                                                <option value="DNMM" data-airport="Muritala Mohammed, Lagos">DNMM (Muritala Mohammed, Lagos)</option>
+                                                                                <option value="DNMN" data-airport="Minna Airport, Minna">DNMN (Minna Airport, Minna)</option>
+                                                                                <option value="DNOS" data-airport="Osogbo Airstrip, Osogbo">DNOS (Osogbo Airstrip, Osogbo)</option>
+                                                                                <option value="DNPO" data-airport="Port Harcourt Aiport, P.H">DNPO (Port Harcourt Aiport, P.H)</option>
+                                                                                <option value="DNSO" data-airport="Sokoto Airport, Sokoto">DNSO (Sokoto Airport, Sokoto)</option>
+                                                                                <option value="DNYO" data-airport="Yola Airport, Yola">DNYO (Yola Airport, Yola)</option>
+                                                                                <option value="DNZA" data-airport="Zaria Airport, Zaria">DNZA (Zaria Airport, Zaria)</option>
+                                                                            </select><span id="addPort2" class="glyphicons glyphicons-circle_plus"></span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <select id="picOpt" name="pic">
+                                                                                <option value="R.M" selected>RM</option>
+                                                                                <option value="G.V">GV</option>
+                                                                                <option value="K.S">K.S</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td>
+                                                                            <select id="sicOpt" name="sic">
+                                                                                <option value="G.V" selected>GV</option>
+                                                                                <option value="R.M">RM</option>
+                                                                                <option value="K.S">K.S</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td>
+                                                                            <select id="headOpt" name="hca">
+                                                                                <option value="G.V">GV</option>
+                                                                                <option value="R.M">RM</option>
+                                                                                <option value="K.S" selected >K.S</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td>
+                                                                            <select id="paxOpt" name="pax">
+                                                                                <option value="0">0</option>
+                                                                                <option value="1">1</option>
+                                                                                <option value="2">2</option>
+                                                                                <option value="3">3</option>
+                                                                                <option value="4">4</option>
+                                                                                <option value="5">5</option>
+                                                                                <option value="6">6</option>
+                                                                                <option value="7">7</option>
+                                                                                <option value="8">8</option>
+                                                                                <option value="9">9</option>
+                                                                                <option value="10">10</option>
+                                                                                <option value="11">11</option>
+                                                                                <option value="12">12</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td>
+                                                                            <select id="natOpt" name="nature">
+                                                                                <option value="None">---</option>
+                                                                                <option value="Delivery">Delivery</option>
+                                                                                <option value="Demonstration">Demonstration</option> 
+                                                                                <option value="Maintenance Ferry">Maintenance Ferry</option>
+                                                                                <option value="Medivac">Medivac</option> 
+                                                                                <option value="Military">Military</option> 
+                                                                                <option value="Non-Schedule">Non-Schedule</option>
+                                                                                <option value="Positioning">Positioning</option> 
+                                                                                <option value="Scheduled">Scheduled</option> 
+                                                                                <option value="Test">Test</option>
+                                                                                <option value="Training">Training</option>    
+                                                                            </select>
+                                                                        </td>
+                                                                        <td>
+                                                                            <select id="cliOpt" name="client">
+                                                                                <option value="">None Assigned</option>
+                                                                                <option value="NPC Oil">NPC Oil</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td><span id="apName2">&nbsp;</span></td>
+                                                                        <td><span id="apName3">&nbsp;</span></td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel">
+                                                        <div class="panel-heading"><div class="panel-title">FLIGHT DETAILS</div></div>
+                                                        <div class="panel-body">
+                                                            <div class="oTime">
+                                                                <table class="opTime">
+                                                                    <tr><td>Block Off</td><td>Take-Off</td><td>Landing</td><td>Blocks On</td><td class="bRight">Flight Times</td><td>Dept Fuel</td><td class="bRight">Arr Fuel</td><td>Distance(nm)</td><td>Landings</td></tr>
+                                                                    <tr>
+                                                                        <td><input type="text" pattern="[0-9]*" id="bOff" name="block_off" class="form-control time" placeholder="00:00"></td>
+                                                                        <td><input type="text" pattern="[0-9]*" id="tOff" name="flight_off" class="form-control time" placeholder="00:00"></td>
+                                                                        <td><input type="text" pattern="[0-9]*" id="lndng" name="flight_on" class="form-control time" placeholder="00:00"></td>
+                                                                        <td><input type="text" pattern="[0-9]*" id="bOn" name="block_on" class="form-control time" placeholder="00:00"></td>
+                                                                        <td class="bRight">
+                                                                            Flight Time:&nbsp;<span id="fTime">00.00</span> hrs<br>
+                                                                        Block Time:&nbsp;<span id="bTime">00.00</span> hrs</td>
+                                                                        <td><input type="number" pattern="[0-9]*" id="dFuel" name="departure_fuel"></td>
+                                                                        <td class="bRight"><input type="number" pattern="[0-9]*" id="aFuel" name="arrival_fuel"></td>
+                                                                        <td><input type="number" pattern="[0-9]*" id="nmDist" name="dist"></td>
+                                                                        <td>
+                                                                            <select id="sLnd" name="leg">
+                                                                                <option value="1">1</option>
+                                                                                <option value="2">2</option>
+                                                                                <option value="3">3</option>
+                                                                                <option value="4">4</option>
+                                                                                <option value="5">5</option>
+                                                                                <option value="6">6</option>
+                                                                                <option value="7">7</option>
+                                                                                <option value="8">8</option>
+                                                                                <option value="9">9</option>
+                                                                                <option value="10">10</option>
+                                                                                <option value="11">11</option>
+                                                                                <option value="12">12</option>
+                                                                            </select>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <button id="bStart" class="btn btn-gradient">Start</button>
+                                                                        </td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td>
+                                                                            <button id="bStop" class="btn btn-gradient">Stop</button>
+                                                                        </td>
+                                                                        <td class="bRight"></td>
+                                                                        <td colspan="2" class="bRight">
+                                                                            Fuel Used&#58;&nbsp;<span id="fUsed">0</span>&nbsp;lbs<br>
+                                                                            <span id="adFlFm">&nbsp;Add Fuel Receipt</span>
+                                                                        </td>
+                                                                        <td></td>
+                                                                        <td><span id="kmDist">00.00</span>&#58;KM&nbsp;</td><td></td></tr>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="stFoot">
+                                                            <!-- <button id="taBtn" class="btn btn-gradient">TAB</button>
+                                                            <span class="rptNo">Report &#35;<span id="rptNo">00001</span></span> -->
+                                                            <button id="subSec" class="btn btn-gradient">SUBMIT SECTOR</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <div id="fuelDeets" title="Fuel Receipt">
+                                                    <form>
+                                                        Supplier: <input id="flSupp" style="margin:auto 0 5px 77px"><br>
+                                                        Fueling Location:<input id="flLoc" style="margin:0 0 5px 25px"><br>
+                                                        Receipt Invoice No.: <input id="flRct" style="margin:0 0 5px 0"><br>
+                                                        Liters: <input id="flLit" type="text" pattern="[0-9]*" style="width:75px;margin:0 43px 5px 10px" placeholder="0.00" step="any" min="0">
+                                                        Gallons: <input id="flGal" type="text" pattern="[0-9]*" style="width:75px;margin:5px 0 0 10px" placeholder="0.00" step="any" min="0"><br>
+                                                        Refueler's Name:<input id="flNme" style="margin:0 0 5px 29px"><br>
+                                                        <span><label for="flCmnt">Comments: </label>
+                                                        <textarea id="flCmnt"></textarea></span><br>
+                                                        <div  id="cPhotoF"><img alt="Image" src="img/camSm.png"></div>
+                                                        <div id="cVasF"></div><br>
+                                                        <input type="hidden" id="picURLF">
+                                                        <button id="subFuel" class="btn btn-primary">Submit</button>
+                                                    </form>
+                                                </div>
+                                                <div id="portForm2" title="Add Airport">
+                                                    <form>
+                                                        ICAO Code:<input type="text" class="addIcao" maxlength="4"><br>
+                                                        Airport Name:<input type="text" class="addPortName"><br>
+                                                        Airport City:<input type="text" class="addPortCity"><br>
+                                                        <span class="portClaim">It is <em>extremely</em> unlikely that you are going to or are currently at an airport that we haven't included in our list. Please close this dialog and go check again. If it <em>really</em> isn't there, we'll be more than happy to investigate.</span><br>
+                                                        <button id="subPort2" class="btn btn-primary" style="float:right;">Add Airport</button>
+                                                    </form>
+                                                </div>
+                                                <!--End Operational-->
+                                                <!--Begin Maintenance-->
+                                                <div class="row" id="vMaint">
+                                                    <!--grouping<div style="width:100%;">-->
+                                                    <div class="col-md-4" style="width:25%;float:right;position: relative;z-index: 2000;">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="panel" id="docAcc" style="width:100%;position:absolute;right:0px;">
+                                                                    <div class="panel-heading" id="docuHead"><div class="panel-title">
+                                                                    <i class="fa fa-bar-chart-"></i>DOCUMENTATION</div></div>
+                                                                <div id="accContent"><table id="docu">
+                                                                    <tr>
+                                                                        <td>Status</td>
+                                                                        <td>Name</td>
+                                                                        <td>Access</td>
+                                                                    </tr>
+                                                                    <tbody id="aircraft_docs"></tbody>
+                                                                    <tr>
+                                                                        <td colspan="3"><input type="file" accept="image/*" class="fReceipt" capture></td>
+                                                                    </tr>
+                                                                </table></div>
+                                                            </div>
+                                                        </div>
+                                                    </div></div>
+                                                    <div class="col-md-8" style="width:77%;">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="panel" id="maintenance">
+                                                                    
+                                                                </div>
+                                                            </div></div></div>
+                                                            <div class="col-md-12">
+                                                                <div class="panel">
+                                                                    <div class="panel-heading">
+                                                                        <div class="panel-title"> <i class="fa fa-chain-broken"></i> DEFECTS &amp; DEFERRED DEFECTS</div>
+                                                                    </div>
+                                                                    <div class="panel-body" style="padding:5px;">
+                                                                        <form id="defect" name="defect">
+                                                                            <table id="dFect">
+                                                                                <thead style="font-variant: small-caps;font-weight: bold;"><tr>
+                                                                                    <th>Defect</th>
+                                                                                    <th>Date Logged</th>
+                                                                                    <th>Action Taken</th>
+                                                                                    <th>Engineer</th>
+                                                                                    <th>Date</th>
+                                                                                    <th>Status</th>
+                                                                                    <th style="text-align:center;">Remaining<br>(days)</th></tr>
+                                                                                </thead>
+                                                                                <tbody id="defects_view" style="overflow:scroll">
+                                                                                </tbody>
+                                                                                <tfoot>
+                                                                                <tr>
+                                                                                    <td><input type="text" name="defect" style="width:145px"></td>
+                                                                                    <td><input type="text" name="logged" id="defectlogged" class="date" maxlength="10" autocomplete="off" placeholder="DD/MM/YYYY" style="width:110px"/></td>
+                                                                                    <td><input type="text" name="actiontaken" style="width:135px"></td>
+                                                                                    <td><input type="text" name="engineer" style="width:75px"></td>
+                                                                                    <td><input type="text" name="defectdate" id="defectdate" class="date" maxlength="10" autocomplete="off" placeholder="DD/MM/YYYY" style="width:110px"/></td>
+                                                                                    <td><span class="cirStatA">SEE</span></td>
+                                                                                    <td style="text-align:center;">
+                                                                                        <input type="number" name="daysleft" pattern="[0-9]*" style="width:25px">
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><button id="aDfct_" class="btn btn-primary">Add Defect</button></td>
+                                                                                </tr>
+                                                                                </tfoot>
+                                                                            </table>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--grouping</div>-->
+                                                            <div class="col-md-12" style="width:100%;">
+                                                                <div class="panel">
+                                                                    <div class="panel-heading">
+                                                                        <div class="panel-title"> <i class="glyphicons glyphicons-stats"></i> TREND MONITORING</div>
+                                                                    </div>
+                                                                    <div class="panel-body">
+                                                                        <div class="tMon">
+                                                                            <table><tr><td colspan="6">Flight Details</td></tr>
+                                                                            <tr><td>weight</td><td>oat/sat</td><td>ias</td><td>tas</td><td>mach</td><td>fl</td></tr>
+                                                                            <tr><td class="bord">22750</td><td class="bord">-20</td><td class="bord">264</td><td class="bord">444</td><td class="bord">M.75</td><td class="bord">FL330</td></tr>
+                                                                        </table>
+                                                                        <table><tr><td colspan="6">Fuel Flow</td></tr>
+                                                                        <tr><td>l</td><td>r</td></tr>
+                                                                        <tr><td class="bord">880</td><td class="bord">880</td></tr>
+                                                                    </table>
+                                                                    <table><tr><td colspan="6">N1</td></tr>
+                                                                    <tr><td>l</td><td>r</td></tr>
+                                                                    <tr><td class="bord">92.9</td><td class="bord">93.0</td></tr>
+                                                                </table>
+                                                                <table><tr><td colspan="6">N2</td></tr>
+                                                                <tr><td>l</td><td>r</td></tr>
+                                                                <tr><td class="bord">94.7</td><td class="bord">94.2</td></tr>
+                                                            </table>
+                                                            <table><tr><td colspan="6">ITT</td></tr>
+                                                            <tr><td>l</td><td>r</td></tr>
+                                                            <tr><td class="bord">860</td><td class="bord">848</td></tr>
+                                                        </table>
+                                                        <table><tr><td colspan="6">Oil Pres.</td></tr>
+                                                        <tr><td>l</td><td>r</td></tr>
+                                                        <tr><td class="bord">43</td><td class="bord">46</td></tr>
+                                                    </table>
+                                                    <table><tr><td colspan="6">Oil Temp.</td></tr>
+                                                    <tr><td>l</td><td>r</td></tr>
+                                                    <tr><td class="bord">77</td><td class="bord">79</td></tr>
+                                                </table>
+                                                <table><tr><td colspan="6">amps</td></tr>
+                                                <tr><td>l</td><td>r</td></tr>
+                                                <tr><td class="bord">80</td><td class="bord">80</td></tr>
+                                            </table>
+                                            <table><tr><td colspan="6">Fuel Temp.</td></tr>
+                                            <tr><td class="bord" rowspan="2">20</td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div><!--End Maintenance-->
+                        
+                        <!--Begin Summary-->
+                        <div class="row" id="vSumm">
+                        <input type="hidden" id="activSumm" value="notActive">
+                            <div class="pTop" style="padding-left:auto; padding-right:auto; margin-left: auto; margin-right: auto">
+                                <table id="sumTit">
+                                    
+                                </table>
+                            </div>
+                            <div class="panel" style="margin-top:10px;">
+                                <div class="panel-heading"><div class="panel-title">CREW</div></div>
+                                <div class="panel-body">
+                                    <table id="crewSumTbl">
+                                        <tr id="crewlist">
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="panel-heading"><div class="panel-title">SECTOR DETAILS</div></div>
+                                <div class="panel-body" id="sumSecDiv">
+                                    <b id="msg">No Sectors Recorded</b>
+                                    <table id="sumSecD">
+                                        <thead>
+                                            <tr>
+                                                <td colspan='10'></td>
+                                                <td colspan='2'>engine hours</td>
+                                                <td colspan='2'>engine cycles</td>
+                                                <td colspan='5'></td>
+                                            </tr>
+                                            <tr>
+                                                <td>ID</td>
+                                                <td>from</td>
+                                                <td>to</td>
+                                                <td>dist(nm)</td>
+                                                <td>pic</td>
+                                                <td>sic</td>
+                                                <td>h c&#47;a</td>
+                                                <td>block time</td>
+                                                <td>flight time</td>
+                                                <td>airframe</td>
+                                                <td>&#35;1</td>
+                                                <td>&#35;2</td>
+                                                <td>&#35;1</td>
+                                                <td>&#35;2</td>
+                                                <td>lnds</td>
+                                                <td>fuel</td>
+                                                <td>pax</td>
+                                                <td>nature</td>
+                                                <td>client</td>
+                                            </tr>
+                                        </thead>
+                                    <tbody id="sectordetails"></tbody>
+                                    <tfoot></tfoot>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-heading"><div class="panel-title">DEFECTS</div></div>
+                            <div class="panel-body">
+                                <table id="sumDef">
+                                    <thead class="trUnd">
+                                        <tr><td>pilot entry</td><td>action taken</td><td>date</td><td>engineer</td><td>days remaining</td></tr>
+                                    </thead> 
+                                    <tbody class="_trUnd"> 
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="multiP">
+                            <div class="panel" style="width:40%">
+                                <div class="panel-heading">
+                                    <div class="panel-title">PRE FLIGHT</div></div>
+                                    <div class="panel-body">
+                                        <table>
+                                            <tr class="trUnd"><td>engineer pre flight</td><td>pilots acceptance</td></tr>
+                                            <tr><td>name&#58;&nbsp;<span class="pfEng">M. Mason</span></td><td>name&#58;&nbsp;<span class="pfPil">R. Martin</span></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="panel" style="width:40%">
+                                    <div class="panel-heading"><div class="panel-title">POST FLIGHT</div></div>
+                                    <div class="panel-body">
+                                        <table>
+                                            <tr class="trUnd"><td>pilots approval</td><td>engineer sign in</td></tr>
+                                            <tr><td>name&#58;&nbsp;<span class="pfEng">R. Martin</span></td><td>name&#58;&nbsp;<span class="pfPil">nil</span></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            <button id="subAir" class="btn btn-gradient">SUBMIT AIR</button></div>
+                            
+                            <div class="progress progress-striped active" style="display:none">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%"> <span class="sr-only"></span> </div>
+                            </div>
+                            
+                            <div id="dClaim">By submitting the above AIR it will be taken that the information is correct and true and complies with all requirements prescribed in the Civil Aviation Regulations 1997.</div>
+                            
+                            </div><!--End Summary-->
+                            <!--Begin FlightDuty-->
+                            <div class="row" id="vFdut">
+                                <div class="panel">
+                                </div>
+                            </div>
+                            <!--End FlightDuty-->
+                        </section>
+                        <!-- End: Content<div id="plWait"></div> --> <div class="modal-backdrop in" style="display:none;"></div>
+                    </div></div>
+                    <!-- End: Main -->
+                    <script src="assets/ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                    <script src="assets/ajax.googleapis.com/ajax/libs/jqueryui/jquery-ui.min.js"></script>
+                    <script src="assets/netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+                    <!-- Plugins -->
+                    <script type="text/javascript" src="vendor/plugins/jquerymask/jquery.maskedinput.min.js"></script>
+                    <script type="text/javascript" src="vendor/plugins/daterange/moment.min.js"></script><!-- Datatable Bootstrap Addon -->
+                     
+                     <!-- Theme 
+                    <script type="text/javascript" src="js/twitAuto.js"></script>
+                    <script type="text/javascript" src="js/jqx.js"></script>
+                    Javascript-->
+					<script type="text/javascript" src="js/offline.min.js"></script>
+                    <script type="text/javascript" src="js/complete.js"></script>
+                    <script type="text/javascript" src="js/airops.js"></script>
+                    <script type="text/javascript" src="js/getCam.js"></script>
+                    <script type="text/javascript" src="js/custom.js"></script>
+                    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+                    <script type="text/javascript" src="SQLitePlugin.js"></script>
+                    
+                    <script type="text/javascript" src="js/main.js"></script>
+                 </body>
+            </html>

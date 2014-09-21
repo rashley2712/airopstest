@@ -1,0 +1,877 @@
+[02-Jul-2014 15:35:50 Africa/Lagos] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host '5.10.68.187:3306' (25) in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 20
+[02-Jul-2014 15:35:50 Africa/Lagos] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 66
+[02-Jul-2014 15:35:55 Africa/Lagos] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host '5.10.68.187:3306' (25) in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 20
+[02-Jul-2014 15:35:55 Africa/Lagos] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 66
+[02-Jul-2014 15:35:59 Africa/Lagos] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host '5.10.68.187:3306' (25) in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 20
+[02-Jul-2014 15:35:59 Africa/Lagos] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 66
+[02-Jul-2014 16:46:23 Africa/Lagos] PHP Warning:  [UPDATE aircraft SET airframe_hrs=airframe_hrs+NaN, 
+		engine1_hours=engine1_hours+NaN, 
+		engine2_hours=engine2_hours+NaN,
+		engine1_cycles=engine1_cycles+NaN, 
+		engine2_cycles=engine2_cycles+NaN,
+		updated_at = '2014-07-02 16:07:23' WHERE aircraftid = 2]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[02-Jul-2014 16:51:30 Africa/Lagos] PHP Warning:  [UPDATE aircraft SET airframe_hrs=airframe_hrs+NaN, 
+		engine1_hours=engine1_hours+NaN, 
+		engine2_hours=engine2_hours+NaN,
+		engine1_cycles=engine1_cycles+NaN, 
+		engine2_cycles=engine2_cycles+NaN,
+		updated_at = '2014-07-02 16:07:30' WHERE aircraftid = 2]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[02-Jul-2014 16:52:22 Africa/Lagos] PHP Warning:  [UPDATE aircraft SET airframe_hrs=airframe_hrs+NaN, 
+		engine1_hours=engine1_hours+NaN, 
+		engine2_hours=engine2_hours+NaN,
+		engine1_cycles=engine1_cycles+NaN, 
+		engine2_cycles=engine2_cycles+NaN,
+		updated_at = '2014-07-02 16:07:22' WHERE aircraftid = 2]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[02-Jul-2014 19:03:13 Africa/Lagos] PHP Warning:  [UPDATE aircraft SET airframe_hrs=airframe_hrs+NaN, 
+		engine1_hours=engine1_hours+NaN, 
+		engine2_hours=engine2_hours+NaN,
+		engine1_cycles=engine1_cycles+NaN, 
+		engine2_cycles=engine2_cycles+NaN,
+		updated_at = '2014-07-02 19:07:13' WHERE aircraftid = 2]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[03-Jul-2014 14:46:28 Africa/Lagos] PHP Warning:  [select a.airframe_hrs, a.engine1_hours, a.engine2_hours, 
+	a.engine1_cycles, a.engine2_cycles, a.landings, s.* 
+	from aircraft a inner join sector s on a.aircraftid = s.aircraftid
+	where a.aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[03-Jul-2014 14:46:28 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/loadSummary.php on line 63
+[03-Jul-2014 14:46:28 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[03-Jul-2014 14:46:28 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[03-Jul-2014 15:01:25 Africa/Lagos] PHP Warning:  [select a.airframe_hrs, a.engine1_hours, a.engine2_hours, 
+	a.engine1_cycles, a.engine2_cycles, a.landings, s.* 
+	from aircraft a inner join sector s on a.aircraftid = s.aircraftid
+	where a.aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[03-Jul-2014 15:01:25 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/loadSummary.php on line 63
+[03-Jul-2014 15:01:25 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[03-Jul-2014 15:01:25 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[03-Jul-2014 15:03:32 Africa/Lagos] PHP Warning:  [select a.airframe_hrs, a.engine1_hours, a.engine2_hours, 
+	a.engine1_cycles, a.engine2_cycles, a.landings, s.* 
+	from aircraft a inner join sector s on a.aircraftid = s.aircraftid
+	where a.aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[03-Jul-2014 15:03:32 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/loadSummary.php on line 63
+[03-Jul-2014 15:03:32 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[03-Jul-2014 15:03:32 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[03-Jul-2014 15:04:02 Africa/Lagos] PHP Warning:  [select a.airframe_hrs, a.engine1_hours, a.engine2_hours, 
+	a.engine1_cycles, a.engine2_cycles, a.landings, s.* 
+	from aircraft a inner join sector s on a.aircraftid = s.aircraftid
+	where a.aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[03-Jul-2014 15:04:02 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/loadSummary.php on line 63
+[03-Jul-2014 15:08:45 Africa/Lagos] PHP Warning:  [select a.airframe_hrs, a.engine1_hours, a.engine2_hours, 
+	a.engine1_cycles, a.engine2_cycles, a.landings, s.* 
+	from aircraft a inner join sector s on a.aircraftid = s.aircraftid
+	where a.aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[03-Jul-2014 15:08:45 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/loadSummary.php on line 63
+[03-Jul-2014 15:08:45 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[03-Jul-2014 15:08:45 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[03-Jul-2014 15:30:20 Africa/Lagos] PHP Warning:  [select a.airframe_hrs, a.engine1_hours, a.engine2_hours, 
+	a.engine1_cycles, a.engine2_cycles, a.landings, s.* 
+	from aircraft a inner join sector s on a.aircraftid = s.aircraftid
+	where a.aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[03-Jul-2014 15:30:20 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/loadSummary.php on line 63
+[03-Jul-2014 15:30:20 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[03-Jul-2014 15:30:20 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[03-Jul-2014 15:30:46 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[03-Jul-2014 15:30:46 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[03-Jul-2014 15:30:46 Africa/Lagos] PHP Warning:  [select a.airframe_hrs, a.engine1_hours, a.engine2_hours, 
+	a.engine1_cycles, a.engine2_cycles, a.landings, s.* 
+	from aircraft a inner join sector s on a.aircraftid = s.aircraftid
+	where a.aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[03-Jul-2014 15:30:46 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/loadSummary.php on line 63
+[03-Jul-2014 15:33:09 Africa/Lagos] PHP Warning:  [select a.airframe_hrs, a.engine1_hours, a.engine2_hours, 
+	a.engine1_cycles, a.engine2_cycles, a.landings, s.* 
+	from aircraft a inner join sector s on a.aircraftid = s.aircraftid
+	where a.aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[03-Jul-2014 15:33:09 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/loadSummary.php on line 63
+[03-Jul-2014 15:33:09 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[03-Jul-2014 15:33:09 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[03-Jul-2014 15:33:39 Africa/Lagos] PHP Warning:  [select a.airframe_hrs, a.engine1_hours, a.engine2_hours, 
+	a.engine1_cycles, a.engine2_cycles, a.landings, s.* 
+	from aircraft a inner join sector s on a.aircraftid = s.aircraftid
+	where a.aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[03-Jul-2014 15:33:39 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/loadSummary.php on line 63
+[03-Jul-2014 15:33:39 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[03-Jul-2014 15:33:39 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[03-Jul-2014 16:21:50 Africa/Lagos] PHP Warning:  [select a.airframe_hrs, a.engine1_hours, a.engine2_hours, 
+	a.engine1_cycles, a.engine2_cycles, a.landings, s.* 
+	from aircraft a inner join sector s on a.aircraftid = s.aircraftid
+	where a.aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[03-Jul-2014 16:21:50 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/loadSummary.php on line 63
+[03-Jul-2014 16:21:50 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[03-Jul-2014 16:21:50 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[03-Jul-2014 20:34:47 Africa/Lagos] PHP Warning:  [UPDATE aircraft SET airframe_hrs=airframe_hrs+, 
+		engine1_hours=engine1_hours+, 
+		engine2_hours=engine2_hours+,
+		engine1_cycles=engine1_cycles+, 
+		engine2_cycles=engine2_cycles+,
+		updated_at = '2014-07-03 20:07:47' WHERE aircraftid = 2]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[15-Jul-2014 15:37:52 Africa/Lagos] PHP Warning:  [UPDATE aircraft SET airframe_hrs=airframe_hrs+, 
+		engine1_hours=engine1_hours+, 
+		engine2_hours=engine2_hours+,
+		engine1_cycles=engine1_cycles+, 
+		engine2_cycles=engine2_cycles+,
+		updated_at = '2014-07-15 15:07:52' WHERE aircraftid = 2]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[17-Jul-2014 00:01:59 Africa/Lagos] PHP Warning:  [INSERT into `login` (`username`,`password_used`,`reason`,`usertype`) VALUES (`admin`,`admin`,`Pre-Flight`,`Pilot`)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[17-Jul-2014 00:06:14 Africa/Lagos] PHP Warning:  [INSERT into `login` (`username`,`usertype`,`reason`) VALUES (`admin`,`Pilot``Pre-Flight`,)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[17-Jul-2014 00:11:29 Africa/Lagos] PHP Warning:  [INSERT into `login` (`username`,`usertype`,`reason`) VALUES (`admin`,`Pilot`,`Pre-Flight`)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[17-Jul-2014 00:15:46 Africa/Lagos] PHP Warning:  [INSERT into `login` (`username`,`password`,`usertype`,`reason`) VALUES (`admin`,`admin`,`Pilot`,`Pre-Flight`)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[17-Jul-2014 00:17:31 Africa/Lagos] PHP Warning:  [INSERT into `login` (`username`,`password`,`usertype`,`reason`) VALUES (`admin`,`admin`,`Pilot`,`Pre-Flight`)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[17-Jul-2014 00:21:02 Africa/Lagos] PHP Warning:  [INSERT into `login` (`username`,`password_used`,`usertype`,`reason`) VALUES (`admin`,`admin`,`Pilot`,`Pre-Flight`)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[17-Jul-2014 00:22:21 Africa/Lagos] PHP Warning:  [INSERT into `login` (`username`,`password_used`,`usertype`,`reason`) VALUES (`admin`,`admin`,`Pilot`,`Pre-Flight`)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[17-Jul-2014 04:09:42 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[17-Jul-2014 04:09:42 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[17-Jul-2014 09:59:29 Africa/Lagos] PHP Warning:  [UPDATE aircraft SET airframe_hrs=airframe_hrs+, 
+		engine1_hours=engine1_hours+, 
+		engine2_hours=engine2_hours+,
+		engine1_cycles=engine1_cycles+, 
+		engine2_cycles=engine2_cycles+,
+		updated_at = '2014-07-17 09:07:29' WHERE aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[17-Jul-2014 19:16:29 Africa/Lagos] PHP Warning:  [UPDATE aircraft SET airframe_hrs=airframe_hrs+, 
+		engine1_hours=engine1_hours+, 
+		engine2_hours=engine2_hours+,
+		engine1_cycles=engine1_cycles+, 
+		engine2_cycles=engine2_cycles+,
+		updated_at = '2014-07-17 19:07:29' WHERE aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[18-Jul-2014 04:26:50 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[18-Jul-2014 04:26:50 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[18-Jul-2014 11:01:42 Africa/Lagos] PHP Warning:  [select a.airframe_hrs, a.engine1_hours, a.engine2_hours, 
+	a.engine1_cycles, a.engine2_cycles, a.landings, s.* 
+	from aircraft a inner join sector s on a.aircraftid = s.aircraftid
+	where a.aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[18-Jul-2014 11:01:42 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/loadSummary.php on line 63
+[18-Jul-2014 12:20:22 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 12:20:22 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 12:20:22 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 12:20:23 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 12:20:23 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 12:20:23 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 12:20:36 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 12:20:36 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 12:20:36 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 12:22:04 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 12:22:04 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 12:22:04 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 12:34:12 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 12:34:12 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 12:34:12 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 13:55:54 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 13:55:54 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 13:55:54 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 13:56:06 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 13:56:06 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 13:56:06 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 14:00:30 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 14:00:30 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 14:00:30 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 14:14:20 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 14:14:20 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 14:14:20 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 14:18:37 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 14:18:37 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 14:18:37 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 14:25:52 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 14:25:52 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 14:25:52 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 14:27:10 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 14:27:10 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 14:27:10 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 14:38:34 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 14:38:34 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 14:38:34 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 14:39:07 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 14:39:07 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 14:39:07 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 14:40:19 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 14:40:19 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 14:40:19 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 14:42:38 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 14:42:38 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 14:42:38 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 14:42:40 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 14:42:40 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 14:42:40 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 14:45:25 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 14:45:25 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 14:45:25 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 14:46:11 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 14:46:11 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 14:46:11 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 14:48:06 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 14:48:06 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 14:48:06 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 15:38:20 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 15:38:20 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 15:38:20 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 17:02:51 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 17:02:51 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 17:02:51 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 17:07:01 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 17:07:01 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 17:07:01 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 17:09:23 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 17:09:23 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 17:09:23 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 17:10:17 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 17:10:17 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 17:10:17 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 17:20:45 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 17:20:45 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 17:20:45 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 17:23:25 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 17:23:25 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 17:23:25 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 17:24:08 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 17:24:08 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 17:24:08 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 17:26:03 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 17:26:03 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 17:26:03 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 17:32:30 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 17:32:30 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 17:32:30 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 17:34:28 Africa/Lagos] PHP Warning:  [SELECT aircraftid, registration, type, serial, callsign, nextinspection, status, airframe_hrs, landings 
+      from aircraft where aircraftid =  LIMIT 1]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[18-Jul-2014 17:34:28 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getAircraft.php on line 19
+[18-Jul-2014 17:40:45 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 17:40:45 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 17:40:45 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 17:47:06 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 17:47:06 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 17:47:06 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 17:48:58 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 17:48:58 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 17:48:58 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 17:52:43 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 17:52:43 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 17:52:43 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 17:59:06 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 17:59:06 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 17:59:06 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 17:59:34 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 17:59:34 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 17:59:34 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 18:16:39 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 18:16:39 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 18:16:39 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 18:18:38 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 18:18:38 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 18:18:38 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 18:19:31 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 18:19:31 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 18:19:31 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 18:29:26 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 18:29:26 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 18:29:26 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 18:45:44 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 18:45:44 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 18:45:44 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 18:51:07 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[18-Jul-2014 18:51:07 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[18-Jul-2014 18:51:07 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[18-Jul-2014 22:14:48 Africa/Lagos] PHP Warning:  [SELECT * from document where entityid= ORDER BY `expires` ASC]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[18-Jul-2014 22:14:48 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/get_aircraftdocs.php on line 18
+[18-Jul-2014 22:56:06 Africa/Lagos] PHP Warning:  [SELECT aircraftid, registration, type, serial, callsign, nextinspection, status, airframe_hrs, landings 
+      from aircraft where aircraftid =  LIMIT 1]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[18-Jul-2014 22:56:06 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getAircraft.php on line 19
+[19-Jul-2014 09:14:08 Africa/Lagos] PHP Warning:  [SELECT aircraftid, registration, type, serial, callsign, nextinspection, status, airframe_hrs, landings 
+      from aircraft where aircraftid =  LIMIT 1]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[19-Jul-2014 09:14:08 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getAircraft.php on line 19
+[19-Jul-2014 09:46:34 Africa/Lagos] PHP Warning:  [SELECT * from document where entityid= ORDER BY `expires` ASC]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[19-Jul-2014 09:46:34 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/get_aircraftdocs.php on line 18
+[19-Jul-2014 09:54:34 Africa/Lagos] PHP Warning:  [SELECT nextinspection, status, airframe_hrs, landings, engine1_cycles, 
+      engine1_hours, engine2_cycles, engine2_hours, apu_hours 
+      from aircraft where aircraftid=]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[19-Jul-2014 09:54:34 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/get_aircraftstats.php on line 20
+[19-Jul-2014 19:51:09 Africa/Lagos] PHP Warning:  [SELECT * from document where entityid= ORDER BY `expires` ASC]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[19-Jul-2014 19:51:09 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/get_aircraftdocs.php on line 18
+[19-Jul-2014 20:35:34 Africa/Lagos] PHP Warning:  [SELECT nextinspection, status, airframe_hrs, landings, engine1_cycles, 
+      engine1_hours, engine2_cycles, engine2_hours, apu_hours 
+      from aircraft where aircraftid=]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[19-Jul-2014 20:35:34 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/get_aircraftstats.php on line 20
+[20-Jul-2014 01:46:10 Africa/Lagos] PHP Warning:  [SELECT nextinspection, status, airframe_hrs, landings, engine1_cycles, 
+      engine1_hours, engine2_cycles, engine2_hours, apu_hours 
+      from aircraft where aircraftid=]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[20-Jul-2014 01:46:10 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/get_aircraftstats.php on line 20
+[20-Jul-2014 11:32:01 Africa/Lagos] PHP Warning:  [SELECT aircraftid, registration, type, serial, callsign, nextinspection, status, airframe_hrs, landings 
+      from aircraft where aircraftid =  LIMIT 1]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[20-Jul-2014 11:32:01 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getAircraft.php on line 19
+[20-Jul-2014 15:21:43 Africa/Lagos] PHP Warning:  [SELECT nextinspection, status, airframe_hrs, landings, engine1_cycles, 
+      engine1_hours, engine2_cycles, engine2_hours, apu_hours 
+      from aircraft where aircraftid=]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[20-Jul-2014 15:21:43 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/get_aircraftstats.php on line 20
+[22-Jul-2014 10:05:53 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 10:05:53 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 10:05:53 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 10:30:18 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 10:30:18 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 10:30:18 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 11:03:12 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 11:03:12 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 11:03:12 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 13:28:26 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 13:28:26 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 13:28:26 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 14:25:09 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 14:25:09 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 14:25:09 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 14:25:09 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 14:25:09 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 14:25:09 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 14:25:10 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 14:25:10 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 14:25:10 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 14:26:24 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 14:26:24 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 14:26:24 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 14:28:29 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 14:28:29 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 14:28:29 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 14:29:45 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 14:29:45 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 14:29:45 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 14:29:59 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 14:29:59 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 14:29:59 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 14:30:01 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 14:30:01 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 14:30:01 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 14:30:04 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 14:30:04 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 14:30:04 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 14:30:04 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 14:30:04 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 14:30:04 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 14:30:04 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 14:30:04 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 14:30:04 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 14:30:04 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 14:30:04 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 14:30:04 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 14:30:04 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 14:30:04 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 14:30:04 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 16:28:43 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 16:28:43 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 16:28:43 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 16:39:34 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 16:39:34 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 16:39:34 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 16:50:40 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 16:50:40 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 16:50:40 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 17:36:02 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 17:36:02 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 17:36:02 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 17:58:39 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 17:58:39 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 17:58:39 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 17:58:59 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 17:58:59 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 17:58:59 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 17:59:33 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 17:59:33 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 17:59:33 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 17:59:55 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 17:59:55 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 17:59:55 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 18:00:20 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 18:00:20 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 18:00:20 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 18:00:52 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 18:00:52 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 18:00:52 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 18:01:09 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 18:01:09 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 18:01:09 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 18:01:18 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 18:01:18 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 18:01:18 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[22-Jul-2014 23:55:04 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[22-Jul-2014 23:55:04 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[22-Jul-2014 23:55:04 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[23-Jul-2014 18:42:24 Africa/Lagos] PHP Warning:  fopen(): Filename cannot be empty in /home/tbcmainl/public_html/airops/conn/login_events.php on line 13
+[23-Jul-2014 18:42:24 Africa/Lagos] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 14
+[23-Jul-2014 18:42:24 Africa/Lagos] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/login_events.php on line 16
+[28-Jul-2014 00:08:38 Africa/Lagos] PHP Warning:  [INSERT into `fuel` (`fuelcompany`,`invoiceno`,`fueling_location`,`receipt_img`,`loaded_gal`,`loaded_lit`,`comments`) VALUES ('Mobil Producing','12e809j','Ekiti','fuelPics/53d58619c3730.png','105.67','400.00','The guy said stuff and stuff was said and that's all')]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[29-Jul-2014 12:12:37 Africa/Lagos] PHP Warning:  file_put_contents(/fuelPics/53d781a568681.png): failed to open stream: No such file or directory in /home/tbcmainl/public_html/airops/conn/imgUpF.php on line 10
+[29-Jul-2014 12:14:25 Africa/Lagos] PHP Warning:  file_put_contents({$userN}/fuelPics/53d7821158308.png): failed to open stream: No such file or directory in /home/tbcmainl/public_html/airops/conn/imgUpF.php on line 10
+[29-Jul-2014 12:16:44 Africa/Lagos] PHP Warning:  file_put_contents({$userN}/fuelPics/53d7829c84e03.png): failed to open stream: No such file or directory in /home/tbcmainl/public_html/airops/conn/imgUpF.php on line 11
+[29-Jul-2014 12:17:34 Africa/Lagos] PHP Warning:  file_put_contents(fuelPics/{$userN}/53d782ce05792.png): failed to open stream: No such file or directory in /home/tbcmainl/public_html/airops/conn/imgUpF.php on line 11
+[29-Jul-2014 12:18:38 Africa/Lagos] PHP Warning:  file_put_contents(fuelPics/{$userN}/53d7830ed14f8.png): failed to open stream: No such file or directory in /home/tbcmainl/public_html/airops/conn/imgUpF.php on line 11
+[29-Jul-2014 12:19:08 Africa/Lagos] PHP Warning:  file_put_contents(fuelPics/{$userN}/53d7832c90fbc.png): failed to open stream: No such file or directory in /home/tbcmainl/public_html/airops/conn/imgUpF.php on line 11
+[29-Jul-2014 12:20:14 Africa/Lagos] PHP Warning:  file_put_contents(fuelPics/{$userN}/53d7836eab216.png): failed to open stream: No such file or directory in /home/tbcmainl/public_html/airops/conn/imgUpF.php on line 11
+[29-Jul-2014 12:20:33 Africa/Lagos] PHP Warning:  file_put_contents(fuelPics/{$userN}/53d7838168e71.png): failed to open stream: No such file or directory in /home/tbcmainl/public_html/airops/conn/imgUpF.php on line 11
+[29-Jul-2014 12:21:49 Africa/Lagos] PHP Warning:  file_put_contents(fuelPics/{$userN}/53d783cd81189.png): failed to open stream: No such file or directory in /home/tbcmainl/public_html/airops/conn/imgUpF.php on line 11
+[29-Jul-2014 12:22:23 Africa/Lagos] PHP Warning:  file_put_contents(fuelPics/{$userN}/53d783ef42616.png): failed to open stream: No such file or directory in /home/tbcmainl/public_html/airops/conn/imgUpF.php on line 11
+[29-Jul-2014 12:23:17 Africa/Lagos] PHP Warning:  file_put_contents(fuelPics/{$userN}/53d78425f3e42.png): failed to open stream: No such file or directory in /home/tbcmainl/public_html/airops/conn/imgUpF.php on line 11
+[29-Jul-2014 12:25:02 Africa/Lagos] PHP Warning:  file_put_contents(fuelPics/{$userN}/53d7848eb4dcd.png): failed to open stream: No such file or directory in /home/tbcmainl/public_html/airops/conn/imgUpF.php on line 11
+[29-Jul-2014 14:40:19 Africa/Lagos] PHP Warning:  file_put_contents(/loginPics/53d7a44384405.png): failed to open stream: No such file or directory in /home/tbcmainl/public_html/airops/conn/imgUp.php on line 10
+[29-Jul-2014 14:41:55 Africa/Lagos] PHP Warning:  file_put_contents(/loginPics/53d7a4a34f5f4.png): failed to open stream: No such file or directory in /home/tbcmainl/public_html/airops/conn/imgUp.php on line 10
+[29-Jul-2014 17:04:04 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[29-Jul-2014 17:04:04 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[29-Jul-2014 18:04:05 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[29-Jul-2014 18:04:05 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[29-Jul-2014 19:57:16 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[29-Jul-2014 19:57:16 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[29-Jul-2014 19:57:23 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[29-Jul-2014 19:57:23 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[29-Jul-2014 23:06:52 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[29-Jul-2014 23:06:52 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[30-Jul-2014 00:29:53 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 00:29:53 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[30-Jul-2014 01:23:42 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 01:23:42 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[30-Jul-2014 01:25:43 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 01:25:43 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[30-Jul-2014 03:20:06 Africa/Lagos] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/tbcmainl/public_html/airops/conn/defects.php on line 15
+[30-Jul-2014 03:22:06 Africa/Lagos] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/tbcmainl/public_html/airops/conn/defects.php on line 15
+[30-Jul-2014 03:24:51 Africa/Lagos] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/tbcmainl/public_html/airops/conn/defects.php on line 15
+[30-Jul-2014 03:25:52 Africa/Lagos] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/tbcmainl/public_html/airops/conn/defects.php on line 15
+[30-Jul-2014 03:30:14 Africa/Lagos] PHP Fatal error:  Call to undefined function push() in /home/tbcmainl/public_html/airops/conn/defects.php on line 18
+[30-Jul-2014 06:03:26 Africa/Lagos] PHP Parse error:  syntax error, unexpected ':' in /home/tbcmainl/public_html/airops/conn/defects.php on line 20
+[30-Jul-2014 06:05:01 Africa/Lagos] PHP Parse error:  syntax error, unexpected ':' in /home/tbcmainl/public_html/airops/conn/defects.php on line 20
+[30-Jul-2014 06:13:53 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 06:13:53 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[30-Jul-2014 11:38:59 Africa/Lagos] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/tbcmainl/public_html/airops/conn/defects.php on line 32
+[30-Jul-2014 11:47:02 Africa/Lagos] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/tbcmainl/public_html/airops/conn/defects.php on line 32
+[30-Jul-2014 11:47:02 Africa/Lagos] PHP Warning:  [INSERT INTO defects('aircraftid','defect','actiontaken','engineer','logged','daysleft','deffered','status','created_at','updated_at') 
+		VALUES(2,'','','','',,0 ,0 ,'','')]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 11:52:00 Africa/Lagos] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/tbcmainl/public_html/airops/conn/defects.php on line 32
+[30-Jul-2014 11:52:00 Africa/Lagos] PHP Warning:  [INSERT INTO defects('aircraftid','defect','actiontaken','engineer','logged','daysleft','deffered','status','created_at','updated_at') 
+		VALUES(2,'','','','',,0 ,0 ,'','')]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 11:59:51 Africa/Lagos] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/tbcmainl/public_html/airops/conn/defects.php on line 32
+[30-Jul-2014 12:09:25 Africa/Lagos] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/tbcmainl/public_html/airops/conn/defects.php on line 32
+[30-Jul-2014 12:09:25 Africa/Lagos] PHP Warning:  [INSERT INTO `defects`(`aircraftid`, `defect`, `actiontaken`, `engineer`, `logged`, `daysleft`, `deffered`, `status`, `created_at`, `updated_at`)
+		 VALUES(2,``,``,``,``,,0 ,0 ,``,``)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 12:13:29 Africa/Lagos] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/tbcmainl/public_html/airops/conn/defects.php on line 32
+[30-Jul-2014 12:13:29 Africa/Lagos] PHP Warning:  [INSERT INTO `defects`(`aircraftid`, `defect`, `actiontaken`, `engineer`, `logged`, `daysleft`, `deffered`, `status`, `created_at`, `updated_at`)
+		 VALUES(2,``,``,``,``,,0 ,0 ,``,``)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 12:22:13 Africa/Lagos] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/tbcmainl/public_html/airops/conn/defects.php on line 32
+[30-Jul-2014 12:22:13 Africa/Lagos] PHP Warning:  [INSERT INTO `defects`(`aircraftid`, `defect`, `actiontaken`, `engineer`, `logged`, `daysleft`, `deffered`, `status`, `created_at`, `updated_at`)
+		 VALUES(2,``,``,``,``,,0 ,0 ,``,``)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 12:36:39 Africa/Lagos] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/tbcmainl/public_html/airops/conn/defects.php on line 32
+[30-Jul-2014 12:36:39 Africa/Lagos] PHP Warning:  [INSERT INTO `defects`(`aircraftid`, `defect`, `actiontaken`, `engineer`, `logged`, `daysleft`, `deffered`, `status`, `created_at`, `updated_at`)
+		 VALUES(,`Broken toilet`,`None taken`,``,`2010-02-02`,4,0 ,0 ,``,``)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 12:38:36 Africa/Lagos] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/tbcmainl/public_html/airops/conn/defects.php on line 32
+[30-Jul-2014 12:38:36 Africa/Lagos] PHP Warning:  [INSERT INTO `defects`(`aircraftid`, `defect`, `actiontaken`, `engineer`, `logged`, `daysleft`, `deffered`, `status`, `created_at`, `updated_at`)
+		 VALUES(,`No hot air hostesses`,`Sacked all of them`,``,`2014-02-02`,8,0 ,0 ,``,``)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 12:43:26 Africa/Lagos] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/tbcmainl/public_html/airops/conn/defects.php on line 32
+[30-Jul-2014 12:43:26 Africa/Lagos] PHP Warning:  [INSERT INTO `defects`(`aircraftid`, `defect`, `actiontaken`, `engineer`, `logged`, `daysleft`, `deffered`, `status`, `created_at`, `updated_at`)
+		 VALUES(,`Ugly air hostesses, scared passengers`,`noneclos`,``,`2014-02-02`,4,0 ,0 ,``,``)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 12:46:43 Africa/Lagos] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/tbcmainl/public_html/airops/conn/defects.php on line 32
+[30-Jul-2014 12:46:43 Africa/Lagos] PHP Warning:  [INSERT INTO `defects`(`aircraftid`, `defect`, `actiontaken`, `engineer`, `logged`, `daysleft`, `deffered`, `status`, `created_at`, `updated_at`)
+		 VALUES(2,`Swagger jacking`,`shots fired`,``,`2014-02-02`,7,0 ,0 ,``,``)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 12:56:49 Africa/Lagos] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/tbcmainl/public_html/airops/conn/defects.php on line 32
+[30-Jul-2014 12:56:49 Africa/Lagos] PHP Warning:  [INSERT INTO `defects`(`aircraftid`, `defect`, `actiontaken`, `engineer`, `logged`, `daysleft`, `deffered`, `status`, `created_at`, `updated_at`)
+		 VALUES(2,`Too many hateers`,`none`,``,`2014-03-02`,19,0 ,0 ,``,``)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 13:26:25 Africa/Lagos] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/tbcmainl/public_html/airops/conn/defects.php on line 32
+[30-Jul-2014 13:26:25 Africa/Lagos] PHP Warning:  [INSERT INTO `defects`(`aircraftid`, `defect`, `actiontaken`, `engineer`, `logged`, `daysleft`, `deffered`, `status`, `created_at`, `updated_at`)
+		 VALUES(2,`we are good to go`,`test`,``,`2012-02-02`,4,0 ,0 ,``,``)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 13:37:50 Africa/Lagos] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/tbcmainl/public_html/airops/conn/defects.php on line 32
+[30-Jul-2014 13:37:50 Africa/Lagos] PHP Warning:  [INSERT INTO `defects`(`aircraftid`, `defect`, `actiontaken`, `engineer`, `logged`, `daysleft`, `deffered`, `status`, `created_at`, `updated_at`)
+		 VALUES(2,`Junsns`,`none`,``,`2014-01-01`,8,0 ,0 ,``,``)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 13:56:37 Africa/Lagos] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/tbcmainl/public_html/airops/conn/defects.php on line 32
+[30-Jul-2014 13:56:37 Africa/Lagos] PHP Warning:  [INSERT INTO `defects`(`aircraftid`, `defect`, `actiontaken`, `engineer`, `logged`, `daysleft`, `deffered`, `status`, `created_at`, `updated_at`)
+		 VALUES(2,`Bad bitches`,`make it rain`,``,`2013-02-01`,8,0 ,0 ,``,``)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 13:57:43 Africa/Lagos] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/tbcmainl/public_html/airops/conn/defects.php on line 32
+[30-Jul-2014 13:57:43 Africa/Lagos] PHP Warning:  [INSERT INTO `defects`(`aircraftid`, `defect`, `actiontaken`, `engineer`, `logged`, `daysleft`, `deffered`, `status`, `created_at`, `updated_at`)
+		 VALUES(2,`Broken toilet seat`,`testing stuff that works`,``,`2013-01-01`,29,0 ,0 ,``,``)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 13:59:25 Africa/Lagos] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/tbcmainl/public_html/airops/conn/defects.php on line 32
+[30-Jul-2014 13:59:25 Africa/Lagos] PHP Warning:  [INSERT INTO `defects`(`aircraftid`, `defect`, `actiontaken`, `engineer`, `logged`, `daysleft`, `deffered`, `status`, `created_at`, `updated_at`)
+		 VALUES(3,`Broken rudder`,`None`,``,`2014-01-01`,3,0 ,0 ,``,``)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 14:03:31 Africa/Lagos] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/tbcmainl/public_html/airops/conn/defects.php on line 32
+[30-Jul-2014 14:03:31 Africa/Lagos] PHP Warning:  [INSERT INTO `defects`(`aircraftid`, `defect`, `actiontaken`, `engineer`, `logged`, `daysleft`, `deffered`, `status`, `created_at`, `updated_at`)
+		 VALUES(3,`Loading bay faluty`,`none`,``,`2014-02-11`,8,0 ,0 ,``,``)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 14:06:15 Africa/Lagos] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/tbcmainl/public_html/airops/conn/defects.php on line 32
+[30-Jul-2014 14:06:15 Africa/Lagos] PHP Warning:  [INSERT INTO `defects`(`aircraftid`, `defect`, `actiontaken`, `engineer`, `logged`, `daysleft`, `deffered`, `status`, `created_at`, `updated_at`)
+		 VALUES(3,`Empty wine rack`,`Testing stuff out`,``,`2014-02-02`,3,0 ,0 ,``,``)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 14:09:40 Africa/Lagos] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/tbcmainl/public_html/airops/conn/defects.php on line 32
+[30-Jul-2014 14:09:40 Africa/Lagos] PHP Warning:  [INSERT INTO `defects`(`aircraftid`, `defect`, `actiontaken`, `engineer`, `logged`, `daysleft`, `deffered`, `status`, `created_at`, `updated_at`)
+		 VALUES(`3`,`New wiTest`,`Test`,``,`2014-01-01`,`7`,`0` ,`0` ,``,``)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 14:11:30 Africa/Lagos] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/tbcmainl/public_html/airops/conn/defects.php on line 32
+[30-Jul-2014 14:11:30 Africa/Lagos] PHP Warning:  [INSERT INTO `defects`(`aircraftid`, `defect`, `actiontaken`, `engineer`, `logged`, `daysleft`, `deffered`, `status`, `created_at`, `updated_at`)
+		 VALUES(3,`arrrrr`,`yyyyyy`,``,`2014-01-01`,`3`,`0` ,`0` ,``,``)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 14:16:13 Africa/Lagos] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/tbcmainl/public_html/airops/conn/defects.php on line 32
+[30-Jul-2014 14:16:13 Africa/Lagos] PHP Warning:  [INSERT INTO `defects`(`aircraftid`, `defect`, `actiontaken`, `engineer`, `logged`, `daysleft`, `deffered`, `status`, `created_at`, `updated_at`)
+		 VALUES(3,`Indef`,`Indefintely`,``,`2013-01-01`,8,0,0,``,``)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 14:20:15 Africa/Lagos] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/tbcmainl/public_html/airops/conn/defects.php on line 32
+[30-Jul-2014 14:20:15 Africa/Lagos] PHP Warning:  [INSERT INTO `defects`(`aircraftid`, `defect`, `actiontaken`, `engineer`, `logged`, `daysleft`, `deffered`, `status`, `created_at`, `updated_at`)
+		 VALUES(3,`WEWE`,`dsd`,``,`2014-02-22`,3,0,0,``,``)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 14:27:49 Africa/Lagos] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/tbcmainl/public_html/airops/conn/defects.php on line 32
+[30-Jul-2014 14:27:49 Africa/Lagos] PHP Warning:  [INSERT INTO `defects`(`aircraftid`, `defect`, `actiontaken`, `engineer`, `logged`, `daysleft`, `deffered`, `status`, `created_at`, `updated_at`)
+		 VALUES(3,`wewe`,`wewe`,``,`2013-11-11`,4,0,0,``,``)]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 14:28:07 Africa/Lagos] PHP Warning:  [SELECT `c.displayname`, `d.*` FROM `document` `d` INNER JOIN `crew` `c` ON `d.entityid` = `c.crewid` WHERE `d.entityType` = `p`]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 14:28:59 Africa/Lagos] PHP Warning:  [SELECT `c.displayname`, `d.*` FROM `document` `d` INNER JOIN `crew` `c` ON `d.entityid` = `c.crewid` WHERE `d.entityType` = `p`]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 14:36:19 Africa/Lagos] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/tbcmainl/public_html/airops/conn/defects.php on line 32
+[30-Jul-2014 14:50:47 Africa/Lagos] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 15
+[30-Jul-2014 14:51:45 Africa/Lagos] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 15
+[30-Jul-2014 15:04:39 Africa/Lagos] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 15
+[30-Jul-2014 15:11:20 Africa/Lagos] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 17
+[30-Jul-2014 15:11:58 Africa/Lagos] PHP Fatal error:  Cannot use object of type mysqli_result as array in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 18
+[30-Jul-2014 15:12:57 Africa/Lagos] PHP Fatal error:  Cannot use object of type mysqli_result as array in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 18
+[30-Jul-2014 15:20:02 Africa/Lagos] PHP Warning:  [SELECT `c.displayname`, `d.*` FROM `document` `d` INNER JOIN `crew` `c` ON `d.entityid` = `c.crewid` WHERE `d.entityType` = `'p'`]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 15:20:02 Africa/Lagos] PHP Notice:  Undefined index:  in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 18
+[30-Jul-2014 15:20:02 Africa/Lagos] PHP Notice:  Undefined index:  in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 19
+[30-Jul-2014 15:20:02 Africa/Lagos] PHP Notice:  Undefined index:  in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 20
+[30-Jul-2014 15:20:33 Africa/Lagos] PHP Warning:  [SELECT `c.displayname`, `d.*` FROM `document` `d` INNER JOIN `crew` `c` ON `d.entityid` = `c.crewid` WHERE `d.entityType` = 'p']: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 15:20:33 Africa/Lagos] PHP Notice:  Undefined index:  in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 18
+[30-Jul-2014 15:20:33 Africa/Lagos] PHP Notice:  Undefined index:  in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 19
+[30-Jul-2014 15:20:33 Africa/Lagos] PHP Notice:  Undefined index:  in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 20
+[30-Jul-2014 15:21:44 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 15:21:44 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[30-Jul-2014 15:22:08 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 15:22:08 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[30-Jul-2014 15:22:13 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 15:22:13 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[30-Jul-2014 15:22:47 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 15:22:47 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[30-Jul-2014 15:30:01 Africa/Lagos] PHP Warning:  [SELECT `c.displayname`, `d.*` FROM `document` `d` INNER JOIN `crew` `c` ON `d.entityid` = `c.crewid` WHERE `d.entityType` = 'p']: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 15:30:01 Africa/Lagos] PHP Notice:  Undefined index:  in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 18
+[30-Jul-2014 15:30:01 Africa/Lagos] PHP Notice:  Undefined index:  in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 19
+[30-Jul-2014 15:30:01 Africa/Lagos] PHP Notice:  Undefined index:  in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 20
+[30-Jul-2014 15:31:49 Africa/Lagos] PHP Fatal error:  Cannot use object of type mysqli_result as array in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 18
+[30-Jul-2014 15:40:13 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[30-Jul-2014 15:40:13 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[30-Jul-2014 15:46:12 Africa/Lagos] PHP Notice:  Undefined index: Gia Visser in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 18
+[30-Jul-2014 15:46:12 Africa/Lagos] PHP Notice:  Undefined index: 2014-06-27 11:32:22 in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 19
+[30-Jul-2014 15:46:12 Africa/Lagos] PHP Fatal error:  Cannot use object of type mysqli_result as array in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 20
+[30-Jul-2014 15:48:36 Africa/Lagos] PHP Notice:  Undefined index: Gia Visser in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 18
+[30-Jul-2014 15:48:36 Africa/Lagos] PHP Notice:  Undefined index: 2014-06-27 11:32:22 in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 19
+[30-Jul-2014 15:48:36 Africa/Lagos] PHP Notice:  Undefined index: 2014-07-19 11:32:27 in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 20
+[30-Jul-2014 15:48:40 Africa/Lagos] PHP Notice:  Array to string conversion in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 18
+[30-Jul-2014 15:48:40 Africa/Lagos] PHP Notice:  Undefined index: .Array.['displayname'] in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 18
+[30-Jul-2014 15:48:40 Africa/Lagos] PHP Notice:  Array to string conversion in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 19
+[30-Jul-2014 15:48:40 Africa/Lagos] PHP Notice:  Undefined index: .Array.['dateissued'] in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 19
+[30-Jul-2014 15:48:40 Africa/Lagos] PHP Notice:  Array to string conversion in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 20
+[30-Jul-2014 15:48:40 Africa/Lagos] PHP Notice:  Undefined index: .Array.['expires'] in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 20
+[30-Jul-2014 15:54:46 Africa/Lagos] PHP Notice:  Undefined index: Gia Visser in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 21
+[30-Jul-2014 15:54:46 Africa/Lagos] PHP Notice:  Undefined index: 2014-06-27 11:32:22 in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 22
+[30-Jul-2014 15:54:46 Africa/Lagos] PHP Notice:  Undefined index: 2014-07-19 11:32:27 in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 23
+[30-Jul-2014 15:59:36 Africa/Lagos] PHP Notice:  Undefined index: Gia Visser in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 27
+[30-Jul-2014 15:59:36 Africa/Lagos] PHP Notice:  Undefined index: 2014-06-27 11:32:22 in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 28
+[30-Jul-2014 15:59:36 Africa/Lagos] PHP Notice:  Undefined index: 2014-07-19 11:32:27 in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 29
+[30-Jul-2014 16:30:55 Africa/Lagos] PHP Notice:  Undefined index: Gia Visser in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 27
+[30-Jul-2014 16:30:55 Africa/Lagos] PHP Notice:  Undefined index: 2014-06-27 11:32:22 in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 28
+[30-Jul-2014 16:30:55 Africa/Lagos] PHP Notice:  Undefined index: 2014-07-19 11:32:27 in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 29
+[30-Jul-2014 16:31:22 Africa/Lagos] PHP Notice:  Undefined index: Gia Visser in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 27
+[30-Jul-2014 16:31:22 Africa/Lagos] PHP Notice:  Undefined index: 2014-06-27 11:32:22 in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 28
+[30-Jul-2014 16:31:22 Africa/Lagos] PHP Notice:  Undefined index: 2014-07-19 11:32:27 in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 29
+[30-Jul-2014 16:42:09 Africa/Lagos] PHP Notice:  Undefined index: expires in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 21
+[31-Jul-2014 10:12:27 Africa/Lagos] PHP Notice:  Undefined index: expires in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 21
+[31-Jul-2014 10:31:11 Africa/Lagos] PHP Notice:  Undefined index: expires in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 21
+[31-Jul-2014 10:44:51 Africa/Lagos] PHP Notice:  Undefined index: expires in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 21
+[31-Jul-2014 11:25:03 Africa/Lagos] PHP Notice:  Undefined index: expires in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 21
+[31-Jul-2014 11:30:49 Africa/Lagos] PHP Notice:  Undefined index: expires in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 21
+[31-Jul-2014 11:31:02 Africa/Lagos] PHP Notice:  Undefined index: expires in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 21
+[31-Jul-2014 11:32:30 Africa/Lagos] PHP Notice:  Undefined index: expires in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 21
+[31-Jul-2014 11:32:45 Africa/Lagos] PHP Notice:  Undefined index: expires in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 21
+[31-Jul-2014 12:19:22 Africa/Lagos] PHP Notice:  Undefined index: expires in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 21
+[31-Jul-2014 12:28:36 Africa/Lagos] PHP Notice:  Undefined index: expires in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 21
+[31-Jul-2014 12:28:36 Africa/Lagos] PHP Warning:  mysqli_fetch_array(): Couldn't fetch mysqli_result in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 26
+[31-Jul-2014 12:30:21 Africa/Lagos] PHP Warning:  [SELECT c.displayname, d.* FROM document d INNER JOIN crew c ON d.entityid = c.crewid WHERE d.entityType = \'p\']: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[31-Jul-2014 12:35:15 Africa/Lagos] PHP Notice:  Undefined offset: 5 in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 21
+[31-Jul-2014 12:35:15 Africa/Lagos] PHP Notice:  Undefined offset: 6 in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 23
+[31-Jul-2014 12:35:15 Africa/Lagos] PHP Notice:  Undefined offset: 5 in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 21
+[31-Jul-2014 12:35:15 Africa/Lagos] PHP Notice:  Undefined offset: 6 in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 23
+[31-Jul-2014 12:36:34 Africa/Lagos] PHP Notice:  Undefined offset: 5 in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 21
+[31-Jul-2014 12:36:34 Africa/Lagos] PHP Notice:  Undefined offset: 6 in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 23
+[31-Jul-2014 12:36:34 Africa/Lagos] PHP Notice:  Undefined offset: 5 in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 21
+[31-Jul-2014 12:36:34 Africa/Lagos] PHP Notice:  Undefined offset: 6 in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 23
+[31-Jul-2014 12:37:07 Africa/Lagos] PHP Notice:  Array to string conversion in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 21
+[31-Jul-2014 12:37:20 Africa/Lagos] PHP Notice:  Array to string conversion in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 21
+[31-Jul-2014 16:23:42 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[31-Jul-2014 16:23:42 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[31-Jul-2014 16:24:41 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[31-Jul-2014 16:24:41 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[31-Jul-2014 18:56:10 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[31-Jul-2014 18:56:10 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[31-Jul-2014 19:07:02 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[31-Jul-2014 19:07:02 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[31-Jul-2014 20:35:45 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[31-Jul-2014 20:35:45 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[31-Jul-2014 20:35:47 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[31-Jul-2014 20:35:47 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[04-Aug-2014 12:12:13 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[04-Aug-2014 12:12:13 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[04-Aug-2014 12:27:05 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[04-Aug-2014 12:27:05 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[04-Aug-2014 12:29:13 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[04-Aug-2014 12:29:13 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[04-Aug-2014 12:45:59 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[04-Aug-2014 12:45:59 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[04-Aug-2014 12:46:42 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[04-Aug-2014 12:46:42 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[04-Aug-2014 15:25:54 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[04-Aug-2014 15:25:54 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[05-Aug-2014 13:57:25 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[05-Aug-2014 13:57:25 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[05-Aug-2014 14:31:16 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[05-Aug-2014 14:31:16 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[05-Aug-2014 17:31:43 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[05-Aug-2014 17:31:43 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[05-Aug-2014 17:31:52 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[05-Aug-2014 17:31:52 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[05-Aug-2014 17:33:28 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[05-Aug-2014 17:33:28 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[05-Aug-2014 17:33:50 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[05-Aug-2014 17:33:50 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[05-Aug-2014 17:55:21 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[05-Aug-2014 17:55:21 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[05-Aug-2014 18:21:18 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[05-Aug-2014 18:21:18 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[05-Aug-2014 19:10:01 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[05-Aug-2014 19:10:01 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[05-Aug-2014 19:29:23 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[05-Aug-2014 19:29:23 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[05-Aug-2014 19:36:24 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[05-Aug-2014 19:36:24 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[05-Aug-2014 19:36:28 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[05-Aug-2014 19:36:28 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[05-Aug-2014 19:37:07 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[05-Aug-2014 19:37:07 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[06-Aug-2014 11:40:51 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[06-Aug-2014 11:40:51 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[06-Aug-2014 11:40:54 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[06-Aug-2014 11:40:54 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[06-Aug-2014 11:40:57 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[06-Aug-2014 11:40:57 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[06-Aug-2014 11:40:58 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[06-Aug-2014 11:40:58 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[06-Aug-2014 11:41:04 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[06-Aug-2014 11:41:04 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[06-Aug-2014 11:41:08 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[06-Aug-2014 11:41:08 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[06-Aug-2014 13:33:17 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[06-Aug-2014 13:33:17 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[06-Aug-2014 13:33:18 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[06-Aug-2014 13:33:18 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[06-Aug-2014 13:35:58 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[06-Aug-2014 13:35:58 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[06-Aug-2014 13:36:58 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[06-Aug-2014 13:36:58 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[06-Aug-2014 13:45:29 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[06-Aug-2014 13:45:29 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[06-Aug-2014 13:45:47 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[06-Aug-2014 13:45:47 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[06-Aug-2014 13:47:55 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[06-Aug-2014 13:47:55 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[06-Aug-2014 13:50:30 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[06-Aug-2014 13:50:30 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[06-Aug-2014 14:20:20 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[06-Aug-2014 14:20:20 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[06-Aug-2014 14:41:05 Africa/Lagos] PHP Notice:  Undefined index: expired in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 38
+[06-Aug-2014 14:41:05 Africa/Lagos] PHP Notice:  Undefined variable: data in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 44
+[06-Aug-2014 14:41:42 Africa/Lagos] PHP Notice:  Undefined variable: data in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 44
+[06-Aug-2014 14:41:56 Africa/Lagos] PHP Notice:  Undefined variable: data in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 44
+[06-Aug-2014 14:42:47 Africa/Lagos] PHP Notice:  Undefined variable: data in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 44
+[06-Aug-2014 14:42:56 Africa/Lagos] PHP Notice:  Undefined variable: data in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 44
+[06-Aug-2014 14:42:58 Africa/Lagos] PHP Notice:  Undefined variable: data in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 44
+[06-Aug-2014 16:12:18 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[06-Aug-2014 16:12:18 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[06-Aug-2014 17:03:15 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[06-Aug-2014 17:03:15 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[06-Aug-2014 17:03:42 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[06-Aug-2014 17:03:42 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[07-Aug-2014 15:15:08 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[07-Aug-2014 15:15:08 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[07-Aug-2014 15:16:33 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[07-Aug-2014 15:16:33 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[07-Aug-2014 17:01:35 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[07-Aug-2014 17:01:35 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[07-Aug-2014 17:02:25 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[07-Aug-2014 17:02:25 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[07-Aug-2014 17:27:48 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[07-Aug-2014 17:27:48 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[07-Aug-2014 18:39:52 Africa/Lagos] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/tbcmainl/public_html/airops/conn/add_sector_.php on line 12
+[07-Aug-2014 18:49:33 Africa/Lagos] PHP Warning:  [select * from crew where aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[07-Aug-2014 18:49:33 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/getCrew.php on line 17
+[07-Aug-2014 23:47:49 Africa/Lagos] PHP Parse error:  syntax error, unexpected '$fTime' (T_VARIABLE) in /home/tbcmainl/public_html/airops/conn/add_sector.php on line 31
+[08-Aug-2014 03:39:51 Africa/Lagos] PHP Warning:  [SELECT a.air_id, s.* FROM air a INNER JOIN sector s on 
+	a.air_id = s.air_id ORDER BY air_id DESC]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[08-Aug-2014 03:39:51 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/process_air.php on line 16
+[08-Aug-2014 03:50:19 Africa/Lagos] PHP Warning:  [SELECT a.air_id, s.* FROM air a INNER JOIN sector s on 
+	a.air_id = s.air_id ORDER BY air_id DESC]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[08-Aug-2014 03:50:19 Africa/Lagos] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tbcmainl/public_html/airops/conn/process_air.php on line 16
+[08-Aug-2014 09:36:08 Africa/Lagos] PHP Warning:  [UPDATE aircraft SET airframe_hrs=airframe_hrs+0, 
+		engine1_hours=engine1_hours+0, 
+		engine2_hours=engine2_hours+0,
+		engine1_cycles=engine1_cycles+0, 
+		engine2_cycles=engine2_cycles+0,
+		updated_at = '2014-08-08 09:08:08' WHERE aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[08-Aug-2014 09:48:56 Africa/Lagos] PHP Warning:  [UPDATE aircraft SET airframe_hrs=airframe_hrs+0, 
+		engine1_hours=engine1_hours+0, 
+		engine2_hours=engine2_hours+0,
+		engine1_cycles=engine1_cycles+0, 
+		engine2_cycles=engine2_cycles+0,
+		updated_at = '2014-08-08 09:08:56' WHERE aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[08-Aug-2014 13:06:14 Africa/Lagos] PHP Warning:  [INSERT into `airports` (`airport`,`ICAO`,`city`) VALUES ('Iajfsi','DNAA','adfkhgb')]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[08-Aug-2014 13:07:01 Africa/Lagos] PHP Warning:  [INSERT into `airports` (`airport`,`ICAO`,`city`) VALUES ('asd','DNAA','asdd')]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[08-Aug-2014 13:09:08 Africa/Lagos] PHP Warning:  [INSERT into `airports` (`airport`,`ICAO`,`city`) VALUES ('skdj','DNAA','SLFJSF')]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[08-Aug-2014 13:09:39 Africa/Lagos] PHP Warning:  [INSERT into `airports` (`airport`,`ICAO`,`city`) VALUES ('AWEDASD','DNAA','ASDASD')]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[08-Aug-2014 13:10:53 Africa/Lagos] PHP Warning:  [INSERT into `airports` (`airport`,`ICAO`,`city`) VALUES ('SFL','DNAA','SAFLJ')]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[08-Aug-2014 13:11:18 Africa/Lagos] PHP Warning:  [INSERT into `airports` (`airport`,`ICAO`,`city`) VALUES ('AID','DNMM','AFJHK')]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[08-Aug-2014 13:50:11 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 10
+[08-Aug-2014 13:50:19 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 10
+[08-Aug-2014 13:51:27 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 10
+[08-Aug-2014 13:52:21 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 10
+[08-Aug-2014 13:57:24 Africa/Lagos] PHP Warning:  [SELECT *, CONCAT (airport,\', \',city) as fullAir from airports ORDER BY icao]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[08-Aug-2014 13:57:24 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 10
+[08-Aug-2014 14:02:51 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 10
+[08-Aug-2014 14:04:24 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 10
+[14-Aug-2014 12:18:15 Africa/Lagos] PHP Warning:  [INSERT into `airports` (`airport`,`ICAO`,`city`) VALUES ('test ','DNXX','Test ')]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[14-Aug-2014 12:19:01 Africa/Lagos] PHP Warning:  [INSERT into `airports` (`airport`,`ICAO`,`city`) VALUES ('Ryan Martin international ','Dnrm','Lagos')]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[19-Aug-2014 13:30:53 Africa/Lagos] PHP Warning:  file_put_contents(/loginPics/53f3437d4261f.png): failed to open stream: No such file or directory in /home/tbcmainl/public_html/airops/conn/imgUp.php on line 10
+[19-Aug-2014 13:31:22 Africa/Lagos] PHP Warning:  file_put_contents(/loginPics/53f3439a26d21.png): failed to open stream: No such file or directory in /home/tbcmainl/public_html/airops/conn/imgUp.php on line 10
+[27-Aug-2014 13:39:20 Africa/Lagos] PHP Warning:  mysqli::mysqli(): (HY000/2003): Can't connect to MySQL server on '192.168.3.107' (110) in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 20
+[27-Aug-2014 13:39:20 Africa/Lagos] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 72
+[27-Aug-2014 13:40:33 Africa/Lagos] PHP Warning:  mysqli::mysqli(): (HY000/2003): Can't connect to MySQL server on '192.168.3.107' (110) in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 20
+[27-Aug-2014 13:40:33 Africa/Lagos] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 72
+[27-Aug-2014 15:11:20 Africa/Lagos] PHP Warning:  mysqli::mysqli(): (HY000/2003): Can't connect to MySQL server on '192.168.3.107' (110) in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 20
+[27-Aug-2014 15:11:20 Africa/Lagos] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 72
+[27-Aug-2014 15:17:25 Africa/Lagos] PHP Warning:  mysqli::mysqli(): (HY000/2003): Can't connect to MySQL server on '192.168.3.107' (110) in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 20
+[27-Aug-2014 15:17:25 Africa/Lagos] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 72
+[27-Aug-2014 15:17:36 Africa/Lagos] PHP Warning:  mysqli::mysqli(): (HY000/2003): Can't connect to MySQL server on '192.168.3.107' (110) in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 20
+[27-Aug-2014 15:17:36 Africa/Lagos] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 72
+[27-Aug-2014 15:18:29 Africa/Lagos] PHP Warning:  mysqli::mysqli(): (HY000/2003): Can't connect to MySQL server on '192.168.3.107' (110) in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 20
+[27-Aug-2014 15:18:29 Africa/Lagos] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 72
+[27-Aug-2014 15:19:20 Africa/Lagos] PHP Warning:  mysqli::mysqli(): (HY000/2003): Can't connect to MySQL server on '192.168.3.107' (110) in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 20
+[27-Aug-2014 15:19:20 Africa/Lagos] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 72
+[27-Aug-2014 15:22:47 Africa/Lagos] PHP Warning:  mysqli::mysqli(): (HY000/2003): Can't connect to MySQL server on '192.168.3.107' (110) in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 20
+[27-Aug-2014 15:22:47 Africa/Lagos] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 72
+[27-Aug-2014 15:34:21 Africa/Lagos] PHP Warning:  mysqli::mysqli(): (HY000/2003): Can't connect to MySQL server on '192.168.3.107' (110) in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 20
+[27-Aug-2014 15:34:21 Africa/Lagos] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 72
+[27-Aug-2014 16:22:06 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[27-Aug-2014 16:22:51 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[27-Aug-2014 16:22:56 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[27-Aug-2014 16:22:58 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[27-Aug-2014 16:24:08 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[27-Aug-2014 16:24:12 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[27-Aug-2014 16:24:14 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[27-Aug-2014 16:24:55 Africa/Lagos] PHP Fatal error:  Cannot use [] for reading in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 21
+[27-Aug-2014 16:26:17 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[27-Aug-2014 16:26:50 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[27-Aug-2014 16:27:17 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[27-Aug-2014 16:27:33 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[27-Aug-2014 21:41:31 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[28-Aug-2014 01:40:33 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[28-Aug-2014 01:40:41 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[28-Aug-2014 01:50:00 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[28-Aug-2014 01:50:07 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[28-Aug-2014 01:50:31 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[28-Aug-2014 01:50:33 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[28-Aug-2014 01:50:47 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[28-Aug-2014 01:52:22 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[28-Aug-2014 01:52:24 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[28-Aug-2014 01:53:31 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[28-Aug-2014 01:53:37 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[28-Aug-2014 01:53:50 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[28-Aug-2014 01:53:52 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[28-Aug-2014 01:55:27 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[28-Aug-2014 01:55:30 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 14
+[28-Aug-2014 01:56:13 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 16
+[28-Aug-2014 01:56:13 Africa/Lagos] PHP Notice:  Undefined variable: airports in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 25
+[28-Aug-2014 01:57:35 Africa/Lagos] PHP Notice:  Undefined index: icao in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 19
+[28-Aug-2014 02:15:03 Africa/Lagos] PHP Notice:  Undefined variable: mysqli in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 25
+[28-Aug-2014 02:15:03 Africa/Lagos] PHP Fatal error:  Call to a member function query() on a non-object in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 25
+[28-Aug-2014 02:15:06 Africa/Lagos] PHP Notice:  Undefined variable: mysqli in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 25
+[28-Aug-2014 02:15:06 Africa/Lagos] PHP Fatal error:  Call to a member function query() on a non-object in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 25
+[28-Aug-2014 02:17:49 Africa/Lagos] PHP Fatal error:  Call to undefined method AiropsDB::query() in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 25
+[28-Aug-2014 02:20:53 Africa/Lagos] PHP Fatal error:  Call to undefined method AiropsDB::query() in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 25
+[28-Aug-2014 02:20:54 Africa/Lagos] PHP Fatal error:  Call to undefined method AiropsDB::query() in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 25
+[28-Aug-2014 03:50:38 Africa/Lagos] PHP Warning:  getimagesize(logo.jpg): failed to open stream: No such file or directory in /home/tbcmainl/public_html/airops/conn/fpdf/fpdf.php on line 1213
+[28-Aug-2014 03:51:21 Africa/Lagos] PHP Warning:  getimagesize(fuelPics/logo.png): failed to open stream: No such file or directory in /home/tbcmainl/public_html/airops/conn/fpdf/fpdf.php on line 1213
+[28-Aug-2014 03:51:24 Africa/Lagos] PHP Warning:  getimagesize(fuelPics/logo.png): failed to open stream: No such file or directory in /home/tbcmainl/public_html/airops/conn/fpdf/fpdf.php on line 1213
+[28-Aug-2014 03:51:26 Africa/Lagos] PHP Warning:  getimagesize(fuelPics/logo.png): failed to open stream: No such file or directory in /home/tbcmainl/public_html/airops/conn/fpdf/fpdf.php on line 1213
+[28-Aug-2014 04:23:14 Africa/Lagos] PHP Warning:  Invalid argument supplied for foreach() in /home/tbcmainl/public_html/airops/conn/add_sector.php on line 26
+[28-Aug-2014 04:23:14 Africa/Lagos] PHP Warning:  [INSERT INTO `sector` (`aircraftid`, `from`, `to`, `dist`, `pax`, `pic`, `sic`, `hca`, `block_off`, `block_on`, 
+                `flight_off`, `flight_on`, `airframe`, `departure_fuel`, `arrival_fuel`, `fuel_used`, `nature`, `client`, `leg`, `created_at`, `updated_at`,`air_id`) 
+              VALUES ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[28-Aug-2014 04:23:14 Africa/Lagos] PHP Warning:  [UPDATE aircraft SET airframe_hrs=airframe_hrs+0, 
+		engine1_hours=engine1_hours+0, 
+		engine2_hours=engine2_hours+0,
+		engine1_cycles=engine1_cycles+0, 
+		engine2_cycles=engine2_cycles+0,
+		updated_at = '2014-08-28 04:08:14' WHERE aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[28-Aug-2014 04:23:19 Africa/Lagos] PHP Warning:  Invalid argument supplied for foreach() in /home/tbcmainl/public_html/airops/conn/add_sector.php on line 26
+[28-Aug-2014 04:23:19 Africa/Lagos] PHP Warning:  [INSERT INTO `sector` (`aircraftid`, `from`, `to`, `dist`, `pax`, `pic`, `sic`, `hca`, `block_off`, `block_on`, 
+                `flight_off`, `flight_on`, `airframe`, `departure_fuel`, `arrival_fuel`, `fuel_used`, `nature`, `client`, `leg`, `created_at`, `updated_at`,`air_id`) 
+              VALUES ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[28-Aug-2014 04:23:19 Africa/Lagos] PHP Warning:  [UPDATE aircraft SET airframe_hrs=airframe_hrs+0, 
+		engine1_hours=engine1_hours+0, 
+		engine2_hours=engine2_hours+0,
+		engine1_cycles=engine1_cycles+0, 
+		engine2_cycles=engine2_cycles+0,
+		updated_at = '2014-08-28 04:08:19' WHERE aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[28-Aug-2014 04:50:03 Africa/Lagos] PHP Warning:  Invalid argument supplied for foreach() in /home/tbcmainl/public_html/airops/conn/add_sector.php on line 26
+[28-Aug-2014 04:50:03 Africa/Lagos] PHP Warning:  [INSERT INTO `sector` (`aircraftid`, `from`, `to`, `dist`, `pax`, `pic`, `sic`, `hca`, `block_off`, `block_on`, 
+                `flight_off`, `flight_on`, `airframe`, `departure_fuel`, `arrival_fuel`, `fuel_used`, `nature`, `client`, `leg`, `created_at`, `updated_at`,`air_id`) 
+              VALUES ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[28-Aug-2014 04:50:03 Africa/Lagos] PHP Warning:  [UPDATE aircraft SET airframe_hrs=airframe_hrs+0, 
+		engine1_hours=engine1_hours+0, 
+		engine2_hours=engine2_hours+0,
+		engine1_cycles=engine1_cycles+0, 
+		engine2_cycles=engine2_cycles+0,
+		updated_at = '2014-08-28 04:08:03' WHERE aircraftid = ]: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[28-Aug-2014 08:34:41 Africa/Lagos] PHP Notice:  Undefined index: term in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 9
+[28-Aug-2014 09:02:41 Africa/Lagos] PHP Notice:  Undefined index: term in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 9
+[28-Aug-2014 09:02:41 Africa/Lagos] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in /home/tbcmainl/public_html/airops/conn/getAirports.php on line 18
+[28-Aug-2014 14:55:25 Africa/Lagos] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 19
+[28-Aug-2014 14:55:47 Africa/Lagos] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 19
+[28-Aug-2014 14:56:39 Africa/Lagos] PHP Notice:  Undefined variable: data in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 51
+[28-Aug-2014 14:57:19 Africa/Lagos] PHP Notice:  Undefined variable: data in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 51
+[28-Aug-2014 14:57:21 Africa/Lagos] PHP Notice:  Undefined variable: data in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 51
+[28-Aug-2014 14:57:22 Africa/Lagos] PHP Notice:  Undefined variable: data in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 51
+[28-Aug-2014 14:59:27 Africa/Lagos] PHP Notice:  Undefined index: Ryan Martin in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 21
+[28-Aug-2014 14:59:27 Africa/Lagos] PHP Notice:  Undefined index: 2014-09-11 00:00:00 in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 22
+[28-Aug-2014 14:59:27 Africa/Lagos] PHP Notice:  Undefined index: Accreditation Licence in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 23
+[28-Aug-2014 14:59:27 Africa/Lagos] PHP Notice:  Undefined index: Gia Visser in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 21
+[28-Aug-2014 14:59:27 Africa/Lagos] PHP Notice:  Undefined index: 2014-07-19 11:32:27 in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 22
+[28-Aug-2014 14:59:27 Africa/Lagos] PHP Notice:  Undefined index: C of A in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 23
+[28-Aug-2014 15:12:12 Africa/Lagos] PHP Notice:  Undefined index: $disName in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 28
+[28-Aug-2014 15:12:12 Africa/Lagos] PHP Notice:  Undefined index: $expiry in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 29
+[28-Aug-2014 15:12:12 Africa/Lagos] PHP Notice:  Undefined index: $docTitle in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 30
+[28-Aug-2014 15:17:14 Africa/Lagos] PHP Notice:  Undefined index: $disName in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 28
+[28-Aug-2014 15:17:14 Africa/Lagos] PHP Notice:  Undefined index: $expiry in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 29
+[28-Aug-2014 15:17:14 Africa/Lagos] PHP Notice:  Undefined index: $docTitle in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 30
+[28-Aug-2014 15:17:34 Africa/Lagos] PHP Notice:  Undefined index: $disName in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 28
+[28-Aug-2014 15:17:34 Africa/Lagos] PHP Notice:  Undefined index: $expiry in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 29
+[28-Aug-2014 15:17:34 Africa/Lagos] PHP Notice:  Undefined index: $docTitle in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 30
+[28-Aug-2014 15:18:21 Africa/Lagos] PHP Notice:  Undefined index: $disName in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 28
+[28-Aug-2014 15:18:21 Africa/Lagos] PHP Notice:  Undefined index: $expiry in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 29
+[28-Aug-2014 15:18:21 Africa/Lagos] PHP Notice:  Undefined index: $docTitle in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 30
+[28-Aug-2014 15:18:23 Africa/Lagos] PHP Notice:  Undefined index: $disName in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 28
+[28-Aug-2014 15:18:23 Africa/Lagos] PHP Notice:  Undefined index: $expiry in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 29
+[28-Aug-2014 15:18:23 Africa/Lagos] PHP Notice:  Undefined index: $docTitle in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 30
+[28-Aug-2014 15:18:26 Africa/Lagos] PHP Notice:  Undefined index: $disName in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 28
+[28-Aug-2014 15:18:26 Africa/Lagos] PHP Notice:  Undefined index: $expiry in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 29
+[28-Aug-2014 15:18:26 Africa/Lagos] PHP Notice:  Undefined index: $docTitle in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 30
+[28-Aug-2014 15:20:25 Africa/Lagos] PHP Notice:  Undefined variable: rows in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 21
+[28-Aug-2014 15:20:25 Africa/Lagos] PHP Warning:  Invalid argument supplied for foreach() in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 21
+[28-Aug-2014 15:20:25 Africa/Lagos] PHP Notice:  Undefined variable: disName in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 27
+[28-Aug-2014 15:20:25 Africa/Lagos] PHP Notice:  Undefined variable: expiry in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 27
+[28-Aug-2014 15:20:25 Africa/Lagos] PHP Notice:  Undefined variable: docTitle in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 27
+[28-Aug-2014 15:20:25 Africa/Lagos] PHP Notice:  Undefined variable: rows in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 21
+[28-Aug-2014 15:20:25 Africa/Lagos] PHP Warning:  Invalid argument supplied for foreach() in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 21
+[28-Aug-2014 15:20:25 Africa/Lagos] PHP Notice:  Undefined variable: disName in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 27
+[28-Aug-2014 15:20:25 Africa/Lagos] PHP Notice:  Undefined variable: expiry in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 27
+[28-Aug-2014 15:20:25 Africa/Lagos] PHP Notice:  Undefined variable: docTitle in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 27
+[28-Aug-2014 15:30:00 Africa/Lagos] PHP Fatal error:  Cannot use object of type mysqli_result as array in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 21
+[29-Aug-2014 03:35:17 Africa/Lagos] PHP Parse error:  syntax error, unexpected '<' in /home/tbcmainl/public_html/airops/conn/checkCrew.php on line 23
+[29-Aug-2014 03:58:04 Africa/Lagos] PHP Warning:  [SELECT d.documentTitle, d.documentNo, d.dateissued, d.dateissued, DATEDIFF(day, d.expires, NOW()) AS daysleft
+FROM document d INNER JOIN crew c ON d.entityid = c.crewid 
+WHERE d.entityid in (1,2,3) AND d.entityType = 'P']: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[29-Aug-2014 07:34:14 Africa/Lagos] PHP Warning:  [SELECT d.documentTitle, d.documentNo, d.dateissued, d.dateissued, DATEDIFF(d.expires, NOW()) AS daysleft
+FROM document d INNER JOIN crew c ON d.entityid = c.crewid 
+WHERE d.entityid in (,,) AND d.entityType = 'P']: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[29-Aug-2014 07:36:32 Africa/Lagos] PHP Warning:  [SELECT d.documentTitle, d.documentNo, d.dateissued, d.dateissued, DATEDIFF(d.expires, NOW()) AS daysleft
+FROM document d INNER JOIN crew c ON d.entityid = c.crewid 
+WHERE d.entityid in (,,) AND d.entityType = 'P']: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[29-Aug-2014 07:36:35 Africa/Lagos] PHP Warning:  [SELECT d.documentTitle, d.documentNo, d.dateissued, d.dateissued, DATEDIFF(d.expires, NOW()) AS daysleft
+FROM document d INNER JOIN crew c ON d.entityid = c.crewid 
+WHERE d.entityid in (,,) AND d.entityType = 'P']: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[29-Aug-2014 11:13:09 Africa/Lagos] PHP Warning:  [SELECT d.documentTitle, d.documentNo, d.dateissued, d.dateissued, DATEDIFF(d.expires, NOW()) AS daysleft
+FROM document d INNER JOIN crew c ON d.entityid = c.crewid 
+WHERE d.entityid in (,,) AND d.entityType = 'P']: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[29-Aug-2014 11:13:17 Africa/Lagos] PHP Warning:  [SELECT d.documentTitle, d.documentNo, d.dateissued, d.dateissued, DATEDIFF(d.expires, NOW()) AS daysleft
+FROM document d INNER JOIN crew c ON d.entityid = c.crewid 
+WHERE d.entityid in (,,) AND d.entityType = 'P']: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
+[29-Aug-2014 11:13:53 Africa/Lagos] PHP Warning:  [SELECT d.documentTitle, d.documentNo, d.dateissued, d.dateissued, DATEDIFF(d.expires, NOW()) AS daysleft
+FROM document d INNER JOIN crew c ON d.entityid = c.crewid 
+WHERE d.entityid in (,,) AND d.entityType = 'P']: An error occured during query execution  in /home/tbcmainl/public_html/airops/conn/airops_con.php on line 38
